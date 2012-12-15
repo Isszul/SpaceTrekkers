@@ -3,10 +3,13 @@ MarionetteBase
 
 Base marionette project
 
-Structure is as follows
+Structure is as follows:
 
-
+```
 css - (style sheets)
+ |- style.css
+ |- bootstrap.css
+ \- styles.css (combines both)
 
 imgs - (for any images)
 
@@ -28,5 +31,4 @@ templates - HTML template container
           \-----> loginTemplate.html
 
 index.html ( main index.html )
-
-
+```
