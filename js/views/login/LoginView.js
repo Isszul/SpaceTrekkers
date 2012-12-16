@@ -22,17 +22,7 @@ define([
                     password: $('#password').val()
                 });
 
-                userModel.fetch({
-
-                    success: function() {
-                        console.log('logged in OK');
-                    },
-
-                    error: function() {
-                        console.log('error in login');
-                    }
-
-                });
+                userModel.attemptLogin();
             }
         }
 

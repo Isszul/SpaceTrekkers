@@ -82,5 +82,7 @@ require([
 
 ], function(App) {
 
-  App.start();
+  window.app = App;
+  window.app.start();
+
 });

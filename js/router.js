@@ -1,28 +1,49 @@
 // Filename: router.js
 define([
-  'views/login/LoginView'
-], function(LoginView) {
+  'backbone.marionette'
+], function(Marionette) {
 
-  var AppRouter = Backbone.Marionette.AppRouter.extend({
+  "use strict";
+  var AppRouter = Marionette.AppRouter.extend({
+
 
     routes: {
+
+      'desktop': 'showDesktop',
+
       // Default
-      '*actions': 'defaultAction'
-    },
-
-    initialize: function(app) {
-
-      this.app = app;
-      this.loginView = new LoginView();
-
+      '': 'showLogin'
     },
 
 
-    defaultAction: function(actions) {
-       // We have no matching route, lets display the home page
-      this.app.mainRegion.show(this.loginView);
+    initialize: function() {
+
+      window.app.on("userModel:loginsuccess", this.handleSuccessfulUserLogin, this);
+
+    },
+
+    showDesktop: function() {
+
+      window.app.mainRegion.show(window.app.Views.desktopView);
+
+    },
+
+    showLogin: function() {
+
+
+      window.app.mainRegion.show(window.app.Views.loginView);
+
+    },
+
+
+
+    handleSuccessfulUserLogin : function(userModel) {
+
+      window.app.Models.userModel = userModel;
+      this.navigate('#desktop', {trigger: true});
 
     }
+
 
 
   });
