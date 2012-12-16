@@ -2,12 +2,12 @@ define([
 	'models/user/UserModel',
 	'text!templates/login/loginTemplate.html',
     'backbone.marionette'
-], function (UserModel, homeTemplate, Marionette) {
+], function (UserModel, loginTemplate, Marionette) {
 
 
-    var HomeView = Marionette.ItemView.extend({
+    var LoginView = Marionette.ItemView.extend({
 
-        template: homeTemplate,
+        template: loginTemplate,
 
         events: {
 
@@ -36,6 +36,6 @@ define([
 
     });
 
-    return HomeView;
+    return LoginView;
 
 });
