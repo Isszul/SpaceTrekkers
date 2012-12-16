@@ -2,7 +2,7 @@
 define([
   'views/login/LoginView'
 ], function(LoginView) {
-  
+
   var AppRouter = Backbone.Marionette.AppRouter.extend({
 
     routes: {
@@ -10,7 +10,7 @@ define([
       '*actions': 'defaultAction'
     },
 
-    initialize: function(app){
+    initialize: function(app) {
 
       this.app = app;
       this.loginView = new LoginView();
@@ -18,8 +18,8 @@ define([
     },
 
 
-    defaultAction : function (actions) {
-       // We have no matching route, lets display the home page 
+    defaultAction: function(actions) {
+       // We have no matching route, lets display the home page
       this.app.mainRegion.show(this.loginView);
 
     }
@@ -29,7 +29,7 @@ define([
 
 
   return AppRouter;
- 
+
 
 
 });

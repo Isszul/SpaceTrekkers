@@ -1,21 +1,22 @@
 define([
 'backbone'
-], function (Backbone) {
+], function(Backbone) {
 
     var userModel = Backbone.Model.extend({
 
         defaults: {
-            username: "unknown",
-            password: "unknown"
+            username: 'unknown',
+            password: 'unknown'
         },
 
-        initialize: function (options) {
+        initialize: function(options) {
             this.username = options.username;
             this.password = options.password;
         },
 
-        url: function () {
-            return 'test/?username=' + this.username + "&password=" + this.password;
+        url: function() {
+            return 'test/?username=' + this.username +
+                '&password=' + this.password;
         }
 
     });

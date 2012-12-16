@@ -1,0 +1,697 @@
+<?xml version="1.0" encoding="utf-8"?>
+<checkstyle version="4.3">
+	<file name="js\app.js">
+		<error line="18" column="7" severity="error" message="&apos;Backbone&apos; is not defined." source="&apos;{a}&apos; is not defined." />
+		<error line="2" column="0" severity="warning" message="Implied global &apos;define&apos;" source="jshint.implied-globals" />
+		<error line="18" column="0" severity="warning" message="Implied global &apos;Backbone&apos;" source="jshint.implied-globals" />
+		<error line="17" column="0" severity="warning" message="Unused variable: &apos;app_router&apos;" source="jshint.implied-unuseds" />
+	</file>
+	<file name="js\libs\backbone\backbone-min.js">
+		<error line="7" column="197" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="7" column="248" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="7" column="249" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="7" column="390" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="7" column="437" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="8" column="111" severity="error" message="Expected a conditional expression and instead saw an assignment." source="Expected a conditional expression and instead saw an assignment." />
+		<error line="8" column="222" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="8" column="264" severity="error" message="Expected a conditional expression and instead saw an assignment." source="Expected a conditional expression and instead saw an assignment." />
+		<error line="8" column="326" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="8" column="361" severity="error" message="Expected a conditional expression and instead saw an assignment." source="Expected a conditional expression and instead saw an assignment." />
+		<error line="8" column="377" severity="error" message="Expected a conditional expression and instead saw an assignment." source="Expected a conditional expression and instead saw an assignment." />
+		<error line="8" column="382" severity="error" message="Expected &apos;)&apos; to match &apos;(&apos; from line 8 and instead saw &apos;,&apos;." source="Expected &apos;{a}&apos; to match &apos;{b}&apos; from line {c} and instead saw &apos;{d}&apos;." />
+		<error line="8" column="403" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="8" column="404" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="8" column="404" severity="error" message="Expected an identifier and instead saw &apos;)&apos;." source="Expected an identifier and instead saw &apos;{a}&apos;." />
+		<error line="8" column="404" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="8" column="405" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="8" column="438" severity="error" message="Expected a conditional expression and instead saw an assignment." source="Expected a conditional expression and instead saw an assignment." />
+		<error line="8" column="449" severity="error" message="Expected &apos;)&apos; to match &apos;(&apos; from line 8 and instead saw &apos;,&apos;." source="Expected &apos;{a}&apos; to match &apos;{b}&apos; from line {c} and instead saw &apos;{d}&apos;." />
+		<error line="8" column="479" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="8" column="480" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="8" column="480" severity="error" message="Expected an identifier and instead saw &apos;)&apos;." source="Expected an identifier and instead saw &apos;{a}&apos;." />
+		<error line="8" column="480" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="8" column="481" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="8" column="507" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="9" column="121" severity="error" message="Expected a conditional expression and instead saw an assignment." source="Expected a conditional expression and instead saw an assignment." />
+		<error line="9" column="138" severity="error" message="Expected a conditional expression and instead saw an assignment." source="Expected a conditional expression and instead saw an assignment." />
+		<error line="9" column="213" severity="error" message="Expected a conditional expression and instead saw an assignment." source="Expected a conditional expression and instead saw an assignment." />
+		<error line="9" column="297" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="9" column="310" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="9" column="382" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="9" column="412" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="9" column="418" severity="error" message="Expected a conditional expression and instead saw an assignment." source="Expected a conditional expression and instead saw an assignment." />
+		<error line="10" column="283" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="10" column="439" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="10" column="482" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="11" column="5" severity="error" message="Expected a conditional expression and instead saw an assignment." source="Expected a conditional expression and instead saw an assignment." />
+		<error line="11" column="100" severity="error" message="Use &apos;===&apos; to compare with &apos;null&apos;." source="Use &apos;{a}&apos; to compare with &apos;{b}&apos;." />
+		<error line="11" column="115" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="11" column="151" severity="error" message="Use &apos;!==&apos; to compare with &apos;null&apos;." source="Use &apos;{a}&apos; to compare with &apos;{b}&apos;." />
+		<error line="11" column="157" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="11" column="203" severity="error" message="Use &apos;===&apos; to compare with &apos;null&apos;." source="Use &apos;{a}&apos; to compare with &apos;{b}&apos;." />
+		<error line="11" column="214" severity="error" message="Expected &apos;)&apos; to match &apos;(&apos; from line 11 and instead saw &apos;,&apos;." source="Expected &apos;{a}&apos; to match &apos;{b}&apos; from line {c} and instead saw &apos;{d}&apos;." />
+		<error line="11" column="215" severity="error" message="Expected &apos;:&apos; and instead saw &apos;c&apos;." source="Expected &apos;{a}&apos; and instead saw &apos;{b}&apos;." />
+		<error line="11" column="216" severity="error" message="Expected an identifier and instead saw &apos;=&apos;." source="Expected an identifier and instead saw &apos;{a}&apos;." />
+		<error line="11" column="216" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="11" column="217" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="11" column="217" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="11" column="218" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="11" column="218" severity="error" message="Expected an identifier and instead saw &apos;)&apos;." source="Expected an identifier and instead saw &apos;{a}&apos;." />
+		<error line="11" column="218" severity="error" message="Too many errors. (28% scanned)." source="Too many errors." />
+		<error line="7" column="0" severity="warning" message="Implied global &apos;exports&apos;" source="jshint.implied-globals" />
+		<error line="7" column="0" severity="warning" message="Implied global &apos;require&apos;" source="jshint.implied-globals" />
+		<error line="7" column="0" severity="warning" message="Implied global &apos;define&apos;" source="jshint.implied-globals" />
+		<error line="9" column="0" severity="warning" message="Implied global &apos;n&apos;" source="jshint.implied-globals" />
+	</file>
+	<file name="js\libs\backbone\backbone.babysitter.min.js">
+		<error line="5" column="116" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="5" column="195" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="5" column="196" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="5" column="426" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="5" column="540" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="5" column="600" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="5" column="630" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="5" column="652" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="5" column="734" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="5" column="826" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="5" column="906" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="5" column="963" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="5" column="1008" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="5" column="1087" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="5" column="1150" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="5" column="1270" severity="error" message="&apos;}&apos; is not a statement label." source="&apos;{a}&apos; is not a statement label." />
+		<error line="5" column="1271" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="5" column="1302" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="5" column="1346" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="5" column="1347" severity="error" message="Expected an identifier and instead saw &apos;,&apos;." source="Expected an identifier and instead saw &apos;{a}&apos;." />
+		<error line="5" column="1347" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="5" column="1348" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="5" column="1353" severity="error" message="Label &apos;call&apos; on function statement." source="Label &apos;{a}&apos; on {b} statement." />
+		<error line="5" column="1361" severity="error" message="Missing name in function declaration." source="Missing name in function declaration." />
+		<error line="5" column="1424" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="5" column="1425" severity="error" message="Expected an identifier and instead saw &apos;,&apos;." source="Expected an identifier and instead saw &apos;{a}&apos;." />
+		<error line="5" column="1425" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="5" column="1426" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="5" column="1432" severity="error" message="Label &apos;apply&apos; on function statement." source="Label &apos;{a}&apos; on {b} statement." />
+		<error line="5" column="1440" severity="error" message="Missing name in function declaration." source="Missing name in function declaration." />
+		<error line="5" column="1440" severity="error" message="&apos;{a}&apos; is already defined." source="&apos;{a}&apos; is already defined." />
+		<error line="5" column="1527" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="5" column="1528" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="5" column="1530" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="5" column="1531" severity="error" message="Expected an identifier and instead saw &apos;,&apos;." source="Expected an identifier and instead saw &apos;{a}&apos;." />
+		<error line="5" column="1531" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="5" column="1532" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="5" column="1546" severity="error" message="Label &apos;_updateLength&apos; on function statement." source="Label &apos;{a}&apos; on {b} statement." />
+		<error line="5" column="1554" severity="error" message="Missing name in function declaration." source="Missing name in function declaration." />
+		<error line="5" column="1554" severity="error" message="&apos;{a}&apos; is already defined." source="&apos;{a}&apos; is already defined." />
+		<error line="5" column="1588" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="5" column="1589" severity="error" message="Expected an identifier and instead saw &apos;,&apos;." source="Expected an identifier and instead saw &apos;{a}&apos;." />
+		<error line="5" column="1589" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="5" column="1590" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="5" column="1607" severity="error" message="Label &apos;_addInitialViews&apos; on function statement." source="Label &apos;{a}&apos; on {b} statement." />
+		<error line="5" column="1615" severity="error" message="Missing name in function declaration." source="Missing name in function declaration." />
+		<error line="5" column="1615" severity="error" message="&apos;{a}&apos; is already defined." source="&apos;{a}&apos; is already defined." />
+		<error line="5" column="1685" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="5" column="1687" severity="error" message="Expected &apos;}&apos; to match &apos;{&apos; from line 5 and instead saw &apos;)&apos;." source="Expected &apos;{a}&apos; to match &apos;{b}&apos; from line {c} and instead saw &apos;{d}&apos;." />
+		<error line="5" column="1688" severity="error" message="Expected &apos;)&apos; and instead saw &apos;;&apos;." source="Expected &apos;{a}&apos; and instead saw &apos;{b}&apos;." />
+		<error line="5" column="1688" severity="error" message="Too many errors. (100% scanned)." source="Too many errors." />
+		<error line="5" column="0" severity="warning" message="Implied global &apos;exports&apos;" source="jshint.implied-globals" />
+		<error line="5" column="0" severity="warning" message="Implied global &apos;require&apos;" source="jshint.implied-globals" />
+		<error line="5" column="0" severity="warning" message="Implied global &apos;module&apos;" source="jshint.implied-globals" />
+		<error line="5" column="0" severity="warning" message="Implied global &apos;define&apos;" source="jshint.implied-globals" />
+	</file>
+	<file name="js\libs\backbone\backbone.eventbinder.min.js">
+		<error line="5" column="116" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="5" column="195" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="5" column="196" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="5" column="408" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="5" column="544" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="5" column="612" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="5" column="752" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="5" column="810" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="5" column="849" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="5" column="1048" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="5" column="1049" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="5" column="1227" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="5" column="1229" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="5" column="1326" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="5" column="1330" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="5" column="1331" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="5" column="1340" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="5" column="1351" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="5" column="0" severity="warning" message="Implied global &apos;exports&apos;" source="jshint.implied-globals" />
+		<error line="5" column="0" severity="warning" message="Implied global &apos;require&apos;" source="jshint.implied-globals" />
+		<error line="5" column="0" severity="warning" message="Implied global &apos;module&apos;" source="jshint.implied-globals" />
+		<error line="5" column="0" severity="warning" message="Implied global &apos;define&apos;" source="jshint.implied-globals" />
+	</file>
+	<file name="js\libs\backbone\backbone.marionette.min.js">
+		<error line="6" column="239" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="6" column="389" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="6" column="390" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="6" column="627" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="6" column="628" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="6" column="770" severity="error" message="Missing &apos;()&apos; invoking a constructor." source="Missing &apos;()&apos; invoking a constructor." />
+		<error line="6" column="796" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="6" column="797" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="6" column="799" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="6" column="800" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="6" column="1077" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="6" column="1122" severity="error" message="&apos;e&apos; is already defined." source="&apos;{a}&apos; is already defined." />
+		<error line="6" column="1142" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="6" column="1178" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="6" column="1280" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="6" column="1281" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="6" column="1334" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="6" column="1372" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="6" column="1374" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="6" column="1375" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="6" column="1457" severity="error" message="Missing &apos;()&apos; invoking a constructor." source="Missing &apos;()&apos; invoking a constructor." />
+		<error line="6" column="1536" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="6" column="1607" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="6" column="1809" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="6" column="1855" severity="error" message="&apos;e&apos; is already defined." source="&apos;{a}&apos; is already defined." />
+		<error line="6" column="2029" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="6" column="2031" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="6" column="2048" severity="error" message="&apos;n&apos; is already defined." source="&apos;{a}&apos; is already defined." />
+		<error line="6" column="2069" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="6" column="2169" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="6" column="2170" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="6" column="2172" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="6" column="2173" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="6" column="2246" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="6" column="2374" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="6" column="2387" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="6" column="2389" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="6" column="2436" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="6" column="2569" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="6" column="2571" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="6" column="2736" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="6" column="2737" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="6" column="2885" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="6" column="3067" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="6" column="3067" severity="error" message="Expected an identifier and instead saw &apos;=&apos;." source="Expected an identifier and instead saw &apos;{a}&apos;." />
+		<error line="6" column="3067" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="6" column="3068" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="6" column="3068" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="6" column="3080" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="6" column="3081" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="6" column="3081" severity="error" message="Too many errors. (100% scanned)." source="Too many errors." />
+		<error line="6" column="0" severity="warning" message="Implied global &apos;exports&apos;" source="jshint.implied-globals" />
+		<error line="6" column="0" severity="warning" message="Implied global &apos;require&apos;" source="jshint.implied-globals" />
+		<error line="6" column="0" severity="warning" message="Implied global &apos;module&apos;" source="jshint.implied-globals" />
+		<error line="6" column="0" severity="warning" message="Implied global &apos;define&apos;" source="jshint.implied-globals" />
+		<error line="6" column="0" severity="warning" message="Implied global &apos;Marionette&apos;" source="jshint.implied-globals" />
+	</file>
+	<file name="js\libs\backbone\backbone.wreqr.min.js">
+		<error line="5" column="116" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="5" column="195" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="5" column="196" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="5" column="353" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="5" column="483" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="5" column="686" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="5" column="687" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="5" column="739" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="5" column="787" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="5" column="791" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="5" column="792" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="5" column="960" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="5" column="963" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="5" column="1143" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="5" column="1146" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="5" column="1264" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="5" column="1265" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="5" column="1272" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="5" column="1273" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="5" column="1295" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="5" column="1300" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="5" column="0" severity="warning" message="Implied global &apos;exports&apos;" source="jshint.implied-globals" />
+		<error line="5" column="0" severity="warning" message="Implied global &apos;require&apos;" source="jshint.implied-globals" />
+		<error line="5" column="0" severity="warning" message="Implied global &apos;module&apos;" source="jshint.implied-globals" />
+		<error line="5" column="0" severity="warning" message="Implied global &apos;define&apos;" source="jshint.implied-globals" />
+	</file>
+	<file name="js\libs\jasmine-core\jasmine-html.js">
+		<error line="75" column="22" severity="error" message="Use &apos;===&apos; to compare with &apos;0&apos;." source="Use &apos;{a}&apos; to compare with &apos;{b}&apos;." />
+		<error line="88" column="43" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="208" column="2" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="380" column="17" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="1,3,29,39,46,55,56,57,61,83,106,135,170,181,193,200,209,216,225,226,259,270,309,316,327,387,390,401,415,419,437,442,468,474,480,484,488,492,498,522,581,601,610,616,654,655,665,669" column="0" severity="warning" message="Implied global &apos;jasmine&apos;" source="jshint.implied-globals" />
+		<error line="4,10,189,493,499,505,598" column="0" severity="warning" message="Implied global &apos;document&apos;" source="jshint.implied-globals" />
+		<error line="63,166,170,196" column="0" severity="warning" message="Implied global &apos;window&apos;" source="jshint.implied-globals" />
+		<error line="79" column="0" severity="warning" message="Implied global &apos;createReporterDom&apos;" source="jshint.implied-globals" />
+		<error line="81" column="0" severity="warning" message="Implied global &apos;setExceptionHandling&apos;" source="jshint.implied-globals" />
+		<error line="117,121" column="0" severity="warning" message="Implied global &apos;focusedSpecName&apos;" source="jshint.implied-globals" />
+		<error line="245,355" column="0" severity="warning" message="Implied global &apos;showDetails&apos;" source="jshint.implied-globals" />
+		<error line="269,295,303,308,315,326,332" column="0" severity="warning" message="Implied global &apos;isUndefined&apos;" source="jshint.implied-globals" />
+		<error line="312,319,329,335,343,350,353" column="0" severity="warning" message="Implied global &apos;specPluralizedFor&apos;" source="jshint.implied-globals" />
+		<error line="321,337" column="0" severity="warning" message="Implied global &apos;isDefined&apos;" source="jshint.implied-globals" />
+		<error line="3" column="0" severity="warning" message="Unused variable: &apos;childrenVarArgs&apos;" source="jshint.implied-unuseds" />
+		<error line="126" column="0" severity="warning" message="Unused variable: &apos;focusedSpecName&apos;" source="jshint.implied-unuseds" />
+		<error line="148" column="0" severity="warning" message="Unused variable: &apos;createReporterDom&apos;" source="jshint.implied-unuseds" />
+		<error line="188" column="0" severity="warning" message="Unused variable: &apos;setExceptionHandling&apos;" source="jshint.implied-unuseds" />
+		<error line="87" column="0" severity="warning" message="Unused variable: &apos;runner&apos;" source="jshint.implied-unuseds" />
+		<error line="363" column="0" severity="warning" message="Unused variable: &apos;showDetails&apos;" source="jshint.implied-unuseds" />
+		<error line="373" column="0" severity="warning" message="Unused variable: &apos;isDefined&apos;" source="jshint.implied-unuseds" />
+		<error line="377" column="0" severity="warning" message="Unused variable: &apos;specPluralizedFor&apos;" source="jshint.implied-unuseds" />
+		<error line="498" column="0" severity="warning" message="Unused variable: &apos;childrenVarArgs&apos;" source="jshint.implied-unuseds" />
+		<error line="564" column="0" severity="warning" message="Unused variable: &apos;evt&apos;" source="jshint.implied-unuseds" />
+		<error line="572" column="0" severity="warning" message="Unused variable: &apos;evt&apos;" source="jshint.implied-unuseds" />
+	</file>
+	<file name="js\libs\jasmine-core\jasmine.js">
+		<error line="23" column="9" severity="error" message="Expected an identifier and instead saw &apos;undefined&apos; (a reserved word)." source="Expected an identifier and instead saw &apos;{a}&apos; (a reserved word)." />
+		<error line="911" column="53" severity="error" message="Expected an identifier and instead saw &apos;undefined&apos; (a reserved word)." source="Expected an identifier and instead saw &apos;{a}&apos; (a reserved word)." />
+		<error line="947" column="28" severity="error" message="Expected an identifier and instead saw &apos;undefined&apos; (a reserved word)." source="Expected an identifier and instead saw &apos;{a}&apos; (a reserved word)." />
+		<error line="952" column="21" severity="error" message="Expected an identifier and instead saw &apos;undefined&apos; (a reserved word)." source="Expected an identifier and instead saw &apos;{a}&apos; (a reserved word)." />
+		<error line="952" column="62" severity="error" message="Expected an identifier and instead saw &apos;undefined&apos; (a reserved word)." source="Expected an identifier and instead saw &apos;{a}&apos; (a reserved word)." />
+		<error line="953" column="26" severity="error" message="Expected an identifier and instead saw &apos;undefined&apos; (a reserved word)." source="Expected an identifier and instead saw &apos;{a}&apos; (a reserved word)." />
+		<error line="953" column="52" severity="error" message="Expected an identifier and instead saw &apos;undefined&apos; (a reserved word)." source="Expected an identifier and instead saw &apos;{a}&apos; (a reserved word)." />
+		<error line="1157" column="78" severity="error" message="Expected an identifier and instead saw &apos;undefined&apos; (a reserved word)." source="Expected an identifier and instead saw &apos;{a}&apos; (a reserved word)." />
+		<error line="1162" column="102" severity="error" message="Expected an identifier and instead saw &apos;undefined&apos; (a reserved word)." source="Expected an identifier and instead saw &apos;{a}&apos; (a reserved word)." />
+		<error line="1243" column="20" severity="error" message="Expected an identifier and instead saw &apos;undefined&apos; (a reserved word)." source="Expected an identifier and instead saw &apos;{a}&apos; (a reserved word)." />
+		<error line="1308" column="35" severity="error" message="Expected an identifier and instead saw &apos;undefined&apos; (a reserved word)." source="Expected an identifier and instead saw &apos;{a}&apos; (a reserved word)." />
+		<error line="1315" column="35" severity="error" message="Expected an identifier and instead saw &apos;undefined&apos; (a reserved word)." source="Expected an identifier and instead saw &apos;{a}&apos; (a reserved word)." />
+		<error line="1418" column="213" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="1481" column="7" severity="error" message="Confusing use of &apos;!&apos;." source="Confusing use of &apos;{a}&apos;." />
+		<error line="1504" column="36" severity="error" message="Expected an identifier and instead saw &apos;undefined&apos; (a reserved word)." source="Expected an identifier and instead saw &apos;{a}&apos; (a reserved word)." />
+		<error line="1510" column="44" severity="error" message="Expected an identifier and instead saw &apos;undefined&apos; (a reserved word)." source="Expected an identifier and instead saw &apos;{a}&apos; (a reserved word)." />
+		<error line="1559" column="16" severity="error" message="Use &apos;!==&apos; to compare with &apos;null&apos;." source="Use &apos;{a}&apos; to compare with &apos;{b}&apos;." />
+		<error line="1559" column="52" severity="error" message="Expected an identifier and instead saw &apos;undefined&apos; (a reserved word)." source="Expected an identifier and instead saw &apos;{a}&apos; (a reserved word)." />
+		<error line="1597" column="51" severity="error" message="Expected an identifier and instead saw &apos;undefined&apos; (a reserved word)." source="Expected an identifier and instead saw &apos;{a}&apos; (a reserved word)." />
+		<error line="1601" column="51" severity="error" message="Expected an identifier and instead saw &apos;undefined&apos; (a reserved word)." source="Expected an identifier and instead saw &apos;{a}&apos; (a reserved word)." />
+		<error line="1624" column="34" severity="error" message="Expected an identifier and instead saw &apos;undefined&apos; (a reserved word)." source="Expected an identifier and instead saw &apos;{a}&apos; (a reserved word)." />
+		<error line="1628" column="53" severity="error" message="Expected an identifier and instead saw &apos;undefined&apos; (a reserved word)." source="Expected an identifier and instead saw &apos;{a}&apos; (a reserved word)." />
+		<error line="1792" column="6" severity="error" message="Don&apos;t make functions within a loop." source="Don&apos;t make functions within a loop." />
+		<error line="1890" column="27" severity="error" message="Expected an identifier and instead saw &apos;undefined&apos; (a reserved word)." source="Expected an identifier and instead saw &apos;{a}&apos; (a reserved word)." />
+		<error line="1932" column="85" severity="error" message="Expected an identifier and instead saw &apos;undefined&apos; (a reserved word)." source="Expected an identifier and instead saw &apos;{a}&apos; (a reserved word)." />
+		<error line="2019" column="26" severity="error" message="Expected an identifier and instead saw &apos;undefined&apos; (a reserved word)." source="Expected an identifier and instead saw &apos;{a}&apos; (a reserved word)." />
+		<error line="2028" column="26" severity="error" message="Expected an identifier and instead saw &apos;undefined&apos; (a reserved word)." source="Expected an identifier and instead saw &apos;{a}&apos; (a reserved word)." />
+		<error line="2037" column="26" severity="error" message="Expected an identifier and instead saw &apos;undefined&apos; (a reserved word)." source="Expected an identifier and instead saw &apos;{a}&apos; (a reserved word)." />
+		<error line="2095" column="8" severity="error" message="Don&apos;t make functions within a loop." source="Don&apos;t make functions within a loop." />
+		<error line="2411" column="22" severity="error" message="Expected an identifier and instead saw &apos;undefined&apos; (a reserved word)." source="Expected an identifier and instead saw &apos;{a}&apos; (a reserved word)." />
+		<error line="2415" column="63" severity="error" message="Expected an identifier and instead saw &apos;undefined&apos; (a reserved word)." source="Expected an identifier and instead saw &apos;{a}&apos; (a reserved word)." />
+		<error line="1" column="0" severity="warning" message="Implied global &apos;window&apos;" source="jshint.implied-globals" />
+		<error line="1,9,483,501,514,528,538,549,561,573,585,605,616" column="0" severity="warning" message="Implied global &apos;exports&apos;" source="jshint.implied-globals" />
+		<error line="620,645" column="0" severity="warning" message="Implied global &apos;XMLHttpRequest&apos;" source="jshint.implied-globals" />
+		<error line="630,633,636,639" column="0" severity="warning" message="Implied global &apos;ActiveXObject&apos;" source="jshint.implied-globals" />
+		<error line="558" column="0" severity="warning" message="Unused variable: &apos;optional_timeout&apos;" source="jshint.implied-unuseds" />
+		<error line="558" column="0" severity="warning" message="Unused variable: &apos;optional_timeoutMessage&apos;" source="jshint.implied-unuseds" />
+		<error line="558" column="0" severity="warning" message="Unused variable: &apos;latchFunction&apos;" source="jshint.implied-unuseds" />
+		<error line="856" column="0" severity="warning" message="Unused variable: &apos;specDefinitions&apos;" source="jshint.implied-unuseds" />
+		<error line="856" column="0" severity="warning" message="Unused variable: &apos;desc&apos;" source="jshint.implied-unuseds" />
+		<error line="875" column="0" severity="warning" message="Unused variable: &apos;func&apos;" source="jshint.implied-unuseds" />
+		<error line="875" column="0" severity="warning" message="Unused variable: &apos;desc&apos;" source="jshint.implied-unuseds" />
+		<error line="1021" column="0" severity="warning" message="Unused variable: &apos;runner&apos;" source="jshint.implied-unuseds" />
+		<error line="1025" column="0" severity="warning" message="Unused variable: &apos;runner&apos;" source="jshint.implied-unuseds" />
+		<error line="1029" column="0" severity="warning" message="Unused variable: &apos;suite&apos;" source="jshint.implied-unuseds" />
+		<error line="1033" column="0" severity="warning" message="Unused variable: &apos;spec&apos;" source="jshint.implied-unuseds" />
+		<error line="1037" column="0" severity="warning" message="Unused variable: &apos;spec&apos;" source="jshint.implied-unuseds" />
+		<error line="1041" column="0" severity="warning" message="Unused variable: &apos;str&apos;" source="jshint.implied-unuseds" />
+		<error line="1122" column="0" severity="warning" message="Unused variable: &apos;runner&apos;" source="jshint.implied-unuseds" />
+		<error line="1127" column="0" severity="warning" message="Unused variable: &apos;suite&apos;" source="jshint.implied-unuseds" />
+		<error line="1139" column="0" severity="warning" message="Unused variable: &apos;str&apos;" source="jshint.implied-unuseds" />
+		<error line="1188" column="0" severity="warning" message="Unused variable: &apos;str&apos;" source="jshint.implied-unuseds" />
+		<error line="1193" column="0" severity="warning" message="Unused variable: &apos;details&apos;" source="jshint.implied-unuseds" />
+		<error line="1193" column="0" severity="warning" message="Unused variable: &apos;failing_message&apos;" source="jshint.implied-unuseds" />
+		<error line="1193" column="0" severity="warning" message="Unused variable: &apos;result&apos;" source="jshint.implied-unuseds" />
+		<error line="2294" column="0" severity="warning" message="Unused variable: &apos;optional_timeout&apos;" source="jshint.implied-unuseds" />
+		<error line="2294" column="0" severity="warning" message="Unused variable: &apos;optional_timeoutMessage&apos;" source="jshint.implied-unuseds" />
+		<error line="2294" column="0" severity="warning" message="Unused variable: &apos;latchFunction&apos;" source="jshint.implied-unuseds" />
+	</file>
+	<file name="js\libs\jquery\jquery-min.js">
+		<error line="2" column="90" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="2" column="93" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="2" column="94" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="2" column="319" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="2" column="343" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="2" column="352" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="2" column="361" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="2" column="464" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="2" column="473" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="2" column="496" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="2" column="519" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="2" column="586" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="2" column="607" severity="error" message="Expected &apos;{&apos; and instead saw &apos;a&apos;." source="Expected &apos;{a}&apos; and instead saw &apos;{b}&apos;." />
+		<error line="2" column="647" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="2" column="757" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="2" column="820" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="2" column="894" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="2" column="950" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="2" column="1009" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="2" column="1011" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="2" column="1143" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="2" column="1245" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="2" column="1451" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="2" column="1487" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="2" column="1488" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="2" column="1574" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="2" column="1614" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="2" column="1696" severity="error" message="Expected &apos;)&apos; to match &apos;(&apos; from line 2 and instead saw &apos;,&apos;." source="Expected &apos;{a}&apos; to match &apos;{b}&apos; from line {c} and instead saw &apos;{d}&apos;." />
+		<error line="2" column="1697" severity="error" message="Expected &apos;:&apos; and instead saw &apos;p&apos;." source="Expected &apos;{a}&apos; and instead saw &apos;{b}&apos;." />
+		<error line="2" column="1698" severity="error" message="Expected an identifier and instead saw &apos;.&apos;." source="Expected an identifier and instead saw &apos;{a}&apos;." />
+		<error line="2" column="1698" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="2" column="1699" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="2" column="1778" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="2" column="1779" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="2" column="1779" severity="error" message="Expected an identifier and instead saw &apos;)&apos;." source="Expected an identifier and instead saw &apos;{a}&apos;." />
+		<error line="2" column="1779" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="2" column="1780" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="2" column="1780" severity="error" message="Expected &apos;}&apos; to match &apos;{&apos; from line 2 and instead saw &apos;:&apos;." source="Expected &apos;{a}&apos; to match &apos;{b}&apos; from line {c} and instead saw &apos;{d}&apos;." />
+		<error line="2" column="1847" severity="error" message="Expected &apos;)&apos; to match &apos;(&apos; from line 2 and instead saw &apos;,&apos;." source="Expected &apos;{a}&apos; to match &apos;{b}&apos; from line {c} and instead saw &apos;{d}&apos;." />
+		<error line="2" column="1848" severity="error" message="Expected &apos;:&apos; and instead saw &apos;b&apos;." source="Expected &apos;{a}&apos; and instead saw &apos;{b}&apos;." />
+		<error line="2" column="1849" severity="error" message="Expected an identifier and instead saw &apos;.&apos;." source="Expected an identifier and instead saw &apos;{a}&apos;." />
+		<error line="2" column="1849" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="2" column="1850" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="2" column="1883" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="2" column="1884" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="2" column="1884" severity="error" message="Expected an identifier and instead saw &apos;)&apos;." source="Expected an identifier and instead saw &apos;{a}&apos;." />
+		<error line="2" column="1884" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="2" column="1885" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="2" column="1885" severity="error" message="Expected &apos;}&apos; to match &apos;{&apos; from line 2 and instead saw &apos;:&apos;." source="Expected &apos;{a}&apos; to match &apos;{b}&apos; from line {c} and instead saw &apos;{d}&apos;." />
+		<error line="2" column="1886" severity="error" message="Expected &apos;)&apos; to match &apos;(&apos; from line 2 and instead saw &apos;c&apos;." source="Expected &apos;{a}&apos; to match &apos;{b}&apos; from line {c} and instead saw &apos;{d}&apos;." />
+		<error line="2" column="1886" severity="error" message="Too many errors. (100% scanned)." source="Too many errors." />
+		<error line="2" column="0" severity="warning" message="Implied global &apos;F&apos;" source="jshint.implied-globals" />
+		<error line="2" column="0" severity="warning" message="Implied global &apos;p&apos;" source="jshint.implied-globals" />
+		<error line="2" column="0" severity="warning" message="Implied global &apos;s&apos;" source="jshint.implied-globals" />
+		<error line="2" column="0" severity="warning" message="Implied global &apos;I&apos;" source="jshint.implied-globals" />
+		<error line="2" column="0" severity="warning" message="Implied global &apos;H&apos;" source="jshint.implied-globals" />
+		<error line="2" column="0" severity="warning" message="Implied global &apos;be&apos;" source="jshint.implied-globals" />
+		<error line="2" column="0" severity="warning" message="Implied global &apos;bl&apos;" source="jshint.implied-globals" />
+		<error line="2" column="0" severity="warning" message="Implied global &apos;support&apos;" source="jshint.implied-globals" />
+		<error line="2" column="0" severity="warning" message="Implied global &apos;c&apos;" source="jshint.implied-globals" />
+		<error line="2" column="0" severity="warning" message="Implied global &apos;bv&apos;" source="jshint.implied-globals" />
+		<error line="2" column="0" severity="warning" message="Implied global &apos;value&apos;" source="jshint.implied-globals" />
+	</file>
+	<file name="js\libs\jquery\jquery-serialize.js">
+		<error line="9" column="20" severity="error" message="Use &apos;!==&apos; to compare with &apos;null&apos;." source="Use &apos;{a}&apos; to compare with &apos;{b}&apos;." />
+		<error line="15" column="31" severity="error" message="Use &apos;!==&apos; to compare with &apos;null&apos;." source="Use &apos;{a}&apos; to compare with &apos;{b}&apos;." />
+		<error line="27" column="2" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="1,6" column="0" severity="warning" message="Implied global &apos;jQuery&apos;" source="jshint.implied-globals" />
+	</file>
+	<file name="js\libs\json2\json2.js">
+		<error line="163" column="5" severity="error" message="Read only." source="Read only." />
+		<error line="179" column="17" severity="error" message="Bad line breaking before &apos;?&apos;." source="Bad line breaking before &apos;{a}&apos;." />
+		<error line="222" column="17" severity="error" message="Bad line breaking before &apos;?&apos;." source="Bad line breaking before &apos;{a}&apos;." />
+		<error line="308" column="21" severity="error" message="Bad line breaking before &apos;?&apos;." source="Bad line breaking before &apos;{a}&apos;." />
+		<error line="310" column="21" severity="error" message="Bad line breaking before &apos;?&apos;." source="Bad line breaking before &apos;{a}&apos;." />
+		<error line="347" column="17" severity="error" message="Bad line breaking before &apos;?&apos;." source="Bad line breaking before &apos;{a}&apos;." />
+		<error line="349" column="17" severity="error" message="Bad line breaking before &apos;?&apos;." source="Bad line breaking before &apos;{a}&apos;." />
+		<error line="477" column="21" severity="error" message="Bad line breaking before &apos;?&apos;." source="Bad line breaking before &apos;{a}&apos;." />
+		<error line="176" column="0" severity="warning" message="Unused variable: &apos;key&apos;" source="jshint.implied-unuseds" />
+		<error line="190" column="0" severity="warning" message="Unused variable: &apos;key&apos;" source="jshint.implied-unuseds" />
+	</file>
+	<file name="js\libs\require\require.js">
+		<error line="7" column="65" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="7" column="115" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="7" column="196" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="7" column="302" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="7" column="340" severity="error" message="Expected a conditional expression and instead saw an assignment." source="Expected a conditional expression and instead saw an assignment." />
+		<error line="8" column="60" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="8" column="132" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="8" column="133" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="8" column="232" severity="error" message="Expected &apos;)&apos; to match &apos;(&apos; from line 8 and instead saw &apos;,&apos;." source="Expected &apos;{a}&apos; to match &apos;{b}&apos; from line {c} and instead saw &apos;{d}&apos;." />
+		<error line="8" column="232" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="8" column="233" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="8" column="256" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="8" column="256" severity="error" message="Expected an identifier and instead saw &apos;)&apos;." source="Expected an identifier and instead saw &apos;{a}&apos;." />
+		<error line="8" column="256" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="8" column="300" severity="error" message="Expected a conditional expression and instead saw an assignment." source="Expected a conditional expression and instead saw an assignment." />
+		<error line="8" column="340" severity="error" message="Expected an identifier and instead saw &apos;else&apos;." source="Expected an identifier and instead saw &apos;{a}&apos;." />
+		<error line="8" column="340" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="8" column="344" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="8" column="399" severity="error" message="Unexpected &apos;break&apos;." source="Unexpected &apos;{a}&apos;." />
+		<error line="8" column="426" severity="error" message="Expected &apos;)&apos; to match &apos;(&apos; from line 8 and instead saw &apos;,&apos;." source="Expected &apos;{a}&apos; to match &apos;{b}&apos; from line {c} and instead saw &apos;{d}&apos;." />
+		<error line="8" column="426" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="8" column="427" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="8" column="431" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="8" column="431" severity="error" message="Expected an identifier and instead saw &apos;)&apos;." source="Expected an identifier and instead saw &apos;{a}&apos;." />
+		<error line="8" column="431" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="8" column="489" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="8" column="490" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="8" column="499" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="9" column="60" severity="error" message="&apos;i&apos; is already defined." source="&apos;{a}&apos; is already defined." />
+		<error line="9" column="88" severity="error" message="Expected &apos;)&apos; to match &apos;(&apos; from line 9 and instead saw &apos;,&apos;." source="Expected &apos;{a}&apos; to match &apos;{b}&apos; from line {c} and instead saw &apos;{d}&apos;." />
+		<error line="9" column="88" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="9" column="89" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="9" column="116" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="9" column="116" severity="error" message="Expected an identifier and instead saw &apos;)&apos;." source="Expected an identifier and instead saw &apos;{a}&apos;." />
+		<error line="9" column="116" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="9" column="130" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="9" column="201" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="9" column="220" severity="error" message="Expected &apos;)&apos; to match &apos;(&apos; from line 9 and instead saw &apos;,&apos;." source="Expected &apos;{a}&apos; to match &apos;{b}&apos; from line {c} and instead saw &apos;{d}&apos;." />
+		<error line="9" column="221" severity="error" message="Expected &apos;)&apos; to match &apos;(&apos; from line 9 and instead saw &apos;i&apos;." source="Expected &apos;{a}&apos; to match &apos;{b}&apos; from line {c} and instead saw &apos;{d}&apos;." />
+		<error line="9" column="222" severity="error" message="Bad assignment." source="Bad assignment." />
+		<error line="9" column="222" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="9" column="223" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="9" column="226" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="9" column="255" severity="error" message="Expected &apos;)&apos; to match &apos;(&apos; from line 9 and instead saw &apos;,&apos;." source="Expected &apos;{a}&apos; to match &apos;{b}&apos; from line {c} and instead saw &apos;{d}&apos;." />
+		<error line="9" column="255" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="9" column="256" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="9" column="262" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="9" column="262" severity="error" message="Expected an identifier and instead saw &apos;)&apos;." source="Expected an identifier and instead saw &apos;{a}&apos;." />
+		<error line="9" column="262" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="9" column="263" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="9" column="263" severity="error" message="Too many errors. (28% scanned)." source="Too many errors." />
+		<error line="7" column="0" severity="warning" message="Implied global &apos;M&apos;" source="jshint.implied-globals" />
+		<error line="7" column="0" severity="warning" message="Implied global &apos;K&apos;" source="jshint.implied-globals" />
+		<error line="7" column="0" severity="warning" message="Implied global &apos;d&apos;" source="jshint.implied-globals" />
+		<error line="8" column="0" severity="warning" message="Implied global &apos;da&apos;" source="jshint.implied-globals" />
+		<error line="8" column="0" severity="warning" message="Implied global &apos;aa&apos;" source="jshint.implied-globals" />
+		<error line="8" column="0" severity="warning" message="Implied global &apos;p&apos;" source="jshint.implied-globals" />
+		<error line="9" column="0" severity="warning" message="Implied global &apos;n&apos;" source="jshint.implied-globals" />
+		<error line="9" column="0" severity="warning" message="Implied global &apos;g&apos;" source="jshint.implied-globals" />
+	</file>
+	<file name="js\libs\sinon\sinon.js">
+		<error line="111" column="34" severity="error" message="&apos;arr&apos; is already defined." source="&apos;{a}&apos; is already defined." />
+		<error line="139" column="28" severity="error" message="Use &apos;===&apos; to compare with &apos;0&apos;." source="Use &apos;{a}&apos; to compare with &apos;{b}&apos;." />
+		<error line="145" column="37" severity="error" message="Use &apos;===&apos; to compare with &apos;0&apos;." source="Use &apos;{a}&apos; to compare with &apos;{b}&apos;." />
+		<error line="162" column="38" severity="error" message="Use &apos;===&apos; to compare with &apos;0&apos;." source="Use &apos;{a}&apos; to compare with &apos;{b}&apos;." />
+		<error line="178" column="27" severity="error" message="Use &apos;===&apos; to compare with &apos;0&apos;." source="Use &apos;{a}&apos; to compare with &apos;{b}&apos;." />
+		<error line="194" column="45" severity="error" message="[&apos;TEMP&apos;] is better written in dot notation." source="[&apos;{a}&apos;] is better written in dot notation." />
+		<error line="208" column="33" severity="error" message="Use &apos;===&apos; to compare with &apos;null&apos;." source="Use &apos;{a}&apos; to compare with &apos;{b}&apos;." />
+		<error line="230" column="34" severity="error" message="Use &apos;===&apos; to compare with &apos;null&apos;." source="Use &apos;{a}&apos; to compare with &apos;{b}&apos;." />
+		<error line="261" column="16" severity="error" message="&apos;buster&apos; is already defined." source="&apos;{a}&apos; is already defined." />
+		<error line="290" column="22" severity="error" message="Use &apos;===&apos; to compare with &apos;0&apos;." source="Use &apos;{a}&apos; to compare with &apos;{b}&apos;." />
+		<error line="317" column="32" severity="error" message="Possible strict violation." source="Possible strict violation." />
+		<error line="317" column="66" severity="error" message="Possible strict violation." source="Possible strict violation." />
+		<error line="332" column="37" severity="error" message="Possible strict violation." source="Possible strict violation." />
+		<error line="354" column="34" severity="error" message="Possible strict violation." source="Possible strict violation." />
+		<error line="401" column="51" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="459" column="27" severity="error" message="Unexpected dangling &apos;_&apos; in &apos;__dirname&apos;." source="Unexpected {a} in &apos;{b}&apos;." />
+		<error line="469" column="5" severity="error" message="Too many var statements." source="Too many var statements." />
+		<error line="470" column="31" severity="error" message="Expected &apos;!==&apos; and instead saw &apos;!=&apos;." source="Expected &apos;{a}&apos; and instead saw &apos;{b}&apos;." />
+		<error line="471" column="9" severity="error" message="Too many var statements." source="Too many var statements." />
+		<error line="478" column="38" severity="error" message="Expected &apos;===&apos; and instead saw &apos;==&apos;." source="Expected &apos;{a}&apos; and instead saw &apos;{b}&apos;." />
+		<error line="508" column="9" severity="error" message="Too many var statements." source="Too many var statements." />
+		<error line="514" column="31" severity="error" message="Expected &apos;!==&apos; and instead saw &apos;!=&apos;." source="Expected &apos;{a}&apos; and instead saw &apos;{b}&apos;." />
+		<error line="530" column="21" severity="error" message="Too many var statements." source="Too many var statements." />
+		<error line="535" column="17" severity="error" message="Too many var statements." source="Too many var statements." />
+		<error line="559" column="26" severity="error" message="Too many var statements." source="Too many var statements." />
+		<error line="566" column="47" severity="error" message="Expected &apos;!==&apos; and instead saw &apos;!=&apos;." source="Expected &apos;{a}&apos; and instead saw &apos;{b}&apos;." />
+		<error line="585" column="26" severity="error" message="Expected &apos;!==&apos; and instead saw &apos;!=&apos;." source="Expected &apos;{a}&apos; and instead saw &apos;{b}&apos;." />
+		<error line="585" column="50" severity="error" message="Expected &apos;!==&apos; and instead saw &apos;!=&apos;." source="Expected &apos;{a}&apos; and instead saw &apos;{b}&apos;." />
+		<error line="602" column="25" severity="error" message="Expected &apos;!==&apos; and instead saw &apos;!=&apos;." source="Expected &apos;{a}&apos; and instead saw &apos;{b}&apos;." />
+		<error line="606" column="25" severity="error" message="Expected &apos;===&apos; and instead saw &apos;==&apos;." source="Expected &apos;{a}&apos; and instead saw &apos;{b}&apos;." />
+		<error line="611" column="26" severity="error" message="Too many var statements." source="Too many var statements." />
+		<error line="620" column="17" severity="error" message="Too many var statements." source="Too many var statements." />
+		<error line="634" column="25" severity="error" message="Expected &apos;!==&apos; and instead saw &apos;!=&apos;." source="Expected &apos;{a}&apos; and instead saw &apos;{b}&apos;." />
+		<error line="649" column="21" severity="error" message="Too many var statements." source="Too many var statements." />
+		<error line="660" column="25" severity="error" message="Unexpected use of &apos;--&apos;." source="Unexpected use of &apos;{a}&apos;." />
+		<error line="677" column="17" severity="error" message="Too many var statements." source="Too many var statements." />
+		<error line="679" column="22" severity="error" message="Too many var statements." source="Too many var statements." />
+		<error line="701" column="26" severity="error" message="Expected &apos;===&apos; and instead saw &apos;==&apos;." source="Expected &apos;{a}&apos; and instead saw &apos;{b}&apos;." />
+		<error line="702" column="23" severity="error" message="Expected &apos;===&apos; and instead saw &apos;==&apos;." source="Expected &apos;{a}&apos; and instead saw &apos;{b}&apos;." />
+		<error line="703" column="23" severity="error" message="Expected &apos;===&apos; and instead saw &apos;==&apos;." source="Expected &apos;{a}&apos; and instead saw &apos;{b}&apos;." />
+		<error line="708" column="55" severity="error" message="Unexpected use of &apos;++&apos;." source="Unexpected use of &apos;{a}&apos;." />
+		<error line="721" column="21" severity="error" message="Too many var statements." source="Too many var statements." />
+		<error line="722" column="21" severity="error" message="Too many var statements." source="Too many var statements." />
+		<error line="723" column="21" severity="error" message="Too many var statements." source="Too many var statements." />
+		<error line="732" column="51" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="754" column="9" severity="error" message="Too many var statements." source="Too many var statements." />
+		<error line="754" column="32" severity="error" message="Expected &apos;===&apos; and instead saw &apos;==&apos;." source="Expected &apos;{a}&apos; and instead saw &apos;{b}&apos;." />
+		<error line="754" column="62" severity="error" message="Expected &apos;===&apos; and instead saw &apos;==&apos;." source="Expected &apos;{a}&apos; and instead saw &apos;{b}&apos;." />
+		<error line="774" column="13" severity="error" message="Too many var statements." source="Too many var statements." />
+		<error line="781" column="17" severity="error" message="Too many var statements." source="Too many var statements." />
+		<error line="781" column="17" severity="error" message="Too many errors. (18% scanned)." source="Too many errors." />
+		<error line="77,78,183,193,194" column="0" severity="warning" message="Implied global &apos;process&apos;" source="jshint.implied-globals" />
+		<error line="163,165" column="0" severity="warning" message="Implied global &apos;next&apos;" source="jshint.implied-globals" />
+		<error line="259,736" column="0" severity="warning" message="Implied global &apos;setTimeout&apos;" source="jshint.implied-globals" />
+		<error line="277,278" column="0" severity="warning" message="Implied global &apos;global&apos;" source="jshint.implied-globals" />
+		<error line="283,284" column="0" severity="warning" message="Implied global &apos;window&apos;" source="jshint.implied-globals" />
+	</file>
+	<file name="js\libs\text\text.js">
+		<error line="7" column="46" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="7" column="47" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="7" column="61" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="7" column="161" severity="error" message="Expected &apos;)&apos; to match &apos;(&apos; from line 7 and instead saw &apos;,&apos;." source="Expected &apos;{a}&apos; to match &apos;{b}&apos; from line {c} and instead saw &apos;{d}&apos;." />
+		<error line="7" column="162" severity="error" message="Expected &apos;:&apos; and instead saw &apos;h&apos;." source="Expected &apos;{a}&apos; and instead saw &apos;{b}&apos;." />
+		<error line="7" column="163" severity="error" message="Expected an identifier and instead saw &apos;=&apos;." source="Expected an identifier and instead saw &apos;{a}&apos;." />
+		<error line="7" column="163" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="7" column="164" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="7" column="172" severity="error" message="Missing name in function declaration." source="Missing name in function declaration." />
+		<error line="7" column="205" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="7" column="206" severity="error" message="Expected an identifier and instead saw &apos;)&apos;." source="Expected an identifier and instead saw &apos;{a}&apos;." />
+		<error line="7" column="206" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="7" column="207" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="7" column="207" severity="error" message="Expected &apos;}&apos; to match &apos;{&apos; from line 6 and instead saw &apos;:&apos;." source="Expected &apos;{a}&apos; to match &apos;{b}&apos; from line {c} and instead saw &apos;{d}&apos;." />
+		<error line="7" column="208" severity="error" message="Expected an operator and instead saw &apos;typeof&apos;." source="Expected an operator and instead saw &apos;{a}&apos;." />
+		<error line="7" column="215" severity="error" message="Expected &apos;)&apos; and instead saw &apos;Packages&apos;." source="Expected &apos;{a}&apos; and instead saw &apos;{b}&apos;." />
+		<error line="7" column="332" severity="error" message="&apos;c&apos; is already defined." source="&apos;{a}&apos; is already defined." />
+		<error line="7" column="460" severity="error" message="Missing &apos;()&apos; invoking a constructor." source="Missing &apos;()&apos; invoking a constructor." />
+		<error line="8" column="39" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="8" column="128" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="8" column="146" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="8" column="151" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="8" column="152" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="8" column="161" severity="error" message="Did you mean to return a conditional instead of an assignment?" source="Did you mean to return a conditional instead of an assignment?" />
+		<error line="8" column="210" severity="error" message="&apos;a&apos; is already defined." source="&apos;{a}&apos; is already defined." />
+		<error line="8" column="250" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="8" column="251" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="8" column="270" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="8" column="443" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="9" column="24" severity="error" message="Missing &apos;()&apos; invoking a constructor." source="Missing &apos;()&apos; invoking a constructor." />
+		<error line="9" column="94" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="9" column="122" severity="error" message="&apos;}&apos; is not a statement label." source="&apos;{a}&apos; is not a statement label." />
+		<error line="9" column="123" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="9" column="195" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="9" column="196" severity="error" message="Expected an identifier and instead saw &apos;,&apos;." source="Expected an identifier and instead saw &apos;{a}&apos;." />
+		<error line="9" column="196" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="9" column="197" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="9" column="201" severity="error" message="Label &apos;get&apos; on h statement." source="Label &apos;{a}&apos; on {b} statement." />
+		<error line="9" column="201" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="9" column="213" severity="error" message="Label &apos;parseName&apos; on function statement." source="Label &apos;{a}&apos; on {b} statement." />
+		<error line="9" column="221" severity="error" message="Missing name in function declaration." source="Missing name in function declaration." />
+		<error line="9" column="271" severity="error" message="&apos;a&apos; is already defined." source="&apos;{a}&apos; is already defined." />
+		<error line="9" column="299" severity="error" message="&apos;c&apos; is already defined." source="&apos;{a}&apos; is already defined." />
+		<error line="9" column="351" severity="error" message="Expected &apos;)&apos; to match &apos;(&apos; from line 9 and instead saw &apos;,&apos;." source="Expected &apos;{a}&apos; to match &apos;{b}&apos; from line {c} and instead saw &apos;{d}&apos;." />
+		<error line="9" column="351" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="9" column="352" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="9" column="384" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="9" column="384" severity="error" message="Expected an identifier and instead saw &apos;)&apos;." source="Expected an identifier and instead saw &apos;{a}&apos;." />
+		<error line="9" column="384" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="9" column="420" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="9" column="420" severity="error" message="Too many errors. (75% scanned)." source="Too many errors." />
+		<error line="6" column="0" severity="warning" message="Implied global &apos;location&apos;" source="jshint.implied-globals" />
+		<error line="6" column="0" severity="warning" message="Implied global &apos;define&apos;" source="jshint.implied-globals" />
+		<error line="6" column="0" severity="warning" message="Implied global &apos;window&apos;" source="jshint.implied-globals" />
+		<error line="7" column="0" severity="warning" message="Implied global &apos;process&apos;" source="jshint.implied-globals" />
+		<error line="7" column="0" severity="warning" message="Implied global &apos;require&apos;" source="jshint.implied-globals" />
+		<error line="7,9" column="0" severity="warning" message="Implied global &apos;h&apos;" source="jshint.implied-globals" />
+		<error line="7" column="0" severity="warning" message="Implied global &apos;java&apos;" source="jshint.implied-globals" />
+		<error line="8" column="0" severity="warning" message="Implied global &apos;g&apos;" source="jshint.implied-globals" />
+		<error line="8,9" column="0" severity="warning" message="Implied global &apos;XMLHttpRequest&apos;" source="jshint.implied-globals" />
+		<error line="9" column="0" severity="warning" message="Implied global &apos;ActiveXObject&apos;" source="jshint.implied-globals" />
+	</file>
+	<file name="js\libs\underscore\underscore-min.js">
+		<error line="5" column="410" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="5" column="511" severity="error" message="Expected &apos;)&apos; to match &apos;(&apos; from line 5 and instead saw &apos;,&apos;." source="Expected &apos;{a}&apos; to match &apos;{b}&apos; from line {c} and instead saw &apos;{d}&apos;." />
+		<error line="5" column="512" severity="error" message="Expected &apos;:&apos; and instead saw &apos;exports&apos;." source="Expected &apos;{a}&apos; and instead saw &apos;{b}&apos;." />
+		<error line="5" column="519" severity="error" message="Expected an identifier and instead saw &apos;.&apos;." source="Expected an identifier and instead saw &apos;{a}&apos;." />
+		<error line="5" column="519" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="5" column="520" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="5" column="523" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="5" column="523" severity="error" message="Expected an identifier and instead saw &apos;)&apos;." source="Expected an identifier and instead saw &apos;{a}&apos;." />
+		<error line="5" column="523" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="5" column="524" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="5" column="524" severity="error" message="Expected &apos;}&apos; to match &apos;{&apos; from line 5 and instead saw &apos;:&apos;." source="Expected &apos;{a}&apos; to match &apos;{b}&apos; from line {c} and instead saw &apos;{d}&apos;." />
+		<error line="5" column="525" severity="error" message="Expected &apos;)&apos; to match &apos;(&apos; from line 5 and instead saw &apos;a&apos;." source="Expected &apos;{a}&apos; to match &apos;{b}&apos; from line {c} and instead saw &apos;{d}&apos;." />
+		<error line="5" column="530" severity="error" message="Expected &apos;)&apos; to match &apos;(&apos; from line 5 and instead saw &apos;,&apos;." source="Expected &apos;{a}&apos; to match &apos;{b}&apos; from line {c} and instead saw &apos;{d}&apos;." />
+		<error line="5" column="531" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="5" column="716" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="5" column="781" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="5" column="903" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="5" column="905" severity="error" message="Expected &apos;)&apos; to match &apos;(&apos; from line 5 and instead saw &apos;,&apos;." source="Expected &apos;{a}&apos; to match &apos;{b}&apos; from line {c} and instead saw &apos;{d}&apos;." />
+		<error line="5" column="906" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="5" column="906" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="5" column="907" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="5" column="907" severity="error" message="Expected an identifier and instead saw &apos;)&apos;." source="Expected an identifier and instead saw &apos;{a}&apos;." />
+		<error line="5" column="907" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="5" column="908" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="5" column="1050" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="5" column="1098" severity="error" message="Expected &apos;)&apos; to match &apos;(&apos; from line 5 and instead saw &apos;,&apos;." source="Expected &apos;{a}&apos; to match &apos;{b}&apos; from line {c} and instead saw &apos;{d}&apos;." />
+		<error line="5" column="1098" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="5" column="1099" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="5" column="1103" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="5" column="1103" severity="error" message="Expected an identifier and instead saw &apos;)&apos;." source="Expected an identifier and instead saw &apos;{a}&apos;." />
+		<error line="5" column="1103" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="5" column="1104" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="5" column="1188" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="5" column="1358" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="5" column="1412" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="5" column="1480" severity="error" message="Expected &apos;)&apos; to match &apos;(&apos; from line 5 and instead saw &apos;,&apos;." source="Expected &apos;{a}&apos; to match &apos;{b}&apos; from line {c} and instead saw &apos;{d}&apos;." />
+		<error line="5" column="1480" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="5" column="1481" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="5" column="1485" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="5" column="1485" severity="error" message="Expected an identifier and instead saw &apos;)&apos;." source="Expected an identifier and instead saw &apos;{a}&apos;." />
+		<error line="5" column="1485" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="5" column="1486" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="5" column="1570" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="5" column="1663" severity="error" message="Did you mean to return a conditional instead of an assignment?" source="Did you mean to return a conditional instead of an assignment?" />
+		<error line="5" column="1668" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="5" column="1669" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="5" column="1672" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="5" column="1673" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="5" column="1807" severity="error" message="Expected an assignment or function call and instead saw an expression." source="Expected an assignment or function call and instead saw an expression." />
+		<error line="5" column="1808" severity="error" message="Missing semicolon." source="Missing semicolon." />
+		<error line="5" column="1808" severity="error" message="Too many errors. (100% scanned)." source="Too many errors." />
+		<error line="5" column="0" severity="warning" message="Implied global &apos;exports&apos;" source="jshint.implied-globals" />
+		<error line="5" column="0" severity="warning" message="Implied global &apos;module&apos;" source="jshint.implied-globals" />
+		<error line="5" column="0" severity="warning" message="Implied global &apos;_&apos;" source="jshint.implied-globals" />
+		<error line="5" column="0" severity="warning" message="Implied global &apos;y&apos;" source="jshint.implied-globals" />
+		<error line="5" column="0" severity="warning" message="Implied global &apos;m&apos;" source="jshint.implied-globals" />
+		<error line="5" column="0" severity="warning" message="Implied global &apos;c&apos;" source="jshint.implied-globals" />
+		<error line="5" column="0" severity="warning" message="Implied global &apos;n&apos;" source="jshint.implied-globals" />
+		<error line="5" column="0" severity="warning" message="Implied global &apos;o&apos;" source="jshint.implied-globals" />
+		<error line="5" column="0" severity="warning" message="Implied global &apos;p&apos;" source="jshint.implied-globals" />
+		<error line="5" column="0" severity="warning" message="Implied global &apos;g&apos;" source="jshint.implied-globals" />
+		<error line="5" column="0" severity="warning" message="Implied global &apos;A&apos;" source="jshint.implied-globals" />
+		<error line="5" column="0" severity="warning" message="Implied global &apos;q&apos;" source="jshint.implied-globals" />
+	</file>
+	<file name="js\models\user\UserModelSpec.js">
+		<error line="20" column="29" severity="error" message="Variables should not be deleted." source="Variables should not be deleted." />
+		<error line="1" column="0" severity="warning" message="Implied global &apos;require&apos;" source="jshint.implied-globals" />
+		<error line="7" column="0" severity="warning" message="Implied global &apos;describe&apos;" source="jshint.implied-globals" />
+		<error line="10" column="0" severity="warning" message="Implied global &apos;beforeEach&apos;" source="jshint.implied-globals" />
+		<error line="19" column="0" severity="warning" message="Implied global &apos;afterEach&apos;" source="jshint.implied-globals" />
+		<error line="24,32" column="0" severity="warning" message="Implied global &apos;it&apos;" source="jshint.implied-globals" />
+		<error line="27,28,48,49" column="0" severity="warning" message="Implied global &apos;expect&apos;" source="jshint.implied-globals" />
+		<error line="35,36,37" column="0" severity="warning" message="Implied global &apos;sinon&apos;" source="jshint.implied-globals" />
+	</file>
+	<file name="js\libs\backbone\backbone.marionette.js">
+		<error line="7" column="0" severity="warning" message="Implied global &apos;exports&apos;" source="jshint.implied-globals" />
+		<error line="9,10,11,12,13,14" column="0" severity="warning" message="Implied global &apos;require&apos;" source="jshint.implied-globals" />
+		<error line="16" column="0" severity="warning" message="Implied global &apos;module&apos;" source="jshint.implied-globals" />
+		<error line="18,20" column="0" severity="warning" message="Implied global &apos;define&apos;" source="jshint.implied-globals" />
+		<error line="25" column="0" severity="warning" message="Implied global &apos;Marionette&apos;" source="jshint.implied-globals" />
+		<error line="145,152" column="0" severity="warning" message="Implied global &apos;triggerDOMRefresh&apos;" source="jshint.implied-globals" />
+		<error line="1783" column="0" severity="warning" message="Implied global &apos;window&apos;" source="jshint.implied-globals" />
+		<error line="156" column="0" severity="warning" message="Unused variable: &apos;triggerDOMRefresh&apos;" source="jshint.implied-unuseds" />
+		<error line="544" column="0" severity="warning" message="Unused variable: &apos;that&apos;" source="jshint.implied-unuseds" />
+		<error line="584" column="0" severity="warning" message="Unused variable: &apos;that&apos;" source="jshint.implied-unuseds" />
+		<error line="863" column="0" severity="warning" message="Unused variable: &apos;options&apos;" source="jshint.implied-unuseds" />
+		<error line="976" column="0" severity="warning" message="Unused variable: &apos;item&apos;" source="jshint.implied-unuseds" />
+		<error line="991" column="0" severity="warning" message="Unused variable: &apos;that&apos;" source="jshint.implied-unuseds" />
+		<error line="1088" column="0" severity="warning" message="Unused variable: &apos;index&apos;" source="jshint.implied-unuseds" />
+		<error line="1114" column="0" severity="warning" message="Unused variable: &apos;that&apos;" source="jshint.implied-unuseds" />
+		<error line="1129" column="0" severity="warning" message="Unused variable: &apos;options&apos;" source="jshint.implied-unuseds" />
+		<error line="1151" column="0" severity="warning" message="Unused variable: &apos;item&apos;" source="jshint.implied-unuseds" />
+		<error line="1361" column="0" severity="warning" message="Unused variable: &apos;that&apos;" source="jshint.implied-unuseds" />
+		<error line="1362" column="0" severity="warning" message="Unused variable: &apos;name&apos;" source="jshint.implied-unuseds" />
+		<error line="1518" column="0" severity="warning" message="Unused variable: &apos;moduleDefinition&apos;" source="jshint.implied-unuseds" />
+		<error line="1518" column="0" severity="warning" message="Unused variable: &apos;moduleNames&apos;" source="jshint.implied-unuseds" />
+	</file>
+	<file name="js\main.js">
+		<error line="2,71" column="0" severity="warning" message="Implied global &apos;require&apos;" source="jshint.implied-globals" />
+	</file>
+	<file name="js\models\user\UserModel.js">
+		<error line="1" column="0" severity="warning" message="Implied global &apos;define&apos;" source="jshint.implied-globals" />
+	</file>
+	<file name="js\router.js">
+		<error line="2" column="0" severity="warning" message="Implied global &apos;define&apos;" source="jshint.implied-globals" />
+		<error line="6" column="0" severity="warning" message="Implied global &apos;Backbone&apos;" source="jshint.implied-globals" />
+		<error line="21" column="0" severity="warning" message="Unused variable: &apos;actions&apos;" source="jshint.implied-unuseds" />
+	</file>
+	<file name="js\views\login\LoginView.js">
+		<error line="1" column="0" severity="warning" message="Implied global &apos;define&apos;" source="jshint.implied-globals" />
+		<error line="19,20" column="0" severity="warning" message="Implied global &apos;$&apos;" source="jshint.implied-globals" />
+		<error line="26,30" column="0" severity="warning" message="Implied global &apos;console&apos;" source="jshint.implied-globals" />
+	</file>
+</checkstyle>

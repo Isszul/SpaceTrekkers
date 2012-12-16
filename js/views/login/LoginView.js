@@ -1,8 +1,8 @@
 define([
-	'models/user/UserModel',
-	'text!templates/login/loginTemplate.html',
+    'models/user/UserModel',
+    'text!templates/login/loginTemplate.html',
     'backbone.marionette'
-], function (UserModel, loginTemplate, Marionette) {
+], function(UserModel, loginTemplate, Marionette) {
 
 
     var LoginView = Marionette.ItemView.extend({
@@ -11,23 +11,23 @@ define([
 
         events: {
 
-            "click #loginButton": function (el) {
+            'click #loginButton': function(el) {
 
                 el.preventDefault();
 
-                var userModel = new UserModel({ 
-                    username: $('#username').val(), 
-                    password: $('#password').val() 
+                var userModel = new UserModel({
+                    username: $('#username').val(),
+                    password: $('#password').val()
                 });
 
                 userModel.fetch({
 
-                    success: function () {
-                        console.log("logged in OK");
+                    success: function() {
+                        console.log('logged in OK');
                     },
 
-                    error: function () {
-                        console.log("error in login");
+                    error: function() {
+                        console.log('error in login');
                     }
 
                 });

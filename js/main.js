@@ -52,10 +52,15 @@ require.config({
     'backbone.eventbinder': {
       deps: ['backbone'],
       exports: 'Eventbinder'
-    },    
+    },
 
     'backbone.marionette': {
-      deps: ['backbone', 'backbone.eventbinder', 'backbone.babysitter', 'backbone.wreqr'],
+      deps: [
+        'backbone',
+        'backbone.eventbinder',
+        'backbone.babysitter',
+        'backbone.wreqr'
+      ],
       exports: 'Marionette'
     }
 
@@ -65,11 +70,9 @@ require.config({
 
 require([
   // Load our app module and pass it to our definition function
-  'app',
+  'app'
 
-], function(App){
+], function(App) {
 
-  // The "app" dependency is passed in as "App"
-  // Again, the other dependencies passed in are not "AMD" therefore don't pass a parameter to this function
   App.start();
 });
