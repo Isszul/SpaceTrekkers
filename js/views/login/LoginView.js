@@ -1,13 +1,15 @@
 define([
     'models/user/UserModel',
     'text!templates/login/loginTemplate.html',
-    'backbone.marionette'
-], function(UserModel, loginTemplate, Marionette) {
+    'backbone.marionette',
+    'underscore',
+    'i18n!nls/general'
+], function(UserModel, loginTemplate, Marionette, _, nls) {
 
 
     var LoginView = Marionette.ItemView.extend({
 
-        template: loginTemplate,
+        template: _.template(loginTemplate, nls),
 
         events: {
 
