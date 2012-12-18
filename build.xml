@@ -1,0 +1,45 @@
+<project name="MarionetteBase-Coffeescript" default="minifyJavascript" basedir=".">
+
+
+	<taskdef name="CoffeeScriptC" classname="csat.CoffeeScriptCTask" classpath="lib/csat-0.1.6.jar" />
+	<taskdef name="jsmin" classname="net.matthaynes.jsmin.JSMin_Task" classpath="lib/jsmin.0.2.4.jar" />
+
+	<property name="src" location="src" />
+	<property name="output" location="WebContent/client" />
+	<property name="CopyrightMsg" value="(c) 2012 Alex Thomas" />
+
+
+	<target name="compile" depends="clean" description="compile the source ">
+
+		<CoffeeScriptC nowrap="true" destDir="${output}" verbose="true" nesting="true">
+			<fileset dir="${src}">
+				<include name="**/*.coffee" />
+			</fileset>
+		</CoffeeScriptC>
+
+		<copy todir="${output}">
+			<fileset dir="${src}">
+				<exclude name="**/*.coffee" />
+			</fileset>
+		</copy>
+
+	</target>
+
+	<target name="minifyJavascript" depends="compile">
+
+		<jsmin copyright="${CopyrightMsg}" force="true">
+			<fileset dir="${output}">
+				<include name="**/*.js" />
+				<exclude name="**/libs/**" />
+				<exclude name="**/i18n.js" />
+			</fileset>
+		</jsmin>
+	</target>
+
+
+
+	<target name="clean" description="clean up">
+		<delete dir="${output}" />
+	</target>
+
+</project>
