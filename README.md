@@ -36,7 +36,7 @@ index.html ( main index.html )
 build.xml
 -----
 
-cleans WebContent/client
-compiles the coffeescript to javascript with csat-0.1.6.jar
-minifies the compiled javascript with ksmin.0.2.4.jar
+- cleans WebContent/client
+- compiles the coffeescript to javascript with csat-0.1.6.jar
+- minifies the compiled javascript with ksmin.0.2.4.jar
 
