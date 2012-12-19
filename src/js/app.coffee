@@ -13,9 +13,12 @@ define ["backbone.marionette",
       loginView: new LoginView()
       desktopView: new DesktopView()
   )
+  
   app.addRegions mainRegion: "#page"
+  
   app.addInitializer ->
     @app_router = new Router this
     Backbone.history.start()
 
   app
+  

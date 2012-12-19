@@ -20,7 +20,7 @@ define ["backbone"
 
         error: (userModel, jqXHR, options) ->
           console.log "error in login"
-          window.app.trigger "userModel:loginsuccess", userModel
+          window.app.trigger "userModel:loginfailure", userModel
 
   )
   userModel

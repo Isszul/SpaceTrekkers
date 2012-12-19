@@ -11,6 +11,7 @@ define ["backbone.marionette"
 
     initialize: ->
       window.app.on "userModel:loginsuccess", @handleSuccessfulUserLogin, this
+      window.app.on "userModel:loginfailure", @handleUnsuccessfulUserLogin, this
 
     showDesktop: ->
       window.app.mainRegion.show window.app.Views.desktopView
@@ -22,6 +23,9 @@ define ["backbone.marionette"
       window.app.Models.userModel = userModel
       @navigate "#desktop",
         trigger: true
-
+      
+    handleUnsuccessfulUserLogin: () ->
+      window.app.Views.loginView.showFailedLoginMessage()
+      
   )
   AppRouter

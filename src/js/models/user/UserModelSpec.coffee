@@ -1,6 +1,5 @@
 require ["models/user/UserModel", 
-         "sinon", 
-         "jasmine"
+         "sinon"
 ], (UserModel) ->
   describe "UserModel", ->
     userModel = undefined

@@ -25,24 +25,20 @@
                 'jquery': 'libs/jquery/jquery-min',
                 'underscore': 'libs/underscore/underscore-min',
                 'backbone': 'libs/backbone/backbone-min',
-                'jasmine': 'libs/jasmine-core/jasmine',
-                'jasmine-html': 'libs/jasmine-core/jasmine-html',
                 'sinon': 'libs/sinon/sinon'
             }
         });
     </script>
 
-
-    <!-- SPECS -->
-    <script type="text/javascript" src="UserModelSpec.js"></script>
+    
+	<script type="text/javascript" src="../../libs/jasmine-core/jasmine.js" ></script>
+	<script type="text/javascript" src="../../libs/jasmine-core/jasmine-html.js" ></script>
 
 
     <script type='text/javascript'>
 
-        require([
-            'jasmine', 
-            'jasmine-html'
-        ], function (Jasmine, JasmineHTML){
+        require(['UserModelSpec.js'
+        ], function (){
 
             var jasmineEnv = jasmine.getEnv();
             jasmineEnv.updateInterval = 1000;

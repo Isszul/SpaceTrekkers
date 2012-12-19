@@ -7,6 +7,10 @@ define ["models/user/UserModel",
 
   LoginView = Marionette.ItemView.extend(
     template: _.template(loginTemplate, nls)
+    
+    showFailedLoginMessage: () -> 
+    	$('#loginMessage').html nls.failedLogin
+    
     events:
       "click #loginButton": (el) ->
         el.preventDefault()
