@@ -1,20 +1,30 @@
+#Require config
 require.config
+
+  #Base config for require
   config:
     i18n:
       locale: "root"
-
+  
+  baseUrl : 'js'
+      
+  #Import name to path relationships
   paths:
+    app: "app"
+    router: "router"
     templates: "../templates"
-    jquery: "libs/jquery/jquery-min"
-    underscore: "libs/underscore/underscore1.4.3-min"
-    text: "libs/text/text"
-    json2: "libs/json2/json2"
-    backbone: "libs/backbone/backbone-min"
-    "backbone.wreqr": "libs/backbone/backbone.wreqr.min"
-    "backbone.babysitter": "libs/backbone/backbone.babysitter.min"
-    "backbone.eventbinder": "libs/backbone/backbone.eventbinder.min"
-    "backbone.marionette": "libs/backbone/backbone.marionette.min"
+    jquery: "../libs/jquery/jquery-min"
+    underscore: "../libs/underscore/underscore1.4.3-min"
+    text: "../libs/text/text"
+    json2: "../libs/json2/json2"
+    backbone: "../libs/backbone/backbone-min"
+    "backbone.wreqr": "../libs/backbone/backbone.wreqr.min"
+    "backbone.babysitter": "../libs/backbone/backbone.babysitter.min"
+    "backbone.eventbinder": "../libs/backbone/backbone.eventbinder.min"
+    "backbone.marionette": "../libs/backbone/backbone.marionette.min"
 
+
+  #Maps the interdependancies
   shim:
     underscore:
       exports: "_"
@@ -41,9 +51,16 @@ require.config
     "backbone.marionette":
       deps: ["backbone", "backbone.eventbinder", "backbone.babysitter", "backbone.wreqr"]
       exports: "Marionette"
+      
+    "app":
+      deps: ["backbone.marionette"]
+      exports: "App"
+      
+    "router":
+      deps: ["backbone.marionette"]
+      exports: "router"      
 
 
-# Load our app module and pass it to our definition function
+# Start up our application
 require ["app"], (App) ->
-  window.app = App
-  window.app.start()
+  App.start()

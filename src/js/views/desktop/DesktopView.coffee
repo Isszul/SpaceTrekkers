@@ -1,7 +1,16 @@
-define ["text!templates/desktop/desktopTemplate.html", 
+define ["jquery",
+        "underscore",           
         "backbone.marionette", 
-        "underscore", 
+        "text!templates/desktop/desktopTemplate.html", 
         "i18n!nls/general"
-], (desktopTemplate, Marionette, _, nls) ->
-  DesktopView = Marionette.ItemView.extend(template: _.template(desktopTemplate, nls))
+], ($, _,  Marionette, desktopTemplate, nls) ->
+	
+  #Class definition for the desktop view	
+  DesktopView = Marionette.ItemView.extend(
+  	
+  	template: _.template(desktopTemplate, nls)
+  	
+  )
+  
+  #Return this definition to the caller.
   DesktopView
