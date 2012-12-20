@@ -1,7 +1,7 @@
 require ["views/login/LoginView"  
          "sinon" 
          "text!templates/login/loginTemplate.html"  
-], (LoginView, LoginTemplate) ->
+], (LoginView, sinon, LoginTemplate) ->
 	
 	
 	describe "LoginView", ->
