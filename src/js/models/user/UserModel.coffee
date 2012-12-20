@@ -28,13 +28,13 @@ define ["backbone"
         #When there is a successful request made (still need to validate and check the response)
         success: (userModel, response, options) ->
           console.log "log in request responded"
-          window.Backbone.Events.trigger "userModel:loginsuccess", userModel if response.validLogin
-          window.Backbone.Events.trigger "userModel:loginfailure", userModel if !response.validLogin
+          Backbone.Events.trigger "userModel:loginsuccess", userModel if response.validLogin
+          Backbone.Events.trigger "userModel:loginfailure", userModel if !response.validLogin
 
 		#When the ajax call fails
         error: (userModel, jqXHR, options) ->
           console.log "error in login"
-          window.Backbone.Events.trigger "userModel:loginfailure", userModel
+          Backbone.Events.trigger "userModel:loginfailure", userModel
 
   )
   

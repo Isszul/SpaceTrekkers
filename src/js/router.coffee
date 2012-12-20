@@ -19,8 +19,8 @@ define ["backbone.marionette"], (Marionette) ->
     # 	@param app A reference to the main application
     #
     initialize: (app) ->
-      window.Backbone.Events.on "userModel:loginsuccess", @handleSuccessfulUserLogin, this
-      window.Backbone.Events.on "userModel:loginfailure", @handleUnsuccessfulUserLogin, this
+      Backbone.Events.on "userModel:loginsuccess", @handleSuccessfulUserLogin, this
+      Backbone.Events.on "userModel:loginfailure", @handleUnsuccessfulUserLogin, this
       @app = app
 
     #Shows the desktop in the main Region

@@ -24,7 +24,7 @@ require ["backbone.marionette",
       eventCallback = sinon.spy()
       server = sinon.fakeServer.create()
       
-      window.Backbone.Events.on "userModel:loginfailure", eventCallback, this
+      Backbone.Events.on "userModel:loginfailure", eventCallback, this
       
       userModel.attemptLogin()
       
@@ -41,7 +41,7 @@ require ["backbone.marionette",
       eventCallback = sinon.spy()
       server = sinon.fakeServer.create()
       
-      window.Backbone.Events.on "userModel:loginfailure", eventCallback, this
+      Backbone.Events.on "userModel:loginfailure", eventCallback, this
       
       userModel.attemptLogin()
       
@@ -58,7 +58,7 @@ require ["backbone.marionette",
       eventCallback = sinon.spy()
       server = sinon.fakeServer.create()
       
-      window.Backbone.Events.on "userModel:loginsuccess", eventCallback, this
+      Backbone.Events.on "userModel:loginsuccess", eventCallback, this
       
       userModel.attemptLogin()
       
