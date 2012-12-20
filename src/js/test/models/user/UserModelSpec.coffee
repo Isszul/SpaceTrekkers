@@ -1,7 +1,6 @@
-require ["backbone.marionette", 
-		 "models/user/UserModel", 
+require ["models/user/UserModel", 
          "sinon"
-], (Marionette, UserModel) ->
+], (UserModel) ->
 	
 	
   describe "UserModel", ->

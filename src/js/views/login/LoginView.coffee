@@ -3,18 +3,18 @@ define ["jquery",
         "backbone.marionette", 
         "models/user/UserModel", 
         "text!templates/login/loginTemplate.html" 
-        "i18n!nls/general"
-], ($, _, Marionette, UserModel, loginTemplate, nls) ->
+        "translationUtil"
+], ($, _, Marionette, UserModel, LoginTemplate, TranslationUtil) ->
 
   # Class def for the login view.
   LoginView = Marionette.ItemView.extend(
   	
   	#template is shown on the region when a .show is passed this view
-    template: _.template(loginTemplate, nls)
+    template: TranslationUtil.geti18nTemplate LoginTemplate
     
     #Show a message explaining that the user has failed to log in
     showFailedLoginMessage: () -> 
-    	$('#loginMessage').html nls.failedLogin
+    	$('#loginMessage').html TranslationUtil.geti18nString "failedLogin"
     
     #List the DOM events that this view handles.
     events:

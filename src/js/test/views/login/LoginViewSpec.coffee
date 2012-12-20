@@ -1,7 +1,7 @@
-require ["backbone.marionette",
-		 "views/login/LoginView"  
-         "sinon"
-], (Marionette, LoginView) ->
+require ["views/login/LoginView"  
+         "sinon" 
+         "text!templates/login/loginTemplate.html"  
+], (LoginView, LoginTemplate) ->
 	
 	
 	describe "LoginView", ->
@@ -14,7 +14,7 @@ require ["backbone.marionette",
 		afterEach ->
   			loginView = null
 
-		it "should initialize ", ->
-  			expect(loginView.template).toEqual ""
+		it "should initialize with the default login view template ", ->
+  			expect(loginView.template).toEqual LoginTemplate
 
      

@@ -2,15 +2,15 @@
 	<form id="loginForm" method="POST">
     
         <fieldset>
-            <label for="username"><%= username_label %>:</label>
+            <label for="username">{{ tranlations.username_label }}:</label>
             <input type="text" id="username" class="text-input" required autofocus="true"  />
 
-            <label for="password"><%= password_label %>:</label>
+            <label for="password">{{ tranlations.password_label }}:</label>
             <input type="password" id="password" class="text-input" required />
         </fieldset>
 
         <fieldset>
-            <input type="submit" id="loginButton" value="<%= login_label %>"/>
+            <input type="submit" id="loginButton" value="{{ tranlations.login_label }}"/>
             <div id="loginMessage"></div>
         </fieldset>
     

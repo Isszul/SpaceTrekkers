@@ -22,6 +22,8 @@ require.config
     "backbone.babysitter": "../libs/backbone/backbone.babysitter.min"
     "backbone.eventbinder": "../libs/backbone/backbone.eventbinder.min"
     "backbone.marionette": "../libs/backbone/backbone.marionette.min"
+    "handlebars": "../libs/handlebars/handlebars-1.0.rc.1"
+    "translationUtil": "utils/translationUtil"
 
 
   #Maps the interdependancies
@@ -31,6 +33,13 @@ require.config
 
     jquery:
       exports: "$"
+
+    "handlebars": 
+      exports: "Handlebars"
+      
+    "translationUtil":
+      deps: ["handlebars", "backbone"]
+      exports: "translationUtil"
 
     backbone:
       deps: ["underscore", "jquery"]
@@ -58,7 +67,9 @@ require.config
       
     "router":
       deps: ["backbone.marionette"]
-      exports: "router"      
+      exports: "router"    
+      
+
 
 
 # Start up our application

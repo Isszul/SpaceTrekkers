@@ -14,35 +14,36 @@
 
 <meta name="viewport" content="width=device-width,initial-scale=1">
 
+
 <!-- CSS -->
 <link rel="stylesheet" type="text/css"
-	href="../../libs/jasmine-core/jasmine.css">
+	href="../../../../libs/jasmine-core/jasmine.css">
 
-<script type="text/javascript" src="../../libs/require/require0.27.0.js"></script>
+<script type="text/javascript" src="../../../../libs/require/require.js"></script>
 <script type="text/javascript">
 	require.config({
-		
-		baseUrl : '../../',		
+
+		baseUrl : '../../../../js',
 		paths : {
-			templates: "../templates",
-			'text': "libs/text/text",
-            'jquery': 'libs/jquery/jquery-min',
-            'underscore': 'libs/underscore/underscore-min',
-            'backbone': 'libs/backbone/backbone-min',
-            'sinon': 'libs/sinon/sinon',
-            'backbone.babysitter': 'libs/backbone/backbone.babysitter.min',
-            'backbone.wreqr': 'libs/backbone/backbone.wreqr.min',
-            'backbone.eventbinder': 'libs/backbone/backbone.eventbinder.min',            
-            'backbone.marionette': 'libs/backbone/backbone.marionette.min'
+			'templates': '../templates',
+            'jquery': '../libs/jquery/jquery-min',
+            'underscore': '../libs/underscore/underscore-min',
+            'backbone': '../libs/backbone/backbone-min',
+            'sinon': '../libs/sinon/sinon',
+            'backbone.babysitter': '../libs/backbone/backbone.babysitter.min',
+            'backbone.wreqr': '../libs/backbone/backbone.wreqr.min',
+            'backbone.eventbinder': '../libs/backbone/backbone.eventbinder.min',            
+            'backbone.marionette': '../libs/backbone/backbone.marionette.min',
+            'text': '../libs/text/text',
+            'translationUtil':  "test/utils/translationUtil-Mock"
 		}
 	});
 </script>
 
 
-<script type="text/javascript" src="../../libs/jasmine-core/jasmine.js"></script>
+<script type="text/javascript" src="../../../../libs/jasmine-core/jasmine.js"></script>
 <script type="text/javascript"
-	src="../../libs/jasmine-core/jasmine-html.js"></script>
-
+	src="../../../../libs/jasmine-core/jasmine-html.js"></script>
 
 <script type='text/javascript'>
 	
@@ -76,5 +77,10 @@
 </script>
 </head>
 <body>
+
+  <div id="page">
+    Loading....
+  </div>
+
 </body>
 </html>
