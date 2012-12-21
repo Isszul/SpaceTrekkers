@@ -41,5 +41,12 @@
 	<target name="clean" description="clean up">
 		<delete dir="${output}" />
 	</target>
+	
+	<target name="test" >
+		<delete file="${output}\test\testResults.txt" />
+		<exec dir="${output}\test" executable="cmd" >
+			<arg line="/c runTests.bat" />	
+		</exec>
+	</target>
 
 </project>

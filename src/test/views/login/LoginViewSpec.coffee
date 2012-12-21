@@ -19,10 +19,9 @@ require ["LoginView"
   			testRegion = null
   			$('#testRegion').html ''
 
-		it "should initialize with the default login view template ", ->
+		it "should initialize with the default login view template ", -> 
   			expect(loginView.template).toEqual LoginTemplate
-
-
+		
 		it "should render to the #testRegion", ->
 			testRegion.show(loginView)
 			expect($('#testRegion').html().length).toBeGreaterThan 0
@@ -36,4 +35,4 @@ require ["LoginView"
 			
 			$('#loginButton').click()
 			
-			expect(eventCallback.calledOnce).toBeTruthy
+			expect(eventCallback.calledOnce).toBeTruthy()
