@@ -1,4 +1,4 @@
-require ["models/user/UserModel", 
+require ["UserModel", 
          "sinon"
 ], (UserModel) ->
 	

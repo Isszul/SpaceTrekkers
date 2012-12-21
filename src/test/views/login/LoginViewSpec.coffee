@@ -1,4 +1,4 @@
-require ["views/login/LoginView"  
+require ["LoginView"  
          "text!templates/login/loginTemplate.html"  
          "sinon"
 ], (LoginView, LoginTemplate) ->
