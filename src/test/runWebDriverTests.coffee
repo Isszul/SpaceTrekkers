@@ -8,9 +8,9 @@ client = webdriverjs.remote()
 #var client = webdriverjs.remote({desiredCapabilities:{browserName:"chrome"}}); // to run in chrome
 
 client.init().url(system.args[2]).getText("#HTMLReporter", (value) ->
-  console.log "===================================="
-  console.log "Test Runner : " + system.args[2]
-  console.log "------------------------------------"
-  console.log value.value
-  console.log "===================================="
+	console.log "===================================="
+	console.log "Test Runner : " + system.args[2]
+	console.log "------------------------------------"
+	console.log value.value
+	console.log "===================================="
 ).end()
