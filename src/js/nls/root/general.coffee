@@ -1,4 +1,6 @@
 define
+	app_title: "Marionette Base"
+	
 	username_label: "Username"
 	password_label: "Password"
 	login_label: "Login"

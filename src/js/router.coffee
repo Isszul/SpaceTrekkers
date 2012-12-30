@@ -24,7 +24,8 @@ define ["backbone"
 			Backbone.Events.on "userModel:loginsuccess", @handleSuccessfulUserLogin, this
 			Backbone.Events.on "userModel:loginfailure", @handleUnsuccessfulUserLogin, this
 			@bind 'all', @checkLoggedIn
-			@app = app
+			@app = app			
+			@app.logo.show @app.Views.logoView
 			@
 
 		#Shows the desktop in the main Region

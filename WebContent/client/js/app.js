@@ -1,5 +1,5 @@
 
-define(["backbone", "backbone.marionette", "router", "models/user/UserModel", "views/login/LoginView", "views/desktop/DesktopView"], function(Backbone, Marionette, Router, UserModel, LoginView, DesktopView) {
+define(["backbone", "backbone.marionette", "router", "models/user/UserModel", "views/login/LoginView", "views/desktop/DesktopView", "views/logo/LogoView"], function(Backbone, Marionette, Router, UserModel, LoginView, DesktopView, LogoView) {
   "use strict";
 
   var app;
@@ -8,10 +8,12 @@ define(["backbone", "backbone.marionette", "router", "models/user/UserModel", "v
     Collections: {},
     Views: {
       loginView: new LoginView(),
-      desktopView: new DesktopView()
+      desktopView: new DesktopView(),
+      logoView: new LogoView()
     }
   });
   app.addRegions({
+    logo: "#logo",
     mainRegion: "#page"
   });
   app.addInitializer(function() {
