@@ -37,8 +37,6 @@ define ["backbone.marionette"], (Marionette) ->
 		handleSuccessfulUserLogin: (userModel) ->
 			@app.Views.loginView.hide()
 			@app.Models.userModel = userModel
-			@navigate "#desktop",
-				trigger: true
 			
 		#Handles an unsuccessful login attempt and instructs the login view to show an error message
 		handleUnsuccessfulUserLogin: () ->
