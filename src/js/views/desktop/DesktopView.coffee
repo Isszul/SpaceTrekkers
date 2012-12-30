@@ -1,8 +1,8 @@
-define ["jquery",
-        "underscore",           
-        "backbone.marionette", 
-        "text!templates/desktop/desktopTemplate.html",
-        "translationUtil",
+define ["jquery"
+        "underscore",          
+        "backbone.marionette" 
+        "text!templates/desktop/desktopTemplate.html"
+        "translationUtil"
         "jqueryui"
 ], ($, _,  Marionette, desktopTemplate, TranslationUtil) ->
 	

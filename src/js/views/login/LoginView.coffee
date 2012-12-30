@@ -1,7 +1,7 @@
-define ["jquery",
-        "underscore",           
-        "backbone.marionette", 
-        "models/user/UserModel", 
+define ["jquery"
+        "underscore"          
+        "backbone.marionette"
+        "models/user/UserModel"
         "text!templates/login/loginTemplate.html" 
         "translationUtil"
 ], ($, _, Marionette, UserModel, LoginTemplate, TranslationUtil) ->

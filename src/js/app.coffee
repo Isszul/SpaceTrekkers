@@ -1,7 +1,7 @@
-define ["backbone.marionette",
-        "router", 
-        "models/user/UserModel", 
-        "views/login/LoginView", 
+define ["backbone.marionette"
+        "router"
+        "models/user/UserModel"
+        "views/login/LoginView"
         "views/desktop/DesktopView"
 ], (Marionette, Router, UserModel, LoginView, DesktopView) ->
 
