@@ -13,7 +13,7 @@ define ["backbone"
     
     #Translation a whole page with additional options 
     geti18nTemplate: (template, options) ->
-      _template = Handlebars.compile(template)({ tranlations: nls, options: options })
+      _template = Handlebars.compile(template)({ nls: nls, options: options })
       _template
       
   )

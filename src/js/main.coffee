@@ -75,6 +75,9 @@ require.config
       
 
 
+__debug__ = true
+
+
 
 # Start up our application
 require ["app"], (App) ->

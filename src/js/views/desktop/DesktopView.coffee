@@ -12,7 +12,9 @@ define ["jquery"
   	template: TranslationUtil.geti18nTemplate desktopTemplate
   	
   	onShow: () ->
-  		$("#WelcomeDialog").dialog()
+  		$("#WelcomeDialog").dialog({
+  			modal: true
+  		})
   	
   )
   
