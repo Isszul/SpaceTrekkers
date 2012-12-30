@@ -1,6 +1,8 @@
 MarionetteBase
 ==============
 
+[![Build Status](https://travis-ci.org/Isszul/MarionetteBase.png?branch=master)](https://travis-ci.org/Isszul/MarionetteBase)
+
 
 src folder contains
 ----
