@@ -39,6 +39,10 @@ js - Javascript container
  |       |        \---- general.coffee
  |       \----> general.coffee (translation register)
  |
+ |
+ |----> utils ( helper classes)
+ |       \----> TranslationUtil (includes geti18nString + geti18nTemplate)
+ |
  |- app.coffee ( sets up the Main Marionette Application, including page regions)
  |- i18n.js (third party internationalization lib. *needs to be here*)
  |- main.coffee ( javascript entry point, contains all lib paths + dependancies)
