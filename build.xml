@@ -9,6 +9,18 @@
 	<property name="CopyrightMsg" value="(c) 2012 Alex Thomas" />
 
 
+	 <condition property="isWindows">
+	    <os family="windows" />
+	 </condition>
+
+	 <condition property="isLinux">
+	     <os family="unix" />
+	 </condition>
+
+	<target name="clean" description="clean up">
+		<delete dir="${output}" />
+	</target>
+
 	<target name="compile" depends="clean" description="compile the source ">
 
 		<CoffeeScriptC nowrap="true" destDir="${output}" verbose="true" nesting="true">
@@ -35,14 +47,8 @@
 			</fileset>
 		</jsmin>
 	</target>
-
-
-
-	<target name="clean" description="clean up">
-		<delete dir="${output}" />
-	</target>
 	
-	<target name="test" >
+	<target name="test" if="isWindows">
 		<delete file="${output}\test\testResults.txt" />
 		<exec dir="${output}\test" executable="cmd" >
 			<arg line="/c runTests.bat" />	
