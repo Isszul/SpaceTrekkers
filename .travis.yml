@@ -1,2 +1,2 @@
 language: java
-install: ant compile
+install: ant lintJavascript
