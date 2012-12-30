@@ -38,12 +38,14 @@
 	</target>
 
 	<target name="lintJavascript" depends="compile">
-		<jslint>
-			<formatter type="plain" destfile="${output}/jslint.out" />
+		<jslint options="indent, white, nomen, undef, sloppy">
+			<formatter type="checkstyle" destfile="${output}/jslint-checkstyle.xml" />
+			<formatter type="report" destfile="${output}/jslint-report.html" />
 			<fileset dir="${output}">
 				<include name="**/*.js" />
 				<exclude name="**/libs/**" />
 				<exclude name="**/i18n.js" />
+				<exclude name="**/node_modules/**" />
 			</fileset>
 		</jslint>
 	</target>

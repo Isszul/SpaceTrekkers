@@ -1,5 +1,7 @@
 # Filename: router.js
-define ["backbone.marionette"], (Marionette) ->
+define ["backbone"
+		"backbone.marionette"
+], (Backbone, Marionette) ->
 	"use strict"
 
 	# Class definition for the AppRouter
@@ -23,6 +25,7 @@ define ["backbone.marionette"], (Marionette) ->
 			Backbone.Events.on "userModel:loginfailure", @handleUnsuccessfulUserLogin, this
 			@bind 'all', @checkLoggedIn
 			@app = app
+			@
 
 		#Shows the desktop in the main Region
 		showDesktop: () ->
@@ -31,12 +34,13 @@ define ["backbone.marionette"], (Marionette) ->
 
 		#check if there is a usermodel @ app.models.userModel
 		checkLoggedIn: () ->
-			@app.mainRegion.show @app.Views.loginView if not @app.Models.userModel?
+			@app.mainRegion.show @app.Views.loginView if @app.Models.userModel != null
 
 		#Handles a successful login attempt and navigates the user to the desktop.
 		handleSuccessfulUserLogin: (userModel) ->
 			@app.Views.loginView.hide()
 			@app.Models.userModel = userModel
+			@
 			
 		#Handles an unsuccessful login attempt and instructs the login view to show an error message
 		handleUnsuccessfulUserLogin: () ->

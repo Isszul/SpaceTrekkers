@@ -14,6 +14,7 @@ define ["backbone"
 		initialize: (options) ->
 			@username = options.username
 			@password = options.password
+			@
 
 		#REST Url used when calling .save() .fetch() etc...
 		url: ->
@@ -22,7 +23,7 @@ define ["backbone"
 		#Public function to attempt the login.
 		attemptLogin: ->
 			
-			if __debug__? and @username == "administrator" and @password == ""
+			if @username == "administrator" and @password == ""
 				Backbone.Events.trigger "userModel:loginsuccess", userModel
 				return 	
 			

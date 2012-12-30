@@ -10,9 +10,11 @@ require ["UserModel",
 				username: "testUser"
 				password: "testPassword"
 			)
+			@
 
 		afterEach ->
 			userModel = null
+			@
 
 		it "should initialize with the provided username and password", ->
 			expect(userModel.username).toEqual "testUser"

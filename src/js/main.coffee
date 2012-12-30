@@ -75,10 +75,13 @@ require.config
 			
 
 
-__debug__ = true
+DEBUG_MODE = true
 
 
 
 # Start up our application
 require ["app"], (App) ->
+
+	"use strict"
+	
 	App.start()

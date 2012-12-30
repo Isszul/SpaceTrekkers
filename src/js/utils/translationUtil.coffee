@@ -4,7 +4,7 @@ define ["backbone"
 ], (Backbone, nls, Handlebars) ->
 
 	#Class def for the model
-	translationUtil = Backbone.Model.extend(
+	TranslationUtil = Backbone.Model.extend(
 
 		#translates a single string
 		geti18nString: (value) ->
@@ -17,4 +17,4 @@ define ["backbone"
 			_template
 
 	)
-	new translationUtil
+	new TranslationUtil()

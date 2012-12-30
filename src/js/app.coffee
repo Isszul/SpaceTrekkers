@@ -1,9 +1,10 @@
-define ["backbone.marionette"
-				"router"
-				"models/user/UserModel"
-				"views/login/LoginView"
-				"views/desktop/DesktopView"
-], (Marionette, Router, UserModel, LoginView, DesktopView) ->
+define ["backbone"
+		"backbone.marionette"
+		"router"
+		"models/user/UserModel"
+		"views/login/LoginView"
+		"views/desktop/DesktopView"
+], (Backbone, Marionette, Router, UserModel, LoginView, DesktopView) ->
 
 	"use strict"
 	

@@ -53,7 +53,7 @@ define ["jquery"
 				
 			#When we push enter on the password input attempt the login	
 			$('#password').keypress (e) ->
-				$('#mainLoginDiv').dialog('option', 'buttons')['loginButton'].click() if(e.which == $.ui.keyCode.ENTER)
+				$('#mainLoginDiv').dialog('option', 'buttons').loginButton.click() if(e.which == $.ui.keyCode.ENTER)
 					
 					
 	)

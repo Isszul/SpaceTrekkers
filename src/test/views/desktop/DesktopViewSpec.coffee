@@ -14,11 +14,14 @@ require ["DesktopView"
 			testRegion = new Backbone.Marionette.Region( 
 				el: "#testRegion"
 			)
+			@
+			
 		afterEach ->
   			desktopView = null
   			testRegion = null
   			$('#testRegion').html ''
   			$('#WelcomeDialog').dialog( "close" )
+  			@
 
 		it "should initialize with the default desktop view template ", -> 
   			expect(desktopView.template).toEqual DesktopTemplate

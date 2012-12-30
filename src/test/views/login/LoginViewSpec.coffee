@@ -15,11 +15,14 @@ require ["LoginView"
 			testRegion = new Backbone.Marionette.Region( 
 				el: "#testRegion"
 			)
+			@
+
 		afterEach ->
   			loginView = null
   			testRegion = null
   			$('#testRegion').html ''
   			$('#mainLoginDiv').dialog "close" 
+  			@
 
 		it "should initialize with the default login view template ", -> 
   			expect(loginView.template).toEqual LoginTemplate
@@ -32,7 +35,7 @@ require ["LoginView"
 			testRegion.show(loginView)
 			eventCallback = sinon.spy()
 			Backbone.Events.on "userModel:attemptLogin", eventCallback, this
-			$('#mainLoginDiv').dialog('option', 'buttons')['loginButton'].click()
+			$('#mainLoginDiv').dialog('option', 'buttons').loginButton.click()
 			expect(eventCallback.calledOnce).toBeTruthy()
 			
 			
