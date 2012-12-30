@@ -1,14 +1,18 @@
 define ["jquery",
         "underscore",           
         "backbone.marionette", 
-        "text!templates/desktop/desktopTemplate.html", 
-        "i18n!nls/general"
-], ($, _,  Marionette, desktopTemplate, nls) ->
+        "text!templates/desktop/desktopTemplate.html",
+        "translationUtil",
+        "jqueryui"
+], ($, _,  Marionette, desktopTemplate, TranslationUtil) ->
 	
   #Class definition for the desktop view	
   DesktopView = Marionette.ItemView.extend(
   	
-  	template: _.template(desktopTemplate, nls)
+  	template: TranslationUtil.geti18nTemplate desktopTemplate
+  	
+  	onShow: () ->
+  		$("#WelcomeDialog").dialog()
   	
   )
   

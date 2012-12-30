@@ -3,3 +3,8 @@ define
   password_label: "Password"
   login_label: "login"
   failedLogin: "Failed login"
+	  
+  
+  welcomedialogtitle: "Welcome"
+  welcomedialogtext: "Hello!"
+  

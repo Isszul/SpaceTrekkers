@@ -14,6 +14,7 @@ require.config
     router: "router"
     templates: "../templates"
     jquery: "../libs/jquery/jquery-min"
+    jqueryui: "../libs/jquery/jquery-ui-1.9.2.custom"
     underscore: "../libs/underscore/underscore1.4.3-min"
     text: "../libs/text/text"
     json2: "../libs/json2/json2"
@@ -33,7 +34,10 @@ require.config
 
     jquery:
       exports: "$"
-
+      
+    jqueryui:
+      deps: ["jquery"]
+    
     "handlebars": 
       exports: "Handlebars"
       
