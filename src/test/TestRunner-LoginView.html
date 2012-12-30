@@ -27,6 +27,7 @@
 		paths : {
 			'templates': 'templates',
             'jquery': 'libs/jquery/jquery-min',
+			'jqueryui' : 'libs/jquery/jquery-ui-1.9.2.custom',
             'underscore': 'libs/underscore/underscore-min',
             'backbone': 'libs/backbone/backbone-min',
             'sinon': 'libs/sinon/sinon',
@@ -38,6 +39,14 @@
             'translationUtil':  "test/utils/translationUtil-Mock",
             'models/user/UserModel': 'test/views/login/UserModel-Mock',
             'LoginView' : 'js/views/login/LoginView'
+		},
+		shim : {
+			'jquery': {
+				exports : '_'
+			},
+			'jqueryui' : {
+				deps : [ 'jquery' ]
+			}
 		}
 	});
 </script>

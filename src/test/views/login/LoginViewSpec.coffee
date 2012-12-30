@@ -1,6 +1,7 @@
 require ["LoginView"  
          "text!templates/login/loginTemplate.html"  
          "sinon"
+         "jquery"
 ], (LoginView, LoginTemplate) ->
 	
 	
@@ -18,21 +19,23 @@ require ["LoginView"
   			loginView = null
   			testRegion = null
   			$('#testRegion').html ''
+  			$('#mainLoginDiv').dialog "close" 
 
 		it "should initialize with the default login view template ", -> 
   			expect(loginView.template).toEqual LoginTemplate
 		
-		it "should render to the #testRegion", ->
+		it "should show the mainLoginDiv modal login", ->
 			testRegion.show(loginView)
-			expect($('#testRegion').html().length).toBeGreaterThan 0
+			expect($('#mainLoginDiv').html().length).toBeGreaterThan 0
 
-		
 		it "should attempt a user login when the login button is clicked", ->
 			testRegion.show(loginView)
 			eventCallback = sinon.spy()
-      
 			Backbone.Events.on "userModel:attemptLogin", eventCallback, this
-			
-			$('#loginButton').click()
-			
+			$('#mainLoginDiv').dialog('option', 'buttons')['loginButton'].click()
 			expect(eventCallback.calledOnce).toBeTruthy()
+			
+			
+			
+			
+			

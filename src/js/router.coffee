@@ -13,7 +13,7 @@ define ["backbone.marionette"], (Marionette) ->
 			"desktop": "showDesktop"
 			
 			# Default route
-			"": "showLogin"
+			"": "showDesktop"
 
 		# Constructor for this router
 		# 	@param app A reference to the main application
@@ -28,9 +28,6 @@ define ["backbone.marionette"], (Marionette) ->
 		showDesktop: ->
 			@app.mainRegion.show @app.Views.desktopView
 
-		#Show the login view in the main Region
-		showLogin: ->
-			@app.mainRegion.show @app.Views.loginView
 
 		#check if there is a usermodel @ app.models.userModel
 		checkLoggedIn: ->

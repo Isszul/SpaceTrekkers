@@ -25,8 +25,12 @@ define ["jquery"
 		#Show a modal form to prompt for login details
 		onShow: () -> 
 			$("#mainLoginDiv").dialog 
+				closeOnEscape: false
 				modal: true
-				draggable: false    
+				draggable: false 
+				resizable: false
+				open: () -> 
+					$(this).closest('.ui-dialog').find('.ui-dialog-titlebar-close').hide()
 				buttons: 
 					loginButton: 
 						text: (TranslationUtil.geti18nString "login_label")
@@ -35,8 +39,10 @@ define ["jquery"
 							new UserModel(
 							  username: $("#username").val()
 							  password: $("#password").val()
-							).attemptLogin()#	
-
+							).attemptLogin()
+							
+		   	#Move to the front 
+			$("#mainLoginDiv").dialog( "moveToTop" )
 													
 			#By Default focus on the username input
 			$('#username').focus()
