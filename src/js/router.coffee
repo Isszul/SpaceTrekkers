@@ -25,12 +25,12 @@ define ["backbone.marionette"], (Marionette) ->
 			@app = app
 
 		#Shows the desktop in the main Region
-		showDesktop: ->
+		showDesktop: () ->
 			@app.mainRegion.show @app.Views.desktopView
 
 
 		#check if there is a usermodel @ app.models.userModel
-		checkLoggedIn: ->
+		checkLoggedIn: () ->
 			@app.mainRegion.show @app.Views.loginView if not @app.Models.userModel?
 
 		#Handles a successful login attempt and navigates the user to the desktop.
