@@ -1,6 +1,8 @@
 define
 	app_title: "Marionette Base"
-	
+	desktop: "Le Desktop"
+	logout: "Le Logout"
+
 	username_label: "Le Username"
 	password_label: "Le Password"
 	login_label: "Le login"

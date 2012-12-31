@@ -23,12 +23,12 @@ define(["jquery", "underscore", "backbone.marionette", "models/user/UserModel", 
       });
       $('#username').focus();
       $('#username').keypress(function(e) {
-        if (e.which === $.ui.keyCode.ENTER) {
+        if (e.which === 13) {
           return $('#password').focus();
         }
       });
       $('#password').keypress(function(e) {
-        if (e.which === $.ui.keyCode.ENTER) {
+        if (e.which === 13) {
           return $("#loginButton").click();
         }
       });

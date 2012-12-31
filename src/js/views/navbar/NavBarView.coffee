@@ -11,6 +11,9 @@ define ["jquery"
 		#template is shown on the region when a .show is passed this view
 		template: TranslationUtil.geti18nTemplate NavBarTemplate
 
+		showUsernameOnNavBar: (username) ->
+			$("#username_navbar").html(username)
+
 	)
   
 	#Return the class definition

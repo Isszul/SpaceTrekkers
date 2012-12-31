@@ -6,6 +6,7 @@ define(["backbone", "backbone.marionette"], function(Backbone, Marionette) {
   AppRouter = Marionette.AppRouter.extend({
     routes: {
       "desktop": "showDesktop",
+      "logout": "logoutUser",
       "": "showDesktop"
     },
     initialize: function(app) {
@@ -19,6 +20,11 @@ define(["backbone", "backbone.marionette"], function(Backbone, Marionette) {
     showDesktop: function() {
       return this.app.mainRegion.show(this.app.Views.desktopView);
     },
+    logoutUser: function() {
+      delete this.app.Models.userModel;
+      this.app.Views.navBarView.showUsernameOnNavBar("");
+      return this.navigate('#');
+    },
     checkLoggedIn: function() {
       if (!(this.app.Models.userModel != null)) {
         return this.app.mainRegion.show(this.app.Views.loginView);
@@ -28,6 +34,7 @@ define(["backbone", "backbone.marionette"], function(Backbone, Marionette) {
       this.app.Views.loginView.hide();
       this.showDesktop();
       this.app.Models.userModel = userModel;
+      this.app.Views.navBarView.showUsernameOnNavBar(userModel.username);
       return this;
     },
     handleUnsuccessfulUserLogin: function() {

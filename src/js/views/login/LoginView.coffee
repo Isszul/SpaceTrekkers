@@ -42,11 +42,11 @@ define ["jquery"
 			
 			#When we push enter on the username input advance to the password input
 			$('#username').keypress (e) ->
-				$('#password').focus() if(e.which == $.ui.keyCode.ENTER)
+				$('#password').focus() if(e.which == 13)
 				
 			#When we push enter on the password input attempt the login	
 			$('#password').keypress (e) ->
-				$("#loginButton").click() if(e.which == $.ui.keyCode.ENTER)
+				$("#loginButton").click() if(e.which == 13)
 
 			@					
 					

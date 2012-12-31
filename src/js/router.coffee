@@ -13,6 +13,9 @@ define ["backbone"
 			
 			# route when navigating to #/desktop 
 			"desktop": "showDesktop"
+
+			#logout route
+			"logout": "logoutUser"
 			
 			# Default route
 			"": "showDesktop"
@@ -32,6 +35,11 @@ define ["backbone"
 		showDesktop: () ->
 			@app.mainRegion.show @app.Views.desktopView
 
+		#Logs the user out (deletes app.Models.userModel)
+		logoutUser: () ->
+			delete @app.Models.userModel
+			@app.Views.navBarView.showUsernameOnNavBar ""
+			@navigate('#')
 
 		#check if there is a usermodel @ app.models.userModel
 		checkLoggedIn: () ->
@@ -42,6 +50,7 @@ define ["backbone"
 			@app.Views.loginView.hide()
 			@showDesktop()
 			@app.Models.userModel = userModel
+			@app.Views.navBarView.showUsernameOnNavBar userModel.username
 			@
 			
 		#Handles an unsuccessful login attempt and instructs the login view to show an error message
