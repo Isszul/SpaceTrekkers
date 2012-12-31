@@ -38,7 +38,7 @@
 	</target>
 
 	<target name="lintJavascript" depends="compile">
-		<jslint options="indent, white, nomen, undef, sloppy">
+		<jslint options="indent, white, nomen, undef, sloppy, eqeq">
 			<formatter type="checkstyle" destfile="${output}/jslint-checkstyle.xml" />
 			<formatter type="report" destfile="${output}/jslint-report.html" />
 			<fileset dir="${output}">

@@ -11,6 +11,8 @@
 </file><file name='E:\Project\MarionetteBase-Coffeescript\WebContent\client\js\views\logo\LogoView.js'>
 </file><file name='E:\Project\MarionetteBase-Coffeescript\WebContent\client\test\models\user\UserModelSpec.js'>
 </file><file name='E:\Project\MarionetteBase-Coffeescript\WebContent\client\test\runWebDriverTests.js'>
+</file><file name='E:\Project\MarionetteBase-Coffeescript\WebContent\client\test\staticNodeServer.js'>
+<error line='3' column='13' severity='warning' message='Expected an identifier and instead saw &apos;static&apos; (a reserved word).' source='com.googlecode.jslint4java.JSLint'/>
 </file><file name='E:\Project\MarionetteBase-Coffeescript\WebContent\client\test\utils\translationUtil-Mock.js'>
 </file><file name='E:\Project\MarionetteBase-Coffeescript\WebContent\client\test\views\desktop\DesktopViewSpec.js'>
 </file><file name='E:\Project\MarionetteBase-Coffeescript\WebContent\client\test\views\login\LoginViewSpec.js'>

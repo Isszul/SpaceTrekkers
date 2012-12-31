@@ -16,7 +16,7 @@ define(["backbone"], function(Backbone) {
     },
     attemptLogin: function() {
       if (this.username === "administrator" && this.password === "") {
-        Backbone.Events.trigger("userModel:loginsuccess", userModel);
+        Backbone.Events.trigger("userModel:loginsuccess", this);
         return;
       }
       return this.fetch({

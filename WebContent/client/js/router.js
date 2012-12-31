@@ -20,7 +20,7 @@ define(["backbone", "backbone.marionette"], function(Backbone, Marionette) {
       return this.app.mainRegion.show(this.app.Views.desktopView);
     },
     checkLoggedIn: function() {
-      if (this.app.Models.userModel !== null) {
+      if (!(this.app.Models.userModel != null)) {
         return this.app.mainRegion.show(this.app.Views.loginView);
       }
     },

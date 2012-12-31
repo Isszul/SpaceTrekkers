@@ -35,7 +35,7 @@ define ["backbone"
 
 		#check if there is a usermodel @ app.models.userModel
 		checkLoggedIn: () ->
-			@app.mainRegion.show @app.Views.loginView if @app.Models.userModel != null
+			@app.mainRegion.show @app.Views.loginView if not @app.Models.userModel?
 
 		#Handles a successful login attempt and navigates the user to the desktop.
 		handleSuccessfulUserLogin: (userModel) ->

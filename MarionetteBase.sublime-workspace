@@ -27,6 +27,22 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "src/test/staticNodeServer.js",
+			"settings":
+			{
+				"buffer_size": 97,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/test/runTests.bat",
+			"settings":
+			{
+				"buffer_size": 123,
+				"line_ending": "Windows"
+			}
+		}
 	],
 	"build_system": "Packages/Java/Ant.sublime-build",
 	"command_palette":
@@ -52,24 +68,27 @@
 	},
 	"file_history":
 	[
-		"/E/Project/MarionetteBase-Coffeescript/src/test/views/logo/LogoViewSpec.coffee",
+		"/E/Project/MarionetteBase-Coffeescript/src/test/runWebDriverTests.coffee",
 		"/E/Project/MarionetteBase-Coffeescript/src/js/router.coffee",
+		"/E/Project/MarionetteBase-Coffeescript/src/js/models/user/UserModel.coffee",
+		"/E/Project/MarionetteBase-Coffeescript/build.xml",
+		"/E/Project/MarionetteBase-Coffeescript/src/test/runTests.bat",
+		"/E/Project/SpaceTrekkers/build.xml",
+		"/E/Project/MarionetteBase-Coffeescript/src/js/views/login/LoginView.coffee",
+		"/E/Project/MarionetteBase-Coffeescript/src/js/app.coffee",
+		"/E/Project/MarionetteBase-Coffeescript/src/test/views/logo/LogoViewSpec.coffee",
 		"/E/Project/MarionetteBase-Coffeescript/src/test/TestRunner-DesktopView.html",
 		"/E/Project/SpaceTrekkers/.project",
 		"/E/Project/MarionetteBase-Coffeescript/MarionetteBase.sublime-workspace",
 		"/E/Project/MarionetteBase-Coffeescript/MarionetteBase.sublime-project",
 		"/E/Project/MarionetteBase-Coffeescript/src/test/views/desktop/DesktopViewSpec.coffee",
-		"/E/Project/MarionetteBase-Coffeescript/src/js/app.coffee",
 		"/E/Project/MarionetteBase-Coffeescript/src/templates/logo/logoTemplate.html",
 		"/E/Project/MarionetteBase-Coffeescript/src/js/nls/fr-fr/general.coffee",
 		"/E/Project/MarionetteBase-Coffeescript/src/js/nls/root/general.coffee",
 		"/E/Project/MarionetteBase-Coffeescript/src/index.html",
-		"/E/Project/MarionetteBase-Coffeescript/src/js/views/login/LoginView.coffee",
 		"/E/Project/MarionetteBase-Coffeescript/src/js/views/logo/LogoView.coffee",
 		"/E/Project/MarionetteBase-Coffeescript/src/templates/login/loginTemplate.html",
 		"/E/Project/MarionetteBase-Coffeescript/src/js/main.coffee",
-		"/E/Project/MarionetteBase-Coffeescript/src/js/models/user/UserModel.coffee",
-		"/E/Project/MarionetteBase-Coffeescript/build.xml",
 		"/E/Project/MarionetteBase-Coffeescript/.travis.yml",
 		"/E/Project/MarionetteBase-Coffeescript/src/js/utils/TranslationUtil.coffee",
 		"/E/Project/MarionetteBase-Coffeescript/.gitignore",
@@ -91,7 +110,6 @@
 		"/E/GDrive/Google Drive/SSH/putty_public.ppk",
 		"/E/GDrive/Google Drive/SSH/putty_private.ppk",
 		"/E/GDrive/Google Drive/SSH/id_rsa",
-		"/E/Project/MarionetteBase-Coffeescript/src/test/runWebDriverTests.coffee",
 		"/E/Project/MarionetteBase-Coffeescript/src/js/i18n.js",
 		"/E/Project/MarionetteBase-Coffeescript/src/js/views/desktop/DesktopView.coffee",
 		"/E/Project/MarionetteBase-Coffeescript/src/js/utils/translationUtil.coffee",
@@ -177,9 +195,7 @@
 		"/C/Users/Alex/Desktop/NodeJsICM/routes/linking.js",
 		"/C/Users/Alex/Desktop/NodeJsICM/services/user.js",
 		"/C/Users/Alex/Desktop/NodeJsICM/public/MarionetteClient/js/router.js",
-		"/C/Users/Alex/Desktop/NodeJsICM/public/MarionetteClient/templates/login/loginTemplate.html",
-		"/C/Users/Alex/Desktop/NodeJsICM/public/MarionetteClient/templates/dashboard/dashboardTemplate.html",
-		"/C/Users/Alex/Desktop/NodeJsICM/services/asset.js"
+		"/C/Users/Alex/Desktop/NodeJsICM/public/MarionetteClient/templates/login/loginTemplate.html"
 	],
 	"find":
 	{
@@ -197,6 +213,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"test",
 			"});\n",
 			"require",
 			"'\n",
@@ -224,8 +241,61 @@
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "src/test/staticNodeServer.js",
+					"settings":
+					{
+						"buffer_size": 97,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								80,
+								80
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/test/runTests.bat",
+					"settings":
+					{
+						"buffer_size": 123,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1,
+								1
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Batch File/Batch File.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -262,7 +332,7 @@
 	"menu_visible": true,
 	"output.exec":
 	{
-		"height": 505.0
+		"height": 352.0
 	},
 	"replace":
 	{
@@ -282,6 +352,10 @@
 		"height": 500.0,
 		"selected_items":
 		[
+			[
+				"",
+				"/E/Project/SpaceTrekkers/SpaceTrekkers.sublime-project"
+			]
 		],
 		"width": 380.0
 	},

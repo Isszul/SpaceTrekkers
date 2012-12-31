@@ -24,7 +24,7 @@ define ["backbone"
 		attemptLogin: ->
 			
 			if @username == "administrator" and @password == ""
-				Backbone.Events.trigger "userModel:loginsuccess", userModel
+				Backbone.Events.trigger "userModel:loginsuccess", @
 				return 	
 			
 			#Call fetch internally but attach success and error handlers 
