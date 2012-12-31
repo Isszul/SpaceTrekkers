@@ -1,0 +1,294 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"hand",
+				"handleUserNotLoggedIn"
+			],
+			[
+				"j",
+				"json2"
+			],
+			[
+				"ba",
+				"backbone-babysitter"
+			],
+			[
+				"now",
+				"nowServerSide"
+			],
+			[
+				"backg",
+				"background-color"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "Packages/Java/Ant.sublime-build",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/E/Project/MarionetteBase-Coffeescript/src/test/views/logo/LogoViewSpec.coffee",
+		"/E/Project/MarionetteBase-Coffeescript/src/js/router.coffee",
+		"/E/Project/MarionetteBase-Coffeescript/src/test/TestRunner-DesktopView.html",
+		"/E/Project/SpaceTrekkers/.project",
+		"/E/Project/MarionetteBase-Coffeescript/MarionetteBase.sublime-workspace",
+		"/E/Project/MarionetteBase-Coffeescript/MarionetteBase.sublime-project",
+		"/E/Project/MarionetteBase-Coffeescript/src/test/views/desktop/DesktopViewSpec.coffee",
+		"/E/Project/MarionetteBase-Coffeescript/src/js/app.coffee",
+		"/E/Project/MarionetteBase-Coffeescript/src/templates/logo/logoTemplate.html",
+		"/E/Project/MarionetteBase-Coffeescript/src/js/nls/fr-fr/general.coffee",
+		"/E/Project/MarionetteBase-Coffeescript/src/js/nls/root/general.coffee",
+		"/E/Project/MarionetteBase-Coffeescript/src/index.html",
+		"/E/Project/MarionetteBase-Coffeescript/src/js/views/login/LoginView.coffee",
+		"/E/Project/MarionetteBase-Coffeescript/src/js/views/logo/LogoView.coffee",
+		"/E/Project/MarionetteBase-Coffeescript/src/templates/login/loginTemplate.html",
+		"/E/Project/MarionetteBase-Coffeescript/src/js/main.coffee",
+		"/E/Project/MarionetteBase-Coffeescript/src/js/models/user/UserModel.coffee",
+		"/E/Project/MarionetteBase-Coffeescript/build.xml",
+		"/E/Project/MarionetteBase-Coffeescript/.travis.yml",
+		"/E/Project/MarionetteBase-Coffeescript/src/js/utils/TranslationUtil.coffee",
+		"/E/Project/MarionetteBase-Coffeescript/.gitignore",
+		"/E/Project/MarionetteBase-Coffeescript/.project",
+		"/E/Project/MarionetteBase-Coffeescript/README.md",
+		"/E/Project/MarionetteBase-Coffeescript/src/test/views/login/LoginViewSpec.coffee",
+		"/E/Project/MarionetteBase-Coffeescript/src/test/views/login/UserModel-Mock.coffee",
+		"/E/Project/MarionetteBase-Coffeescript/src/test/TestRunner-LoginView.html",
+		"/E/Project/MarionetteBase-Coffeescript/src/test/TestRunner-UserModel.html",
+		"/E/Project/MarionetteBase-Coffeescript/src/test/models/user/UserModelSpec.coffee",
+		"/E/Project/MarionetteBase-Coffeescript/WebContent/client/test/models/user/UserModelSpec.js",
+		"/E/Project/MarionetteBase-Coffeescript/src/test/utils/translationUtil-Mock.coffee",
+		"/E/Project/MarionetteBase-Coffeescript/WebContent/client/js/router.js",
+		"/E/Project/MarionetteBase-Coffeescript/WebContent/client/js/models/user/UserModel.js",
+		"/E/Project/MarionetteBase-Coffeescript/WebContent/client/jslint-report.html",
+		"/E/Project/MarionetteBase-Coffeescript/WebContent/client/jslint-checkstyle.xml",
+		"/E/development/apache-ant-1.7.1/INSTALL",
+		"/E/Project/MarionetteBase-Coffeescript/.externalToolBuilders/Coffeescript Builder.launch",
+		"/E/GDrive/Google Drive/SSH/putty_public.ppk",
+		"/E/GDrive/Google Drive/SSH/putty_private.ppk",
+		"/E/GDrive/Google Drive/SSH/id_rsa",
+		"/E/Project/MarionetteBase-Coffeescript/src/test/runWebDriverTests.coffee",
+		"/E/Project/MarionetteBase-Coffeescript/src/js/i18n.js",
+		"/E/Project/MarionetteBase-Coffeescript/src/js/views/desktop/DesktopView.coffee",
+		"/E/Project/MarionetteBase-Coffeescript/src/js/utils/translationUtil.coffee",
+		"/E/Project/MarionetteBase-Coffeescript/src/js/nls/general.coffee",
+		"/E/Project/MarionetteBase-Coffeescript/WebContent/client/test/node_modules/webdriverjs/lib/webdriverjs.js",
+		"/C/Users/Alex/Desktop/wgetVideoFromZeroPunctuation/getMovie.js",
+		"/E/Tools/env-js-master/envjs/platform/core.js",
+		"/E/Tools/env-js-master/envjs/spydermonkey.py",
+		"/E/Tools/env-js-master/README.textile",
+		"/E/Tools/env-js-master/envjs/rhino.js",
+		"/E/Tools/env-js-master/local_settings.js",
+		"/E/Tools/env-js-master/settings.js",
+		"/E/Tools/env-js-master/specs/platform/rhino.js",
+		"/E/Tools/env-js-master/envjs/console.js",
+		"/E/Tools/env-js-master/examples/loadpage.js",
+		"/E/Tools/env-js-master/envjs/platform/rhino.js",
+		"/E/Tools/env-js-master/examples/pictures/boot.js",
+		"/E/Project/MarionetteBase-Coffeescript/src/js/libs/jasmine-core/jasmine-html.js",
+		"/E/Project/MarionetteBase-Coffeescript/src/js/libs/jasmine-core/jasmine.css",
+		"/E/Project/MarionetteBase-Coffeescript/src/js/libs/jasmine-core/jasmine.js",
+		"/E/Project/Chutzpah-sample/jasmineTests.html",
+		"/E/Project/Chutzpah-sample/jasmineTests.js",
+		"/E/Project/MarionetteBase-Coffeescript/src/js/libs/jquery/jquery-serialize.js",
+		"/E/Project/MarionetteBase-Coffeescript/src/js/libs/backbone/backbone.marionette.js",
+		"/E/Project/MarionetteBase-Coffeescript/src/js/libs/underscore/underscore1.4.3-min.js",
+		"/C/Users/Alex/Desktop/MarionetteBase/js/models/user/UserModel.js",
+		"/C/Users/Alex/Desktop/MarionetteBase/js/router.js",
+		"/C/Users/Alex/Desktop/MarionetteBase/js/app.js",
+		"/E/Project/MarionetteBase-Coffeescript/src/js/libs/underscore/underscore-min.js",
+		"/C/Users/Alex/Desktop/MarionetteBase/js/main.js",
+		"/C/Users/Alex/Desktop/MarionetteBase/templates/desktop/desktopTemplate.html",
+		"/C/Users/Alex/Desktop/MarionetteBase/js/views/desktop/DesktopView.js",
+		"/C/Users/Alex/Desktop/MarionetteBase/js/views/login/LoginView.js",
+		"/C/Users/Alex/Desktop/MarionetteBase/index.html",
+		"/C/Users/Alex/Desktop/MarionetteBase/js/nls/root/general.js",
+		"/C/Users/Alex/Desktop/MarionetteBase/js/nls/general.js",
+		"/C/Users/Alex/Desktop/MarionetteBase/js/config.js",
+		"/C/Users/Alex/Desktop/MarionetteBase/templates/login/loginTemplate.html",
+		"/C/Users/Alex/Desktop/MarionetteBase/js/nls/fr-fr/general.js",
+		"/C/Users/Alex/Desktop/modular-backbone/templates/footer/footerTemplate.html",
+		"/C/Users/Alex/Desktop/modular-backbone/js/views/login/LoginView.js",
+		"/C/Users/Alex/Desktop/modular-backbone/templates/login/loginTemplate.html",
+		"/C/Users/Alex/Desktop/modular-backbone/js/main.js",
+		"/C/Users/Alex/Desktop/modular-backbone/index.html",
+		"/C/Users/Alex/Desktop/modular-backbone/translations/translations.js",
+		"/C/Users/Alex/Desktop/modular-backbone/run-gjslint.bat",
+		"/C/Users/Alex/Desktop/modular-backbone/js/app.js",
+		"/C/Users/Alex/Desktop/modular-backbone/js/models/user/UserModel.js",
+		"/C/Users/Alex/Desktop/modular-backbone/js/models/user/UserModelSpec.js",
+		"/C/Users/Alex/Desktop/modular-backbone/run-jshint.bat",
+		"/C/Users/Alex/Desktop/modular-backbone/run-jsl.bat",
+		"/C/Users/Alex/Desktop/modular-backbone/build-tools/jsl-0.3.0/jsl.default.conf",
+		"/C/Users/Alex/Desktop/modular-backbone/.jshintignore",
+		"/C/Users/Alex/Desktop/modular-backbone/build-tools/.jshintignore",
+		"/C/Users/Alex/Desktop/modular-backbone/build-tools/run-jshint.bat",
+		"/C/Users/Alex/Desktop/modular-backbone/js/.jshintignore",
+		"/C/Users/Alex/Desktop/modular-backbone/build-tools/run-jsl.bat",
+		"/C/Users/Alex/Desktop/modular-backbone/build-tools/jshint-r12/run-jshint.bat",
+		"/C/Users/Alex/Desktop/modular-backbone/build-tools/jshint-r12/.r2config",
+		"/C/Users/Alex/Desktop/modular-backbone/js/models/user/UserModelTestRunner.html",
+		"/C/Users/Alex/Desktop/modular-backbone/build-tools/jsl-0.3.0/run-jsl.bat",
+		"/C/Users/Alex/Desktop/modular-backbone/js/views/login/LoginViewTestRunner.html",
+		"/C/Users/Alex/Desktop/modular-backbone/js/views/login/LoginViewSpec.js",
+		"/C/Users/Alex/Desktop/modular-backbone/js/models/user/TestRunner.html",
+		"/C/Users/Alex/Desktop/modular-backbone/TestRunner.html",
+		"/C/Users/Alex/Desktop/modular-backbone/templates/TestRunner.html",
+		"/C/Users/Alex/Desktop/modular-backbone/SpecRunner.html",
+		"/C/Users/Alex/Desktop/modular-backbone/js/spec/MainAppSpec.js",
+		"/C/Users/Alex/Desktop/Jasmine/SpecRunner.html",
+		"/C/Users/Alex/Desktop/modular-backbone/js/spec/PlayerSpec.js",
+		"/C/Users/Alex/Desktop/modular-backbone/js/spec/SpecHelper.js",
+		"/C/Users/Alex/Desktop/modular-backbone/js/models/user/unitTest.html",
+		"/C/Users/Alex/Desktop/Jasmine/spec/PlayerSpec.js",
+		"/C/Users/Alex/Desktop/Jasmine/spec/SpecHelper.js",
+		"/C/Users/Alex/Desktop/Jasmine/src/Player.js",
+		"/C/Users/Alex/Desktop/Jasmine/SpecRunner.MyObject.html",
+		"/C/Users/Alex/Desktop/modular-backbone/js/JasmineTest.html",
+		"/C/Users/Alex/Desktop/modular-backbone/js/libs/jasmine/jasmine.js",
+		"/C/Users/Alex/Desktop/modular-backbone/jasmine/SpecRunner.MyObject.html",
+		"/C/Users/Alex/Desktop/NodeJsICM/public/MarionetteClient/js/models/user/UserModel.js",
+		"/C/Users/Alex/Desktop/NodeJsICM/public/MarionetteClient/js/views/dashboard/DashboardView.js",
+		"/C/Users/Alex/Desktop/NodeJsICM/public/MarionetteClient/js/views/login/LoginView.js",
+		"/C/Users/Alex/Desktop/NodeJsICM/routes/linking.js",
+		"/C/Users/Alex/Desktop/NodeJsICM/services/user.js",
+		"/C/Users/Alex/Desktop/NodeJsICM/public/MarionetteClient/js/router.js",
+		"/C/Users/Alex/Desktop/NodeJsICM/public/MarionetteClient/templates/login/loginTemplate.html",
+		"/C/Users/Alex/Desktop/NodeJsICM/public/MarionetteClient/templates/dashboard/dashboardTemplate.html",
+		"/C/Users/Alex/Desktop/NodeJsICM/services/asset.js"
+	],
+	"find":
+	{
+		"height": 34.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"});\n",
+			"require",
+			"'\n",
+			"console.log",
+			"body",
+			"expressApp",
+			"app"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"//console.log",
+			"express",
+			"expressApp"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 505.0
+	},
+	"replace":
+	{
+		"height": 62.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 253.0,
+	"status_bar_visible": true
+}
