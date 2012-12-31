@@ -1,15 +1,24 @@
 <div>
 
-	<div id="mainLoginDiv" title="{{ nls.login_label }}">
-		<form>
-			<fieldset>
-				<label for="username">{{ nls.username_label }}:</label> 
-				<input type="text" id="username" class="text-input" required autofocus="true" /> 
-				<label for="password">{{ nls.password_label }}:</label> 
-				<input type="password" id="password" class="text-input" required />
-				<div id="loginMessage"></div>
-			</fieldset>
+	<div id="mainLoginDiv" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-header">
+   			 <h3 id="myModalLabel">{{ nls.login_label }}</h3>
+		</div>
+		<form id="loginForm">
+			<div class="modal-body">
+				<fieldset>
+					<label for="username">{{ nls.username_label }}:</label> 
+					<input type="text" id="username" class="text-input" required autofocus="true" /> 
+					<label for="password">{{ nls.password_label }}:</label> 
+					<input type="password" id="password" class="text-input" />
+				</fieldset>
+				<span class="label label-warning .pull-left" id="loginMessage"></span>
+			</div>
+			<div class="modal-footer">
+	            <button class="btn btn-primary" id="loginButton">{{ nls.login_label }}</button>
+		    </div>
 		</form>
+
 	</div>
 
 

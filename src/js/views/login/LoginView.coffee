@@ -4,7 +4,7 @@ define ["jquery"
         "models/user/UserModel"
         "text!templates/login/loginTemplate.html" 
         "translationUtil"
-        "jqueryui"        
+        "bootstrap"        
 ], ($, _, Marionette, UserModel, LoginTemplate, TranslationUtil) ->
 
 	# Class def for the login view.
@@ -19,30 +19,23 @@ define ["jquery"
 			
 		#Close the login modal
 		hide: () ->
-			$("#mainLoginDiv").dialog "close"
-		
+			$("#mainLoginDiv").modal "hide"
 			
 		#Show a modal form to prompt for login details
 		onShow: () -> 
-			$("#mainLoginDiv").dialog 
-				closeOnEscape: false
-				modal: true
-				draggable: false 
-				resizable: false
-				open: () -> 
-					$(this).closest('.ui-dialog').find('.ui-dialog-titlebar-close').hide()
-				buttons: 
-					loginButton: 
-						text: (TranslationUtil.geti18nString "login_label")
-						click: () -> 
-							#Create a user model and attempt a login
-							new UserModel(
-							  username: $("#username").val()
-							  password: $("#password").val()
-							).attemptLogin()
-							
-		   	#Move to the front 
-			$("#mainLoginDiv").dialog( "moveToTop" )
+
+			$("#mainLoginDiv").modal
+				keyboard: false
+				backdrop: 'static'
+
+
+			$("#loginButton").click (e) ->
+				e.preventDefault()
+				#Create a user model and attempt a login
+				new UserModel(
+				  username: $("#username").val()
+				  password: $("#password").val()
+				).attemptLogin()
 													
 			#By Default focus on the username input
 			$('#username').focus()
@@ -53,8 +46,9 @@ define ["jquery"
 				
 			#When we push enter on the password input attempt the login	
 			$('#password').keypress (e) ->
-				$('#mainLoginDiv').dialog('option', 'buttons').loginButton.click() if(e.which == $.ui.keyCode.ENTER)
-					
+				$("#loginButton").click() if(e.which == $.ui.keyCode.ENTER)
+
+			@					
 					
 	)
   

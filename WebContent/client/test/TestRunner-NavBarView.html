@@ -25,20 +25,19 @@
 
 		baseUrl : '../',
 		paths : {
-			'templates': 'templates',
-            'jquery': 'libs/jquery/jquery-min',
+			'templates' : 'templates',
+			'jquery' : 'libs/jquery/jquery-min',
 			'bootstrap': "../libs/bootstrap/bootstrap",
-            'underscore': 'libs/underscore/underscore-min',
-            'backbone': 'libs/backbone/backbone-min',
-            'sinon': 'libs/sinon/sinon',
-            'backbone.babysitter': 'libs/backbone/backbone.babysitter.min',
-            'backbone.wreqr': 'libs/backbone/backbone.wreqr.min',
-            'backbone.eventbinder': 'libs/backbone/backbone.eventbinder.min',            
-            'backbone.marionette': 'libs/backbone/backbone.marionette.min',
-            'text': 'libs/text/text',
-            'translationUtil':  "test/utils/translationUtil-Mock",
-            'models/user/UserModel': 'test/views/login/UserModel-Mock',
-            'LoginView' : 'js/views/login/LoginView'
+			'underscore' : 'libs/underscore/underscore-min',
+			'backbone' : 'libs/backbone/backbone-min',
+			'sinon' : 'libs/sinon/sinon',
+			'backbone.babysitter' : 'libs/backbone/backbone.babysitter.min',
+			'backbone.wreqr' : 'libs/backbone/backbone.wreqr.min',
+			'backbone.eventbinder' : 'libs/backbone/backbone.eventbinder.min',
+			'backbone.marionette' : 'libs/backbone/backbone.marionette.min',
+			'text' : 'libs/text/text',
+			'translationUtil' : "test/utils/translationUtil-Mock",
+			'NavBarView' : 'js/views/navBar/NavBarView'
 		},
 		shim : {
 			'jquery': {
@@ -53,13 +52,14 @@
 
 
 <script type="text/javascript" src="../libs/jasmine-core/jasmine.js"></script>
-<script type="text/javascript" src="../libs/jasmine-core/jasmine-html.js"></script>
-<script type="text/javascript" src="../libs/jasmine-core/console-runner.js"></script>
+<script type="text/javascript"
+	src="../libs/jasmine-core/jasmine-html.js"></script>
+<script type="text/javascript"
+	src="../libs/jasmine-core/console-runner.js"></script>
 
 <script type='text/javascript'>
-	
-	require([ 'views/login/LoginViewSpec.js' ], function() {
-		
+	require([ 'views/navBar/NavBarViewSpec.js' ], function() {
+
 		var jasmineEnv = jasmine.getEnv();
 		jasmineEnv.updateInterval = 1000;
 
@@ -68,11 +68,11 @@
 
 		jasmineEnv.addReporter(html_reporter);
 		jasmineEnv.addReporter(console_reporter);
-		
+
 		jasmineEnv.specFilter = function(spec) {
 			return html_reporter.specFilter(spec);
 		};
-		
+
 		var currentWindowOnload = window.onload;
 
 		window.onload = function() {
@@ -91,9 +91,7 @@
 </head>
 <body>
 
-  <div id="testRegion">
-    testRegion
-  </div>
+	<div id="testRegion">testRegion</div>
 
 </body>
 </html>

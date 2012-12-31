@@ -4,8 +4,8 @@ define ["backbone"
 		"models/user/UserModel"
 		"views/login/LoginView"
 		"views/desktop/DesktopView"
-		"views/logo/LogoView"
-], (Backbone, Marionette, Router, UserModel, LoginView, DesktopView, LogoView) ->
+		"views/navbar/NavBarView"
+], (Backbone, Marionette, Router, UserModel, LoginView, DesktopView, NavBarView) ->
 
 	"use strict"
 	
@@ -23,13 +23,13 @@ define ["backbone"
 		Views:
 			loginView: new LoginView()
 			desktopView: new DesktopView()
-			logoView: new LogoView()
+			navBarView: new NavBarView()
 	)
 	
 	# Setup the regions we will use on the page
 	app.addRegions 
-		logo: "#logo"
-		mainRegion: "#page"
+		navBar: "#navBar"
+		mainRegion: "#mainRegion"
 	
 	# Add an initializer to setup the router
 	app.addInitializer ->

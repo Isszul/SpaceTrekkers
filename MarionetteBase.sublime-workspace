@@ -28,18 +28,26 @@
 	"buffers":
 	[
 		{
-			"file": "src/test/staticNodeServer.js",
+			"file": "src/templates/login/loginTemplate.html",
 			"settings":
 			{
-				"buffer_size": 97,
+				"buffer_size": 836,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "src/test/runTests.bat",
+			"file": "src/templates/desktop/desktopTemplate.html",
 			"settings":
 			{
-				"buffer_size": 123,
+				"buffer_size": 55,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/js/app.coffee",
+			"settings":
+			{
+				"buffer_size": 808,
 				"line_ending": "Windows"
 			}
 		}
@@ -68,50 +76,59 @@
 	},
 	"file_history":
 	[
-		"/E/Project/MarionetteBase-Coffeescript/src/test/runWebDriverTests.coffee",
-		"/E/Project/MarionetteBase-Coffeescript/src/js/router.coffee",
-		"/E/Project/MarionetteBase-Coffeescript/src/js/models/user/UserModel.coffee",
-		"/E/Project/MarionetteBase-Coffeescript/build.xml",
-		"/E/Project/MarionetteBase-Coffeescript/src/test/runTests.bat",
-		"/E/Project/SpaceTrekkers/build.xml",
-		"/E/Project/MarionetteBase-Coffeescript/src/js/views/login/LoginView.coffee",
 		"/E/Project/MarionetteBase-Coffeescript/src/js/app.coffee",
-		"/E/Project/MarionetteBase-Coffeescript/src/test/views/logo/LogoViewSpec.coffee",
+		"/E/Project/MarionetteBase-Coffeescript/src/js/router.coffee",
+		"/E/Project/MarionetteBase-Coffeescript/src/test/TestRunner-NavBarView.html",
+		"/E/Project/MarionetteBase-Coffeescript/src/test/views/navbar/NavBarViewSpec.coffee",
+		"/E/Project/MarionetteBase-Coffeescript/src/index.html",
+		"/E/Project/MarionetteBase-Coffeescript/src/js/views/navbar/NavBarView.coffee",
+		"/E/Project/MarionetteBase-Coffeescript/src/js/views/login/LoginView.coffee",
+		"/E/Project/MarionetteBase-Coffeescript/src/templates/login/loginTemplate.html",
+		"/E/Project/MarionetteBase-Coffeescript/src/templates/desktop/desktopTemplate.html",
+		"/E/Project/MarionetteBase-Coffeescript/src/templates/logo/logoTemplate.html",
+		"/E/Project/MarionetteBase-Coffeescript/src/js/views/desktop/DesktopView.coffee",
+		"/E/Project/MarionetteBase-Coffeescript/src/js/views/logo/LogoView.coffee",
+		"/E/Project/MarionetteBase-Coffeescript/src/test/views/desktop/DesktopViewSpec.coffee",
+		"/E/Project/MarionetteBase-Coffeescript/src/test/views/login/LoginViewSpec.coffee",
 		"/E/Project/MarionetteBase-Coffeescript/src/test/TestRunner-DesktopView.html",
+		"/E/Project/MarionetteBase-Coffeescript/src/test/TestRunner-LoginView.html",
+		"/E/Project/MarionetteBase-Coffeescript/src/test/TestRunner-LogoView.html",
+		"/E/Project/MarionetteBase-Coffeescript/src/test/TestRunner-UserModel.html",
+		"/E/Project/MarionetteBase-Coffeescript/src/js/main.coffee",
+		"/E/Project/MarionetteBase-Coffeescript/src/css/bootstrap.css",
+		"/E/Project/MarionetteBase-Coffeescript/src/css/styles.css",
+		"/E/Project/MarionetteBase-Coffeescript/src/test/runTests.bat",
+		"/E/Project/MarionetteBase-Coffeescript/WebContent/client/jslint-checkstyle.xml",
+		"/E/Project/MarionetteBase-Coffeescript/build.xml",
+		"/E/Project/MarionetteBase-Coffeescript/src/test/runStaticNodeServer.bat",
+		"/E/Project/MarionetteBase-Coffeescript/src/test/staticNodeServer.js",
+		"/E/Project/MarionetteBase-Coffeescript/.travis.yml",
+		"/E/Project/MarionetteBase-Coffeescript/src/test/runWebDriverTests.coffee",
+		"/E/Project/MarionetteBase-Coffeescript/src/js/models/user/UserModel.coffee",
+		"/E/Project/SpaceTrekkers/build.xml",
+		"/E/Project/MarionetteBase-Coffeescript/src/test/views/logo/LogoViewSpec.coffee",
 		"/E/Project/SpaceTrekkers/.project",
 		"/E/Project/MarionetteBase-Coffeescript/MarionetteBase.sublime-workspace",
 		"/E/Project/MarionetteBase-Coffeescript/MarionetteBase.sublime-project",
-		"/E/Project/MarionetteBase-Coffeescript/src/test/views/desktop/DesktopViewSpec.coffee",
-		"/E/Project/MarionetteBase-Coffeescript/src/templates/logo/logoTemplate.html",
 		"/E/Project/MarionetteBase-Coffeescript/src/js/nls/fr-fr/general.coffee",
 		"/E/Project/MarionetteBase-Coffeescript/src/js/nls/root/general.coffee",
-		"/E/Project/MarionetteBase-Coffeescript/src/index.html",
-		"/E/Project/MarionetteBase-Coffeescript/src/js/views/logo/LogoView.coffee",
-		"/E/Project/MarionetteBase-Coffeescript/src/templates/login/loginTemplate.html",
-		"/E/Project/MarionetteBase-Coffeescript/src/js/main.coffee",
-		"/E/Project/MarionetteBase-Coffeescript/.travis.yml",
 		"/E/Project/MarionetteBase-Coffeescript/src/js/utils/TranslationUtil.coffee",
 		"/E/Project/MarionetteBase-Coffeescript/.gitignore",
 		"/E/Project/MarionetteBase-Coffeescript/.project",
 		"/E/Project/MarionetteBase-Coffeescript/README.md",
-		"/E/Project/MarionetteBase-Coffeescript/src/test/views/login/LoginViewSpec.coffee",
 		"/E/Project/MarionetteBase-Coffeescript/src/test/views/login/UserModel-Mock.coffee",
-		"/E/Project/MarionetteBase-Coffeescript/src/test/TestRunner-LoginView.html",
-		"/E/Project/MarionetteBase-Coffeescript/src/test/TestRunner-UserModel.html",
 		"/E/Project/MarionetteBase-Coffeescript/src/test/models/user/UserModelSpec.coffee",
 		"/E/Project/MarionetteBase-Coffeescript/WebContent/client/test/models/user/UserModelSpec.js",
 		"/E/Project/MarionetteBase-Coffeescript/src/test/utils/translationUtil-Mock.coffee",
 		"/E/Project/MarionetteBase-Coffeescript/WebContent/client/js/router.js",
 		"/E/Project/MarionetteBase-Coffeescript/WebContent/client/js/models/user/UserModel.js",
 		"/E/Project/MarionetteBase-Coffeescript/WebContent/client/jslint-report.html",
-		"/E/Project/MarionetteBase-Coffeescript/WebContent/client/jslint-checkstyle.xml",
 		"/E/development/apache-ant-1.7.1/INSTALL",
 		"/E/Project/MarionetteBase-Coffeescript/.externalToolBuilders/Coffeescript Builder.launch",
 		"/E/GDrive/Google Drive/SSH/putty_public.ppk",
 		"/E/GDrive/Google Drive/SSH/putty_private.ppk",
 		"/E/GDrive/Google Drive/SSH/id_rsa",
 		"/E/Project/MarionetteBase-Coffeescript/src/js/i18n.js",
-		"/E/Project/MarionetteBase-Coffeescript/src/js/views/desktop/DesktopView.coffee",
 		"/E/Project/MarionetteBase-Coffeescript/src/js/utils/translationUtil.coffee",
 		"/E/Project/MarionetteBase-Coffeescript/src/js/nls/general.coffee",
 		"/E/Project/MarionetteBase-Coffeescript/WebContent/client/test/node_modules/webdriverjs/lib/webdriverjs.js",
@@ -186,16 +203,7 @@
 		"/C/Users/Alex/Desktop/Jasmine/spec/SpecHelper.js",
 		"/C/Users/Alex/Desktop/Jasmine/src/Player.js",
 		"/C/Users/Alex/Desktop/Jasmine/SpecRunner.MyObject.html",
-		"/C/Users/Alex/Desktop/modular-backbone/js/JasmineTest.html",
-		"/C/Users/Alex/Desktop/modular-backbone/js/libs/jasmine/jasmine.js",
-		"/C/Users/Alex/Desktop/modular-backbone/jasmine/SpecRunner.MyObject.html",
-		"/C/Users/Alex/Desktop/NodeJsICM/public/MarionetteClient/js/models/user/UserModel.js",
-		"/C/Users/Alex/Desktop/NodeJsICM/public/MarionetteClient/js/views/dashboard/DashboardView.js",
-		"/C/Users/Alex/Desktop/NodeJsICM/public/MarionetteClient/js/views/login/LoginView.js",
-		"/C/Users/Alex/Desktop/NodeJsICM/routes/linking.js",
-		"/C/Users/Alex/Desktop/NodeJsICM/services/user.js",
-		"/C/Users/Alex/Desktop/NodeJsICM/public/MarionetteClient/js/router.js",
-		"/C/Users/Alex/Desktop/NodeJsICM/public/MarionetteClient/templates/login/loginTemplate.html"
+		"/C/Users/Alex/Desktop/modular-backbone/js/JasmineTest.html"
 	],
 	"find":
 	{
@@ -203,7 +211,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 90.0,
 		"where_history":
 		[
 		]
@@ -213,6 +221,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"img",
 			"test",
 			"});\n",
 			"require",
@@ -241,28 +250,29 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 2,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "src/test/staticNodeServer.js",
+					"file": "src/templates/login/loginTemplate.html",
 					"settings":
 					{
-						"buffer_size": 97,
+						"buffer_size": 836,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								80,
-								80
+								836,
+								836
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -272,23 +282,50 @@
 				},
 				{
 					"buffer": 1,
-					"file": "src/test/runTests.bat",
+					"file": "src/templates/desktop/desktopTemplate.html",
 					"settings":
 					{
-						"buffer_size": 123,
+						"buffer_size": 55,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1,
-								1
+								55,
+								55
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/Batch File/Batch File.tmLanguage"
+							"syntax": "Packages/HTML/HTML.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "src/js/app.coffee",
+					"settings":
+					{
+						"buffer_size": 808,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,

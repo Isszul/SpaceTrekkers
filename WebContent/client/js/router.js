@@ -13,7 +13,7 @@ define(["backbone", "backbone.marionette"], function(Backbone, Marionette) {
       Backbone.Events.on("userModel:loginfailure", this.handleUnsuccessfulUserLogin, this);
       this.bind('all', this.checkLoggedIn);
       this.app = app;
-      this.app.logo.show(this.app.Views.logoView);
+      this.app.navBar.show(this.app.Views.navBarView);
       return this;
     },
     showDesktop: function() {
@@ -26,6 +26,7 @@ define(["backbone", "backbone.marionette"], function(Backbone, Marionette) {
     },
     handleSuccessfulUserLogin: function(userModel) {
       this.app.Views.loginView.hide();
+      this.showDesktop();
       this.app.Models.userModel = userModel;
       return this;
     },

@@ -25,7 +25,7 @@ define ["backbone"
 			Backbone.Events.on "userModel:loginfailure", @handleUnsuccessfulUserLogin, this
 			@bind 'all', @checkLoggedIn
 			@app = app			
-			@app.logo.show @app.Views.logoView
+			@app.navBar.show @app.Views.navBarView
 			@
 
 		#Shows the desktop in the main Region
@@ -40,6 +40,7 @@ define ["backbone"
 		#Handles a successful login attempt and navigates the user to the desktop.
 		handleSuccessfulUserLogin: (userModel) ->
 			@app.Views.loginView.hide()
+			@showDesktop()
 			@app.Models.userModel = userModel
 			@
 			
