@@ -1,22 +1,46 @@
 <div>
 
 	<div id="mainLoginDiv" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
 		<div class="modal-header">
    			 <h3 id="myModalLabel">{{ nls.login_label }}</h3>
 		</div>
-		<form id="loginForm">
+
+		<form id="loginForm" class="form-horizontal">
+
 			<div class="modal-body">
 				<fieldset>
-					<label for="username">{{ nls.username_label }}:</label> 
-					<input type="text" id="username" class="text-input" required autofocus="true" /> 
-					<label for="password">{{ nls.password_label }}:</label> 
-					<input type="password" id="password" class="text-input" />
+
+					<div class="control-group">
+						<label for="username" class="control-label">{{ nls.username_label }}:</label> 
+						<div class="controls">
+							<input type="text" id="username" class="text-input" required autofocus="true" /> 
+						</div>
+					</div>
+
+					<div class="control-group">
+						<label for="password" class="control-label">{{ nls.password_label }}:</label> 
+						<div class="controls">
+							<input type="password" id="password" class="text-input" />
+						</div>
+					</div>
+
 				</fieldset>
-				<span class="label label-warning .pull-left" id="loginMessage"></span>
+
+				<div class="control-group">
+					<div class="controls">
+						<span class="label label-warning" id="loginMessage"></span>
+					</div>
+				</div>
+
 			</div>
+
 			<div class="modal-footer">
-	            <button class="btn btn-primary" id="loginButton">{{ nls.login_label }}</button>
+
+				<button class="btn btn-primary" id="loginButton">{{ nls.login_label }}</button>
+
 		    </div>
+
 		</form>
 
 	</div>

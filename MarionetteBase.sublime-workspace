@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"logout",
+				"logoutUser"
+			],
+			[
 				"hand",
 				"handleUserNotLoggedIn"
 			],
@@ -36,18 +40,10 @@
 			}
 		},
 		{
-			"file": "src/templates/desktop/desktopTemplate.html",
+			"file": "src/js/router.coffee",
 			"settings":
 			{
-				"buffer_size": 55,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/js/app.coffee",
-			"settings":
-			{
-				"buffer_size": 808,
+				"buffer_size": 1716,
 				"line_ending": "Windows"
 			}
 		}
@@ -76,15 +72,19 @@
 	},
 	"file_history":
 	[
-		"/E/Project/MarionetteBase-Coffeescript/src/js/app.coffee",
+		"/E/Project/MarionetteBase-Coffeescript/src/js/views/login/LoginView.coffee",
+		"/E/Project/MarionetteBase-Coffeescript/src/js/nls/root/general.coffee",
+		"/E/Project/MarionetteBase-Coffeescript/src/js/views/navbar/NavBarView.coffee",
+		"/E/Project/MarionetteBase-Coffeescript/src/templates/navbar/navBarTemplate.html",
 		"/E/Project/MarionetteBase-Coffeescript/src/js/router.coffee",
+		"/E/Project/MarionetteBase-Coffeescript/src/js/nls/fr-fr/general.coffee",
+		"/E/Project/MarionetteBase-Coffeescript/src/templates/desktop/desktopTemplate.html",
+		"/E/Project/MarionetteBase-Coffeescript/src/js/app.coffee",
+		"/E/Project/MarionetteBase-Coffeescript/MarionetteBase.sublime-workspace",
 		"/E/Project/MarionetteBase-Coffeescript/src/test/TestRunner-NavBarView.html",
 		"/E/Project/MarionetteBase-Coffeescript/src/test/views/navbar/NavBarViewSpec.coffee",
 		"/E/Project/MarionetteBase-Coffeescript/src/index.html",
-		"/E/Project/MarionetteBase-Coffeescript/src/js/views/navbar/NavBarView.coffee",
-		"/E/Project/MarionetteBase-Coffeescript/src/js/views/login/LoginView.coffee",
 		"/E/Project/MarionetteBase-Coffeescript/src/templates/login/loginTemplate.html",
-		"/E/Project/MarionetteBase-Coffeescript/src/templates/desktop/desktopTemplate.html",
 		"/E/Project/MarionetteBase-Coffeescript/src/templates/logo/logoTemplate.html",
 		"/E/Project/MarionetteBase-Coffeescript/src/js/views/desktop/DesktopView.coffee",
 		"/E/Project/MarionetteBase-Coffeescript/src/js/views/logo/LogoView.coffee",
@@ -108,10 +108,7 @@
 		"/E/Project/SpaceTrekkers/build.xml",
 		"/E/Project/MarionetteBase-Coffeescript/src/test/views/logo/LogoViewSpec.coffee",
 		"/E/Project/SpaceTrekkers/.project",
-		"/E/Project/MarionetteBase-Coffeescript/MarionetteBase.sublime-workspace",
 		"/E/Project/MarionetteBase-Coffeescript/MarionetteBase.sublime-project",
-		"/E/Project/MarionetteBase-Coffeescript/src/js/nls/fr-fr/general.coffee",
-		"/E/Project/MarionetteBase-Coffeescript/src/js/nls/root/general.coffee",
 		"/E/Project/MarionetteBase-Coffeescript/src/js/utils/TranslationUtil.coffee",
 		"/E/Project/MarionetteBase-Coffeescript/.gitignore",
 		"/E/Project/MarionetteBase-Coffeescript/.project",
@@ -202,8 +199,7 @@
 		"/C/Users/Alex/Desktop/Jasmine/spec/PlayerSpec.js",
 		"/C/Users/Alex/Desktop/Jasmine/spec/SpecHelper.js",
 		"/C/Users/Alex/Desktop/Jasmine/src/Player.js",
-		"/C/Users/Alex/Desktop/Jasmine/SpecRunner.MyObject.html",
-		"/C/Users/Alex/Desktop/modular-backbone/js/JasmineTest.html"
+		"/C/Users/Alex/Desktop/Jasmine/SpecRunner.MyObject.html"
 	],
 	"find":
 	{
@@ -211,7 +207,7 @@
 	},
 	"find_in_files":
 	{
-		"height": 90.0,
+		"height": 0.0,
 		"where_history":
 		[
 		]
@@ -250,7 +246,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 1,
 			"sheets":
 			[
 				{
@@ -282,44 +278,18 @@
 				},
 				{
 					"buffer": 1,
-					"file": "src/templates/desktop/desktopTemplate.html",
+					"file": "src/js/router.coffee",
 					"settings":
 					{
-						"buffer_size": 55,
+						"buffer_size": 1716,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								55,
-								55
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "src/js/app.coffee",
-					"settings":
-					{
-						"buffer_size": 808,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
+								1205,
+								1234
 							]
 						],
 						"settings":
