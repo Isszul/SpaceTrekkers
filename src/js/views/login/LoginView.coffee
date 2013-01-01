@@ -39,10 +39,6 @@ define ["jquery"
 													
 			#By Default focus on the username input
 			$('#username').focus()
-			
-			#When we push enter on the username input advance to the password input
-			$('#username').keypress (e) ->
-				$('#password').focus() if(e.which == 13)
 				
 			#When we push enter on the password input attempt the login	
 			$('#password').keypress (e) ->

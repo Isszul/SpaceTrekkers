@@ -7,8 +7,7 @@ define ["backbone"
 	# Class definition for the AppRouter
 	AppRouter = Marionette.AppRouter.extend(
 			
-		#configures routes, these link the "#/" urls to functions.
-		
+		#configures routes, these link the "/#" urls to functions.
 		routes:
 			
 			# route when navigating to #/desktop 
@@ -38,7 +37,7 @@ define ["backbone"
 		#Logs the user out (deletes app.Models.userModel)
 		logoutUser: () ->
 			delete @app.Models.userModel
-			@app.Views.navBarView.showUsernameOnNavBar ""
+			@app.Views.navBarView.showUsernameOnNavBar "..."
 			@navigate('#')
 
 		#check if there is a usermodel @ app.models.userModel

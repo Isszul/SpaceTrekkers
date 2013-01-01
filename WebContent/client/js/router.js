@@ -22,7 +22,7 @@ define(["backbone", "backbone.marionette"], function(Backbone, Marionette) {
     },
     logoutUser: function() {
       delete this.app.Models.userModel;
-      this.app.Views.navBarView.showUsernameOnNavBar("");
+      this.app.Views.navBarView.showUsernameOnNavBar("...");
       return this.navigate('#');
     },
     checkLoggedIn: function() {
