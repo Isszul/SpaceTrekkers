@@ -11,12 +11,12 @@ define ["jquery"
 		#template is shown on the region when a .show is passed this view
 		template: TranslationUtil.geti18nTemplate NavBarTemplate
 
-		initialize: () ->
+		initialize:  ->
 			Backbone.Events.on "userModel:loginsuccess", @showUsernameOnNavBar, @
 			Backbone.Events.on "userModel:logout", @blankUsernameOnNavBar, @
 			
 
-		blankUsernameOnNavBar: () ->
+		blankUsernameOnNavBar:  ->
 			$("#username_navbar").html('...')
 
 		showUsernameOnNavBar: (userModel) ->

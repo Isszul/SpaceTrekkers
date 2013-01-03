@@ -32,7 +32,7 @@ define ["backbone"
 			@app_router.showDesktop() #if we are on the desktop the navigate call does nothing below
 			@app_router.navigate '#desktop', true
 
-		handleUserLogout: () ->
+		handleUserLogout:  ->
 			delete @Models.userModel
 
 	# Setup the regions we will use on the page

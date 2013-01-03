@@ -32,19 +32,19 @@ define ["backbone"
 			@
 
 		#Shows the desktop in the main Region
-		showDesktop: () ->
+		showDesktop:  ->
 			@app.mainRegion.show @app.Views.desktopView
 
 		#Show the placeholder
-		showPlaceHolder: () ->
+		showPlaceHolder:  ->
 			@app.mainRegion.show @app.Views.placeHolder
 
 		#Raise a user logged out event
-		logoutUser: () ->
+		logoutUser:  ->
 			Backbone.Events.trigger "userModel:logout"			
 
 		#check if there is a usermodel @ app.models.userModel
-		checkLoggedIn: () ->
+		checkLoggedIn:  ->
 			@app.mainRegion.show @app.Views.loginView if not @app.Models.userModel?
 
 

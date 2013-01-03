@@ -15,6 +15,7 @@ require ["LoginView"
 			testRegion = new Backbone.Marionette.Region
 				el: "#testRegion"
 			@
+			
 
 		afterEach ->
   			loginView = null
@@ -22,6 +23,7 @@ require ["LoginView"
   			$('#testRegion').html ''
   			$('#mainLoginDiv').modal "hide" 
   			@
+  			
 
 		it "should initialize with the default login view template ", -> 
   			expect(loginView.template).toEqual LoginTemplate

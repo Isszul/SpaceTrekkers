@@ -13,19 +13,19 @@ define ["jquery"
 		#template is shown on the region when a .show is passed this view
 		template: TranslationUtil.geti18nTemplate LoginTemplate
 		
-		initialize: () ->
+		initialize:  ->
 			Backbone.Events.on "userModel:loginfailure", @showFailedLoginMessage, @
 
 		#Show a message explaining that the user has failed to log in
-		showFailedLoginMessage: () -> 
+		showFailedLoginMessage:  -> 
 			$('#loginMessage').html TranslationUtil.geti18nString "failed_login"
 			
 		#Close the login modal
-		hide: () ->
+		hide:  ->
 			$("#mainLoginDiv").modal "hide"
 			
 		#Show a modal form to prompt for login details
-		onShow: () -> 
+		onShow:  -> 
 
 			$("#mainLoginDiv").modal
 				keyboard: false
