@@ -4,11 +4,12 @@ define ["backbone"
 ], (Backbone, nls, Handlebars) ->
 
 	#Class def for the model
-	TranslationUtil = Backbone.Model.extend(
+	TranslationUtil = Backbone.Model.extend
 
 		#translates a single string
 		geti18nString: (value) ->
-			nls[value] 
+			if nls[value]? then return nls[value] else return value
+
 
 
 		#Translation a whole page with additional options 
@@ -16,5 +17,5 @@ define ["backbone"
 			_template = Handlebars.compile(template)({ nls: nls, options: options })
 			_template
 
-	)
+	
 	new TranslationUtil()
