@@ -2,7 +2,7 @@ define ["backbone"
 ], (Backbone) ->
 
 	#Class def for the model
-	TranslationUtil = Backbone.Model.extend(
+	TranslationUtil = Backbone.Model.extend
 
 		#translates a single string
 		geti18nString: (value) ->
@@ -12,5 +12,5 @@ define ["backbone"
 		geti18nTemplate: (template, options) ->
 			template
 			
-	)
+	
 	new TranslationUtil()

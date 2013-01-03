@@ -32,19 +32,11 @@
 	"buffers":
 	[
 		{
-			"file": "src/templates/login/loginTemplate.html",
+			"file": "src/libs/bootstrap/bootstrap.js",
 			"settings":
 			{
-				"buffer_size": 836,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/js/router.coffee",
-			"settings":
-			{
-				"buffer_size": 1716,
-				"line_ending": "Windows"
+				"buffer_size": 58528,
+				"line_ending": "Unix"
 			}
 		}
 	],
@@ -72,6 +64,8 @@
 	},
 	"file_history":
 	[
+		"/Users/alexthomas/Documents/workspace/MarionetteBase/src/templates/login/loginTemplate.html",
+		"/Users/alexthomas/Documents/workspace/MarionetteBase/src/js/router.coffee",
 		"/E/Project/MarionetteBase-Coffeescript/src/js/views/login/LoginView.coffee",
 		"/E/Project/MarionetteBase-Coffeescript/src/js/nls/root/general.coffee",
 		"/E/Project/MarionetteBase-Coffeescript/src/js/views/navbar/NavBarView.coffee",
@@ -197,9 +191,7 @@
 		"/C/Users/Alex/Desktop/modular-backbone/js/spec/SpecHelper.js",
 		"/C/Users/Alex/Desktop/modular-backbone/js/models/user/unitTest.html",
 		"/C/Users/Alex/Desktop/Jasmine/spec/PlayerSpec.js",
-		"/C/Users/Alex/Desktop/Jasmine/spec/SpecHelper.js",
-		"/C/Users/Alex/Desktop/Jasmine/src/Player.js",
-		"/C/Users/Alex/Desktop/Jasmine/SpecRunner.MyObject.html"
+		"/C/Users/Alex/Desktop/Jasmine/spec/SpecHelper.js"
 	],
 	"find":
 	{
@@ -246,56 +238,30 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 0,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "src/templates/login/loginTemplate.html",
+					"file": "src/libs/bootstrap/bootstrap.js",
 					"settings":
 					{
-						"buffer_size": 836,
+						"buffer_size": 58528,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								836,
-								836
+								0,
+								0
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "src/js/router.coffee",
-					"settings":
-					{
-						"buffer_size": 1716,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1205,
-								1234
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,

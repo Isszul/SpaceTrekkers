@@ -6,7 +6,7 @@ define ["jquery"
 ], ($, _, Marionette, NavBarTemplate, TranslationUtil) ->
 
 	# Class def for the view.
-	NavBarView = Marionette.ItemView.extend(
+	NavBarView = Marionette.ItemView.extend
 	
 		#template is shown on the region when a .show is passed this view
 		template: TranslationUtil.geti18nTemplate NavBarTemplate
@@ -14,7 +14,6 @@ define ["jquery"
 		showUsernameOnNavBar: (username) ->
 			$("#username_navbar").html(username)
 
-	)
   
 	#Return the class definition
 	NavBarView

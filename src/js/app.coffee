@@ -3,15 +3,15 @@ define ["backbone"
 		"router"
 		"models/user/UserModel"
 		"views/login/LoginView"
-		"views/desktop/DesktopView"
 		"views/navbar/NavBarView"
-], (Backbone, Marionette, Router, UserModel, LoginView, DesktopView, NavBarView) ->
+		"views/plainOldTemplate/PlainOldTemplate"
+], (Backbone, Marionette, Router, UserModel, LoginView, NavBarView, PlainOldTemplate) ->
 
 	"use strict"
 	
 	# Class definition for the main Application
 	
-	app = new Marionette.Application(
+	app = new Marionette.Application
 		
 		# Single Models
 		Models: {}
@@ -22,9 +22,9 @@ define ["backbone"
 		#Registered views
 		Views:
 			loginView: new LoginView()
-			desktopView: new DesktopView()
+			desktopView: new PlainOldTemplate("templates/desktop/desktopTemplate.html")
 			navBarView: new NavBarView()
-	)
+	
 	
 	# Setup the regions we will use on the page
 	app.addRegions 

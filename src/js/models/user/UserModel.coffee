@@ -2,7 +2,7 @@ define ["backbone"
 ], (Backbone) ->
 
 	#Class def for the user model
-	userModel = Backbone.Model.extend(
+	userModel = Backbone.Model.extend
 		
 		#Defaults values passed on empty contruction
 		defaults:
@@ -39,7 +39,7 @@ define ["backbone"
 				error: (userModel, jqXHR, options) ->
 					Backbone.Events.trigger "userModel:loginfailure", userModel
 
-	)
+	
 	
 	#Return the userModel definition
 	userModel

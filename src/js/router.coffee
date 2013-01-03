@@ -5,7 +5,7 @@ define ["backbone"
 	"use strict"
 
 	# Class definition for the AppRouter
-	AppRouter = Marionette.AppRouter.extend(
+	AppRouter = Marionette.AppRouter.extend
 			
 		#configures routes, these link the "/#" urls to functions.
 		routes:
@@ -56,5 +56,5 @@ define ["backbone"
 		handleUnsuccessfulUserLogin: () ->
 			@app.Views.loginView.showFailedLoginMessage()
 			
-	)
+	
 	AppRouter

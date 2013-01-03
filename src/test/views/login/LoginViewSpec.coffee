@@ -12,9 +12,8 @@ require ["LoginView"
 
 		beforeEach ->
 			loginView = new LoginView()
-			testRegion = new Backbone.Marionette.Region( 
+			testRegion = new Backbone.Marionette.Region
 				el: "#testRegion"
-			)
 			@
 
 		afterEach ->

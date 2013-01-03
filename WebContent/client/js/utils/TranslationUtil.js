@@ -3,7 +3,13 @@ define(["backbone", "i18n!nls/general", "handlebars"], function(Backbone, nls, H
   var TranslationUtil;
   TranslationUtil = Backbone.Model.extend({
     geti18nString: function(value) {
-      return nls[value];
+      var retVal;
+      if (nls[value] != null) {
+        retVal = nls[value];
+      } else {
+        retVal = value;
+      }
+      return retVal;
     },
     geti18nTemplate: function(template, options) {
       var _template;

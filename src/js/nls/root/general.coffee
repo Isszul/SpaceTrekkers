@@ -13,4 +13,6 @@ define
 	welcome_dialog_text: "Hello!"
 
 	logged_in_as: "Logged in as"
+
+	loading: "Loading..."
   

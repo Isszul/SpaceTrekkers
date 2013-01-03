@@ -9,9 +9,8 @@ require ["NavBarView"
 
 		beforeEach () ->
 			navBarView = new NavBarView()
-			testRegion = new Backbone.Marionette.Region( 
+			testRegion = new Backbone.Marionette.Region
 				el: "#testRegion"
-			)
 			@
 			
 		afterEach () ->
