@@ -8,7 +8,8 @@ define ["backbone"
 
 		#translates a single string
 		geti18nString: (value) ->
-			if nls[value]? then return nls[value] else return value
+			if nls[value]? then retVal = nls[value] else retVal = value
+			retVal
 
 
 
