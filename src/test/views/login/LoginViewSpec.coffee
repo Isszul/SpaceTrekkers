@@ -20,7 +20,7 @@ require ["LoginView"
   			loginView = null
   			testRegion = null
   			$('#testRegion').html ''
-  			$('#mainLoginDiv').dialog "close" 
+  			$('#mainLoginDiv').modal "hide" 
   			@
 
 		it "should initialize with the default login view template ", -> 
@@ -33,8 +33,8 @@ require ["LoginView"
 		it "should attempt a user login when the login button is clicked", ->
 			testRegion.show(loginView)
 			eventCallback = sinon.spy()
-			Backbone.Events.on "userModel:attemptLogin", eventCallback, this
-			$('#mainLoginDiv').dialog('option', 'buttons').loginButton.click()
+			Backbone.Events.on "userModel:attemptLogin", eventCallback, @
+			$("#loginButton").click()
 			expect(eventCallback.calledOnce).toBeTruthy()
 			
 			

@@ -27,9 +27,9 @@ define(["backbone", "backbone.marionette", "router", "models/user/UserModel", "v
     mainRegion: "#mainRegion"
   });
   app.addInitializer(function() {
+    this.app_router = new Router(this);
     Backbone.Events.on("userModel:logout", this.handleUserLogout, this);
     Backbone.Events.on("userModel:loginsuccess", this.handleSuccessfulUserLogin, this);
-    this.app_router = new Router(this);
     return Backbone.history.start();
   });
   return app;

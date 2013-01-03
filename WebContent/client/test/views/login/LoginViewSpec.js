@@ -15,7 +15,7 @@ require(["LoginView", "text!templates/login/loginTemplate.html", "sinon", "jquer
       loginView = null;
       testRegion = null;
       $('#testRegion').html('');
-      $('#mainLoginDiv').dialog("close");
+      $('#mainLoginDiv').modal("hide");
       return this;
     });
     it("should initialize with the default login view template ", function() {
@@ -30,7 +30,7 @@ require(["LoginView", "text!templates/login/loginTemplate.html", "sinon", "jquer
       testRegion.show(loginView);
       eventCallback = sinon.spy();
       Backbone.Events.on("userModel:attemptLogin", eventCallback, this);
-      $('#mainLoginDiv').dialog('option', 'buttons').loginButton.click();
+      $("#loginButton").click();
       return expect(eventCallback.calledOnce).toBeTruthy();
     });
   });

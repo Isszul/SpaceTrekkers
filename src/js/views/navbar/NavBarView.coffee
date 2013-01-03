@@ -12,8 +12,8 @@ define ["jquery"
 		template: TranslationUtil.geti18nTemplate NavBarTemplate
 
 		initialize: () ->
-			Backbone.Events.on "userModel:loginsuccess", @showUsernameOnNavBar, this
-			Backbone.Events.on "userModel:logout", @blankUsernameOnNavBar, this
+			Backbone.Events.on "userModel:loginsuccess", @showUsernameOnNavBar, @
+			Backbone.Events.on "userModel:logout", @blankUsernameOnNavBar, @
 			
 
 		blankUsernameOnNavBar: () ->

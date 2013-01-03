@@ -14,7 +14,7 @@ define ["jquery"
 		template: TranslationUtil.geti18nTemplate LoginTemplate
 		
 		initialize: () ->
-			Backbone.Events.on "userModel:loginfailure", @showFailedLoginMessage, this
+			Backbone.Events.on "userModel:loginfailure", @showFailedLoginMessage, @
 
 		#Show a message explaining that the user has failed to log in
 		showFailedLoginMessage: () -> 
@@ -35,10 +35,10 @@ define ["jquery"
 			$("#loginButton").click (e) ->
 				e.preventDefault()
 				#Create a user model and attempt a login
-				new UserModel(
+				new UserModel
 				  username: $("#username").val()
 				  password: $("#password").val()
-				).attemptLogin()
+				.attemptLogin()
 													
 			#By Default focus on the username input
 			$('#username').focus()

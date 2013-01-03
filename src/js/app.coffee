@@ -42,9 +42,9 @@ define ["backbone"
 	
 	# Add an initializer to setup the router
 	app.addInitializer ->
-		Backbone.Events.on "userModel:logout", @handleUserLogout, this
-		Backbone.Events.on "userModel:loginsuccess", @handleSuccessfulUserLogin, this
-		@app_router = new Router this
+		@app_router = new Router @
+		Backbone.Events.on "userModel:logout", @handleUserLogout, @
+		Backbone.Events.on "userModel:loginsuccess", @handleSuccessfulUserLogin, @
 		Backbone.history.start()
 
 		

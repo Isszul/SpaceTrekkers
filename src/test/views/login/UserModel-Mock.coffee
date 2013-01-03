@@ -5,7 +5,7 @@ define ["backbone"
 	userModelMock = Backbone.Model.extend
 		#Public function to attempt the login.
 		attemptLogin: ->
-			Backbone.Events.trigger "userModel:attemptLogin", this
+			Backbone.Events.trigger "userModel:attemptLogin", @
 
   
   #Return the userModel-Mock definition

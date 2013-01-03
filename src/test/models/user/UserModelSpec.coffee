@@ -25,7 +25,7 @@ require ["UserModel",
 			eventCallback = sinon.spy()
 			server = sinon.fakeServer.create()
 			
-			Backbone.Events.on "userModel:loginfailure", eventCallback, this
+			Backbone.Events.on "userModel:loginfailure", eventCallback, @
 			
 			userModel.attemptLogin()
 			
@@ -42,7 +42,7 @@ require ["UserModel",
 			eventCallback = sinon.spy()
 			server = sinon.fakeServer.create()
 			
-			Backbone.Events.on "userModel:loginfailure", eventCallback, this
+			Backbone.Events.on "userModel:loginfailure", eventCallback, @
 			
 			userModel.attemptLogin()
 			
@@ -59,7 +59,7 @@ require ["UserModel",
 			eventCallback = sinon.spy()
 			server = sinon.fakeServer.create()
 			
-			Backbone.Events.on "userModel:loginsuccess", eventCallback, this
+			Backbone.Events.on "userModel:loginsuccess", eventCallback, @
 			
 			userModel.attemptLogin()
 			
