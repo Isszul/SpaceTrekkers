@@ -24,6 +24,7 @@ define ["backbone"
 			loginView: new LoginView()
 			desktopView: new PlainOldTemplate("templates/desktop/desktopTemplate.html")
 			navBarView: new NavBarView()
+			placeHolder: new PlainOldTemplate("templates/placeHolder/placeHolderTemplate.html")
 	
 	
 	# Setup the regions we will use on the page
@@ -35,7 +36,16 @@ define ["backbone"
 	app.addInitializer ->
 		@app_router = new Router this
 		Backbone.history.start()
+
 		
 	app
 
 	
+
+
+
+
+
+
+
+

@@ -15,6 +15,9 @@ define ["backbone"
 
 			#logout route
 			"logout": "logoutUser"
+
+			#placeholder
+			"placeholder": "showPlaceHolder"
 			
 			# Default route
 			"": "showDesktop"
@@ -34,11 +37,15 @@ define ["backbone"
 		showDesktop: () ->
 			@app.mainRegion.show @app.Views.desktopView
 
+		#Show the placeholder
+		showPlaceHolder: () ->
+			@app.mainRegion.show @app.Views.placeHolder
+
 		#Logs the user out (deletes app.Models.userModel)
 		logoutUser: () ->
 			delete @app.Models.userModel
-			@app.Views.navBarView.showUsernameOnNavBar "..."
-			@navigate('#')
+			Backbone.Events.trigger "userModel:logout"
+			
 
 		#check if there is a usermodel @ app.models.userModel
 		checkLoggedIn: () ->
@@ -47,10 +54,10 @@ define ["backbone"
 		#Handles a successful login attempt and navigates the user to the desktop.
 		handleSuccessfulUserLogin: (userModel) ->
 			@app.Views.loginView.hide()
-			@showDesktop()
 			@app.Models.userModel = userModel
-			@app.Views.navBarView.showUsernameOnNavBar userModel.username
-			@
+			@showDesktop() #if we are on the desktop the navigate call does nothing below
+			@navigate '#desktop', true
+			
 			
 		#Handles an unsuccessful login attempt and instructs the login view to show an error message
 		handleUnsuccessfulUserLogin: () ->

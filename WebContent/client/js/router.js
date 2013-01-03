@@ -7,6 +7,7 @@ define(["backbone", "backbone.marionette"], function(Backbone, Marionette) {
     routes: {
       "desktop": "showDesktop",
       "logout": "logoutUser",
+      "placeholder": "showPlaceHolder",
       "": "showDesktop"
     },
     initialize: function(app) {
@@ -20,10 +21,12 @@ define(["backbone", "backbone.marionette"], function(Backbone, Marionette) {
     showDesktop: function() {
       return this.app.mainRegion.show(this.app.Views.desktopView);
     },
+    showPlaceHolder: function() {
+      return this.app.mainRegion.show(this.app.Views.placeHolder);
+    },
     logoutUser: function() {
       delete this.app.Models.userModel;
-      this.app.Views.navBarView.showUsernameOnNavBar("...");
-      return this.navigate('#');
+      return Backbone.Events.trigger("userModel:logout");
     },
     checkLoggedIn: function() {
       if (!(this.app.Models.userModel != null)) {
@@ -32,10 +35,9 @@ define(["backbone", "backbone.marionette"], function(Backbone, Marionette) {
     },
     handleSuccessfulUserLogin: function(userModel) {
       this.app.Views.loginView.hide();
-      this.showDesktop();
       this.app.Models.userModel = userModel;
-      this.app.Views.navBarView.showUsernameOnNavBar(userModel.username);
-      return this;
+      this.showDesktop();
+      return this.navigate('#desktop', true);
     },
     handleUnsuccessfulUserLogin: function() {
       return this.app.Views.loginView.showFailedLoginMessage();

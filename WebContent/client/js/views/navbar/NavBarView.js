@@ -3,8 +3,15 @@ define(["jquery", "underscore", "backbone.marionette", "text!templates/navbar/na
   var NavBarView;
   NavBarView = Marionette.ItemView.extend({
     template: TranslationUtil.geti18nTemplate(NavBarTemplate),
-    showUsernameOnNavBar: function(username) {
-      return $("#username_navbar").html(username);
+    initialize: function() {
+      Backbone.Events.on("userModel:loginsuccess", this.showUsernameOnNavBar, this);
+      return Backbone.Events.on("userModel:logout", this.blankUsernameOnNavBar, this);
+    },
+    blankUsernameOnNavBar: function() {
+      return $("#username_navbar").html('...');
+    },
+    showUsernameOnNavBar: function(userModel) {
+      return $("#username_navbar").html(userModel.username);
     }
   });
   return NavBarView;

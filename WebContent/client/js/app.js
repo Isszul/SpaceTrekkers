@@ -9,7 +9,8 @@ define(["backbone", "backbone.marionette", "router", "models/user/UserModel", "v
     Views: {
       loginView: new LoginView(),
       desktopView: new PlainOldTemplate("templates/desktop/desktopTemplate.html"),
-      navBarView: new NavBarView()
+      navBarView: new NavBarView(),
+      placeHolder: new PlainOldTemplate("templates/placeHolder/placeHolderTemplate.html")
     }
   });
   app.addRegions({
