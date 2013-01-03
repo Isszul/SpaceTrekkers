@@ -3,6 +3,9 @@ define(["jquery", "underscore", "backbone.marionette", "models/user/UserModel", 
   var LoginView;
   LoginView = Marionette.ItemView.extend({
     template: TranslationUtil.geti18nTemplate(LoginTemplate),
+    initialize: function() {
+      return Backbone.Events.on("userModel:loginfailure", this.showFailedLoginMessage, this);
+    },
     showFailedLoginMessage: function() {
       return $('#loginMessage').html(TranslationUtil.geti18nString("failed_login"));
     },

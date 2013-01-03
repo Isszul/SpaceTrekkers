@@ -11,6 +11,15 @@ define(["backbone", "backbone.marionette", "router", "models/user/UserModel", "v
       desktopView: new PlainOldTemplate("templates/desktop/desktopTemplate.html"),
       navBarView: new NavBarView(),
       placeHolder: new PlainOldTemplate("templates/placeHolder/placeHolderTemplate.html")
+    },
+    handleSuccessfulUserLogin: function(userModel) {
+      this.Views.loginView.hide();
+      this.Models.userModel = userModel;
+      this.app_router.showDesktop();
+      return this.app_router.navigate('#desktop', true);
+    },
+    handleUserLogout: function() {
+      return delete this.Models.userModel;
     }
   });
   app.addRegions({
@@ -18,6 +27,8 @@ define(["backbone", "backbone.marionette", "router", "models/user/UserModel", "v
     mainRegion: "#mainRegion"
   });
   app.addInitializer(function() {
+    Backbone.Events.on("userModel:logout", this.handleUserLogout, this);
+    Backbone.Events.on("userModel:loginsuccess", this.handleSuccessfulUserLogin, this);
     this.app_router = new Router(this);
     return Backbone.history.start();
   });
