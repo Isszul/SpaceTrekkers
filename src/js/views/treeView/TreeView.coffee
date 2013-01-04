@@ -29,7 +29,7 @@ define ["jquery"
 							"data" : "child2"
 						]
 					]
-				"plugins" : [ "themes", "json_data", "ui", "crrm" ]
+				"plugins" : [ "themes", "json_data", "ui", "crrm", "contextmenu" ]
 
 
   

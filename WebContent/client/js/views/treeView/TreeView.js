@@ -27,7 +27,7 @@ define(["jquery", "underscore", "backbone.marionette", "text!templates/tree/tree
             }
           ]
         },
-        "plugins": ["themes", "json_data", "ui", "crrm"]
+        "plugins": ["themes", "json_data", "ui", "crrm", "contextmenu"]
       });
     }
   });
