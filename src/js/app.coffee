@@ -5,7 +5,8 @@ define ["backbone"
 		"views/login/LoginView"
 		"views/navbar/NavBarView"
 		"views/plainOldTemplate/PlainOldTemplate"
-], (Backbone, Marionette, Router, UserModel, LoginView, NavBarView, PlainOldTemplate) ->
+		"views/treeView/TreeView"
+], (Backbone, Marionette, Router, UserModel, LoginView, NavBarView, PlainOldTemplate, TreeView) ->
 
 	"use strict"
 	
@@ -25,6 +26,7 @@ define ["backbone"
 			desktopView: new PlainOldTemplate("templates/desktop/desktopTemplate.html")
 			navBarView: new NavBarView()
 			placeHolder: new PlainOldTemplate("templates/placeHolder/placeHolderTemplate.html")
+			treeView: new TreeView()
 	
 		handleSuccessfulUserLogin: (userModel) ->
 			@Views.loginView.hide()

@@ -3,6 +3,7 @@ define({
   app_title: "Marionette+Bootstrap Base",
   desktop: "Desktop",
   logout: "Logout",
+  tree: "Tree",
   username_label: "Username",
   password_label: "Password",
   login_label: "Login",

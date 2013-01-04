@@ -1,5 +1,5 @@
 
-define(["backbone", "backbone.marionette", "router", "models/user/UserModel", "views/login/LoginView", "views/navbar/NavBarView", "views/plainOldTemplate/PlainOldTemplate"], function(Backbone, Marionette, Router, UserModel, LoginView, NavBarView, PlainOldTemplate) {
+define(["backbone", "backbone.marionette", "router", "models/user/UserModel", "views/login/LoginView", "views/navbar/NavBarView", "views/plainOldTemplate/PlainOldTemplate", "views/treeView/TreeView"], function(Backbone, Marionette, Router, UserModel, LoginView, NavBarView, PlainOldTemplate, TreeView) {
   "use strict";
 
   var app;
@@ -10,7 +10,8 @@ define(["backbone", "backbone.marionette", "router", "models/user/UserModel", "v
       loginView: new LoginView(),
       desktopView: new PlainOldTemplate("templates/desktop/desktopTemplate.html"),
       navBarView: new NavBarView(),
-      placeHolder: new PlainOldTemplate("templates/placeHolder/placeHolderTemplate.html")
+      placeHolder: new PlainOldTemplate("templates/placeHolder/placeHolderTemplate.html"),
+      treeView: new TreeView()
     },
     handleSuccessfulUserLogin: function(userModel) {
       this.Views.loginView.hide();

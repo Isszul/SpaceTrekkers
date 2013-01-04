@@ -8,6 +8,7 @@ define(["backbone", "backbone.marionette"], function(Backbone, Marionette) {
       "desktop": "showDesktop",
       "logout": "logoutUser",
       "placeholder": "showPlaceHolder",
+      "tree": "showTree",
       "": "showDesktop"
     },
     initialize: function(app) {
@@ -15,6 +16,9 @@ define(["backbone", "backbone.marionette"], function(Backbone, Marionette) {
       this.app = app;
       this.app.navBar.show(this.app.Views.navBarView);
       return this;
+    },
+    showTree: function() {
+      return this.app.mainRegion.show(this.app.Views.treeView);
     },
     showDesktop: function() {
       return this.app.mainRegion.show(this.app.Views.desktopView);

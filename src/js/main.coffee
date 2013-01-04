@@ -14,6 +14,8 @@ require.config
 		router: "router"
 		templates: "../templates"
 		jquery: "../libs/jquery/jquery-min"
+		jqueryhotkeys: "../libs/jquery/jquery.hotkeys"
+		jstree: "../libs/jquery/jquery.jstree"
 		bootstrap: "../libs/bootstrap/bootstrap"
 		underscore: "../libs/underscore/underscore1.4.3-min"
 		text: "../libs/text/text"
@@ -34,6 +36,12 @@ require.config
 
 		jquery:
 			exports: "$"
+
+		jqueryhotkeys:
+			deps: ["jquery"]
+
+		jstree:
+			deps: ["jquery"]
 			
 		bootstrap:
 			deps: ["jquery"]
