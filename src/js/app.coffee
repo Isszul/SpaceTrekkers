@@ -5,7 +5,7 @@ define ["backbone"
 		"views/login/LoginView"
 		"views/navbar/NavBarView"
 		"views/plainOldTemplate/PlainOldTemplate"
-		"views/treeView/TreeView"
+		"views/tree/TreeView"
 ], (Backbone, Marionette, Router, UserModel, LoginView, NavBarView, PlainOldTemplate, TreeView) ->
 
 	"use strict"
