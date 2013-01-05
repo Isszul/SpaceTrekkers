@@ -7,7 +7,7 @@ define ["jquery"
 ], ($, _, Marionette, TreeTemplate, TranslationUtil, jstree) ->
 
 	# Class def for the view.
-	TreeView = Marionette.ItemView.extend
+	TreeView = Marionette.View.extend
 	
 		#template is shown on the region when a .show is passed this view
 		template: TranslationUtil.geti18nTemplate TreeTemplate

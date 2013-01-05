@@ -1,7 +1,7 @@
 
 define(["jquery", "underscore", "backbone.marionette", "models/user/UserModel", "text!templates/login/loginTemplate.html", "translationUtil", "bootstrap"], function($, _, Marionette, UserModel, LoginTemplate, TranslationUtil) {
   var LoginView;
-  LoginView = Marionette.ItemView.extend({
+  LoginView = Marionette.View.extend({
     template: TranslationUtil.geti18nTemplate(LoginTemplate),
     initialize: function() {
       return Backbone.Events.on("userModel:loginfailure", this.showFailedLoginMessage, this);

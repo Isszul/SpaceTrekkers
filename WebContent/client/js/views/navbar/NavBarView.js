@@ -1,7 +1,7 @@
 
 define(["jquery", "underscore", "backbone.marionette", "text!templates/navbar/navBarTemplate.html", "translationUtil"], function($, _, Marionette, NavBarTemplate, TranslationUtil) {
   var NavBarView;
-  NavBarView = Marionette.ItemView.extend({
+  NavBarView = Marionette.View.extend({
     template: TranslationUtil.geti18nTemplate(NavBarTemplate),
     initialize: function() {
       Backbone.Events.on("userModel:loginsuccess", this.showUsernameOnNavBar, this);

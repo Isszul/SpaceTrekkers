@@ -1,7 +1,7 @@
 
 define(["jquery", "underscore", "backbone.marionette", "translationUtil"], function($, _, Marionette, TranslationUtil) {
   var plainOldTemplateView;
-  plainOldTemplateView = Marionette.ItemView.extend({
+  plainOldTemplateView = Marionette.View.extend({
     template: "<div>" + TranslationUtil.geti18nString('loading' + "</div>"),
     initialize: function(templateFileName) {
       var _template;

@@ -8,7 +8,7 @@ define ["jquery"
 ], ($, _, Marionette, UserModel, LoginTemplate, TranslationUtil) ->
 
 	# Class def for the login view.
-	LoginView = Marionette.ItemView.extend
+	LoginView = Marionette.View.extend
 	
 		#template is shown on the region when a .show is passed this view
 		template: TranslationUtil.geti18nTemplate LoginTemplate

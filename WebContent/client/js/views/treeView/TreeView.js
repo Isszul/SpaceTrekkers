@@ -1,7 +1,7 @@
 
 define(["jquery", "underscore", "backbone.marionette", "text!templates/tree/treeTemplate.html", "translationUtil", "jstree"], function($, _, Marionette, TreeTemplate, TranslationUtil, jstree) {
   var TreeView;
-  TreeView = Marionette.ItemView.extend({
+  TreeView = Marionette.View.extend({
     template: TranslationUtil.geti18nTemplate(TreeTemplate),
     onShow: function() {
       return $("#tree").jstree({

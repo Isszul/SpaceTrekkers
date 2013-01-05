@@ -5,7 +5,7 @@ define ["jquery"
 ], ($, _, Marionette, TranslationUtil) ->
 
 	# Class def for the view.
-	plainOldTemplateView = Marionette.ItemView.extend
+	plainOldTemplateView = Marionette.View.extend
 
 		template: "<div>" + TranslationUtil.geti18nString 'loading' + "</div>"
 
