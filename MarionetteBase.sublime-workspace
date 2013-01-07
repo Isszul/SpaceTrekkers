@@ -31,22 +31,6 @@
 	},
 	"buffers":
 	[
-		{
-			"file": "src/index.html",
-			"settings":
-			{
-				"buffer_size": 849,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/js/app.coffee",
-			"settings":
-			{
-				"buffer_size": 1453,
-				"line_ending": "Windows"
-			}
-		}
 	],
 	"build_system": "Packages/Java/Ant.sublime-build",
 	"command_palette":
@@ -72,6 +56,13 @@
 	},
 	"file_history":
 	[
+		"/C/MarionetteBase/src/js/views/login/LoginView.coffee",
+		"/C/MarionetteBase/src/js/router.coffee",
+		"/C/MarionetteBase/src/js/modules/user/UserModule.coffee",
+		"/C/MarionetteBase/src/js/app.coffee",
+		"/C/MarionetteBase/src/js/models/user/UserModel.coffee",
+		"/C/MarionetteBase/src/js/main.coffee",
+		"/C/MarionetteBase/src/index.html",
 		"/C/MarionetteBase/src/libs/bootstrap/bootstrap.js",
 		"/Users/alexthomas/Documents/workspace/MarionetteBase/src/templates/login/loginTemplate.html",
 		"/Users/alexthomas/Documents/workspace/MarionetteBase/src/js/router.coffee",
@@ -192,14 +183,7 @@
 		"/C/Users/Alex/Desktop/modular-backbone/js/views/login/LoginViewSpec.js",
 		"/C/Users/Alex/Desktop/modular-backbone/js/models/user/TestRunner.html",
 		"/C/Users/Alex/Desktop/modular-backbone/TestRunner.html",
-		"/C/Users/Alex/Desktop/modular-backbone/templates/TestRunner.html",
-		"/C/Users/Alex/Desktop/modular-backbone/SpecRunner.html",
-		"/C/Users/Alex/Desktop/modular-backbone/js/spec/MainAppSpec.js",
-		"/C/Users/Alex/Desktop/Jasmine/SpecRunner.html",
-		"/C/Users/Alex/Desktop/modular-backbone/js/spec/PlayerSpec.js",
-		"/C/Users/Alex/Desktop/modular-backbone/js/spec/SpecHelper.js",
-		"/C/Users/Alex/Desktop/modular-backbone/js/models/user/unitTest.html",
-		"/C/Users/Alex/Desktop/Jasmine/spec/PlayerSpec.js"
+		"/C/Users/Alex/Desktop/modular-backbone/templates/TestRunner.html"
 	],
 	"find":
 	{
@@ -246,63 +230,8 @@
 	"groups":
 	[
 		{
-			"selected": 1,
 			"sheets":
 			[
-				{
-					"buffer": 0,
-					"file": "src/index.html",
-					"settings":
-					{
-						"buffer_size": 849,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								764,
-								764
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "src/js/app.coffee",
-					"settings":
-					{
-						"buffer_size": 1453,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								419,
-								419
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Text/Plain text.tmLanguage",
-							"translate_tabs_to_spaces": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				}
 			]
 		}
 	],

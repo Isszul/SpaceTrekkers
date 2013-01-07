@@ -1,13 +1,12 @@
 define ["backbone"
 		"backbone.marionette"
 		"router"
-		"models/user/UserModel"
-		"views/login/LoginView"
+		"modules/user/UserModule"
 		"views/navbar/NavBarView"
 		"views/plainOldTemplate/PlainOldTemplate"
 		"views/tree/TreeView"
-		"modules/user/UserModule"
-], (Backbone, Marionette, Router, UserModel, LoginView, NavBarView, PlainOldTemplate, TreeView, UserModule) ->
+		
+], (Backbone, Marionette, Router, UserModule, NavBarView, PlainOldTemplate, TreeView ) ->
 
 	"use strict"
 	
@@ -23,7 +22,6 @@ define ["backbone"
 		
 		#Registered views
 		Views:
-			loginView: new LoginView()
 			desktopView: new PlainOldTemplate("templates/desktop/desktopTemplate.html")
 			navBarView: new NavBarView()
 			placeHolder: new PlainOldTemplate("templates/placeHolder/placeHolderTemplate.html")

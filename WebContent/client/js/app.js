@@ -1,5 +1,5 @@
 
-define(["backbone", "backbone.marionette", "router", "models/user/UserModel", "views/login/LoginView", "views/navbar/NavBarView", "views/plainOldTemplate/PlainOldTemplate", "views/tree/TreeView", "modules/user/UserModule"], function(Backbone, Marionette, Router, UserModel, LoginView, NavBarView, PlainOldTemplate, TreeView, UserModule) {
+define(["backbone", "backbone.marionette", "router", "modules/user/UserModule", "views/navbar/NavBarView", "views/plainOldTemplate/PlainOldTemplate", "views/tree/TreeView"], function(Backbone, Marionette, Router, UserModule, NavBarView, PlainOldTemplate, TreeView) {
   "use strict";
 
   var app;
@@ -7,7 +7,6 @@ define(["backbone", "backbone.marionette", "router", "models/user/UserModel", "v
     Models: {},
     Collections: {},
     Views: {
-      loginView: new LoginView(),
       desktopView: new PlainOldTemplate("templates/desktop/desktopTemplate.html"),
       navBarView: new NavBarView(),
       placeHolder: new PlainOldTemplate("templates/placeHolder/placeHolderTemplate.html"),
