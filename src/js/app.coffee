@@ -6,7 +6,8 @@ define ["backbone"
 		"views/navbar/NavBarView"
 		"views/plainOldTemplate/PlainOldTemplate"
 		"views/tree/TreeView"
-], (Backbone, Marionette, Router, UserModel, LoginView, NavBarView, PlainOldTemplate, TreeView) ->
+		"modules/user/UserModule"
+], (Backbone, Marionette, Router, UserModel, LoginView, NavBarView, PlainOldTemplate, TreeView, UserModule) ->
 
 	"use strict"
 	
@@ -28,14 +29,9 @@ define ["backbone"
 			placeHolder: new PlainOldTemplate("templates/placeHolder/placeHolderTemplate.html")
 			treeView: new TreeView()
 	
-		handleSuccessfulUserLogin: (userModel) ->
-			@Views.loginView.hide()
-			@Models.userModel = userModel
-			@app_router.showDesktop() #if we are on the desktop the navigate call does nothing below
-			@app_router.navigate '#desktop', true
+		loadModules: ->
+			@.module("UserModule", UserModule)
 
-		handleUserLogout:  ->
-			delete @Models.userModel
 
 	# Setup the regions we will use on the page
 	app.addRegions 
@@ -45,9 +41,8 @@ define ["backbone"
 	# Add an initializer to setup the router
 	app.addInitializer ->
 		@app_router = new Router @
-		Backbone.Events.on "userModel:logout", @handleUserLogout, @
-		Backbone.Events.on "userModel:loginsuccess", @handleSuccessfulUserLogin, @
 		Backbone.history.start()
+
 
 		
 	app

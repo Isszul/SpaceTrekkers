@@ -32,11 +32,19 @@
 	"buffers":
 	[
 		{
-			"file": "src/libs/bootstrap/bootstrap.js",
+			"file": "src/index.html",
 			"settings":
 			{
-				"buffer_size": 58528,
-				"line_ending": "Unix"
+				"buffer_size": 849,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "src/js/app.coffee",
+			"settings":
+			{
+				"buffer_size": 1453,
+				"line_ending": "Windows"
 			}
 		}
 	],
@@ -64,6 +72,7 @@
 	},
 	"file_history":
 	[
+		"/C/MarionetteBase/src/libs/bootstrap/bootstrap.js",
 		"/Users/alexthomas/Documents/workspace/MarionetteBase/src/templates/login/loginTemplate.html",
 		"/Users/alexthomas/Documents/workspace/MarionetteBase/src/js/router.coffee",
 		"/E/Project/MarionetteBase-Coffeescript/src/js/views/login/LoginView.coffee",
@@ -190,8 +199,7 @@
 		"/C/Users/Alex/Desktop/modular-backbone/js/spec/PlayerSpec.js",
 		"/C/Users/Alex/Desktop/modular-backbone/js/spec/SpecHelper.js",
 		"/C/Users/Alex/Desktop/modular-backbone/js/models/user/unitTest.html",
-		"/C/Users/Alex/Desktop/Jasmine/spec/PlayerSpec.js",
-		"/C/Users/Alex/Desktop/Jasmine/spec/SpecHelper.js"
+		"/C/Users/Alex/Desktop/Jasmine/spec/PlayerSpec.js"
 	],
 	"find":
 	{
@@ -238,30 +246,56 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "src/libs/bootstrap/bootstrap.js",
+					"file": "src/index.html",
 					"settings":
 					{
-						"buffer_size": 58528,
+						"buffer_size": 849,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								764,
+								764
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "src/js/app.coffee",
+					"settings":
+					{
+						"buffer_size": 1453,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								419,
+								419
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Text/Plain text.tmLanguage",
+							"translate_tabs_to_spaces": false
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,

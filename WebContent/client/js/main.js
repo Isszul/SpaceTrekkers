@@ -84,5 +84,6 @@ DEBUG_MODE = true;
 
 require(["app"], function(App) {
   "use strict";
+  App.loadModules();
   return App.start();
 });

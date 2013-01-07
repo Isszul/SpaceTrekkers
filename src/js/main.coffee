@@ -91,5 +91,5 @@ DEBUG_MODE = true
 require ["app"], (App) ->
 
 	"use strict"
-	
+	App.loadModules()
 	App.start()

@@ -1,5 +1,5 @@
 
-define(["backbone", "backbone.marionette", "router", "models/user/UserModel", "views/login/LoginView", "views/navbar/NavBarView", "views/plainOldTemplate/PlainOldTemplate", "views/tree/TreeView"], function(Backbone, Marionette, Router, UserModel, LoginView, NavBarView, PlainOldTemplate, TreeView) {
+define(["backbone", "backbone.marionette", "router", "models/user/UserModel", "views/login/LoginView", "views/navbar/NavBarView", "views/plainOldTemplate/PlainOldTemplate", "views/tree/TreeView", "modules/user/UserModule"], function(Backbone, Marionette, Router, UserModel, LoginView, NavBarView, PlainOldTemplate, TreeView, UserModule) {
   "use strict";
 
   var app;
@@ -13,14 +13,8 @@ define(["backbone", "backbone.marionette", "router", "models/user/UserModel", "v
       placeHolder: new PlainOldTemplate("templates/placeHolder/placeHolderTemplate.html"),
       treeView: new TreeView()
     },
-    handleSuccessfulUserLogin: function(userModel) {
-      this.Views.loginView.hide();
-      this.Models.userModel = userModel;
-      this.app_router.showDesktop();
-      return this.app_router.navigate('#desktop', true);
-    },
-    handleUserLogout: function() {
-      return delete this.Models.userModel;
+    loadModules: function() {
+      return this.module("UserModule", UserModule);
     }
   });
   app.addRegions({
@@ -29,8 +23,6 @@ define(["backbone", "backbone.marionette", "router", "models/user/UserModel", "v
   });
   app.addInitializer(function() {
     this.app_router = new Router(this);
-    Backbone.Events.on("userModel:logout", this.handleUserLogout, this);
-    Backbone.Events.on("userModel:loginsuccess", this.handleSuccessfulUserLogin, this);
     return Backbone.history.start();
   });
   return app;
