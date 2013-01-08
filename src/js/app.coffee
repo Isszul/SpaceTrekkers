@@ -11,7 +11,6 @@ define ["backbone"
 	"use strict"
 	
 	# Class definition for the main Application
-	
 	app = new Marionette.Application
 		
 		# Single Models
