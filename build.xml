@@ -5,7 +5,7 @@
 	<taskdef name="jsmin" classname="net.matthaynes.jsmin.JSMin_Task" classpath="lib/jsmin.0.2.4.jar" />
 	<taskdef name="jslint" classname="com.googlecode.jslint4java.ant.JSLintTask" classpath="lib/jslint4java-2.0.3/jslint4java-2.0.3.jar" />
 
-	<property name="src" location="src" />
+	<property name="src" location="client-src" />
 	<property name="output" location="WebContent/client" />
 	<property name="CopyrightMsg" value="(c) 2012 Alex Thomas" />
 

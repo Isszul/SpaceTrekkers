@@ -12,14 +12,13 @@ define(["backbone"], function(Backbone) {
       return this;
     },
     url: function() {
-      return "test/?username=" + this.username + "&password=" + this.password;
+      return "user?username=" + this.username + "&password=" + this.password;
     },
     attemptLogin: function() {
-      if (this.username === "administrator" && this.password === "") {
-        Backbone.Events.trigger("userModel:loginsuccess", this);
-        return;
-      }
       return this.fetch({
+        error: function(userModel, jqXHR, options) {
+          return Backbone.Events.trigger("userModel:loginfailure", userModel);
+        },
         success: function(userModel, response, options) {
           if (response.validLogin) {
             Backbone.Events.trigger("userModel:loginsuccess", userModel);
@@ -27,9 +26,6 @@ define(["backbone"], function(Backbone) {
           if (!response.validLogin) {
             return Backbone.Events.trigger("userModel:loginfailure", userModel);
           }
-        },
-        error: function(userModel, jqXHR, options) {
-          return Backbone.Events.trigger("userModel:loginfailure", userModel);
         }
       });
     }
