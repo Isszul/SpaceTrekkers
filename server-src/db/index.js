@@ -4,8 +4,8 @@ var sql = require('node-sqlserver');
 // server connection info
 var driver = 'SQL Server Native Client 11.0';
 var server = '(local)\\SQLEXPRESS';
-var user = 'sa';
-var pwd = 'monkey123';
+var user = 'dbuser';
+var pwd = 'Monkey123';
 var database = 'marionettebase';
 var useTrustedConnection = true;
 var conn_str = "Driver={" + driver + "};Server=" + server + ";" + (useTrustedConnection == true ? "Trusted_Connection={Yes};" : "UID=" + user + ";PWD=" + pwd + ";") + "Database={" + database + "};";
