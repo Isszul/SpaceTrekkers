@@ -22,7 +22,7 @@ define(["backbone", "backbone.marionette", "router", "modules/user/UserModule", 
   });
   app.addInitializer(function() {
     this.app_router = new Router(this);
-    return Backbone.history.start();
+    return this;
   });
   return app;
 });

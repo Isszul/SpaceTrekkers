@@ -82,8 +82,9 @@ require.config({
 
 DEBUG_MODE = true;
 
-require(["app"], function(App) {
+require(["app", "backbone"], function(App, Backbone) {
   "use strict";
   App.loadModules();
-  return App.start();
+  App.start();
+  return Backbone.history.start();
 });

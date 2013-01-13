@@ -1,11 +1,10 @@
 define ["jquery"
-        "underscore"          
-        "backbone.marionette"
-        "models/user/UserModel"
-        "text!templates/login/loginTemplate.html" 
-        "translationUtil"
-        "bootstrap"        
-], ($, _, Marionette, UserModel, LoginTemplate, TranslationUtil) ->
+		"underscore"          
+		"backbone.marionette"
+		"text!templates/login/loginTemplate.html" 
+		"translationUtil"
+		"bootstrap"        
+], ($, _, Marionette, LoginTemplate, TranslationUtil) ->
 
 	# Class def for the login view.
 	LoginView = Marionette.ItemView.extend
@@ -28,14 +27,9 @@ define ["jquery"
 				keyboard: false
 				backdrop: 'static'
 
-
-			$("#loginButton").click (e) ->
+			$("#loginButton").unbind('click').click (e) ->
 				e.preventDefault()
-				#Create a user model and attempt a login
-				new UserModel
-				  username: $("#username").val()
-				  password: $("#password").val()
-				.attemptLogin()
+				Backbone.Events.trigger "loginView:login"
 													
 			#By Default focus on the username input
 			$('#username').focus()

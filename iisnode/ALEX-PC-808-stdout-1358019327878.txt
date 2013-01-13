@@ -1,3 +1,0 @@
-Express server listening on port NaN in development mode
-ghhg
-test

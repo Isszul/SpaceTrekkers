@@ -37,9 +37,8 @@ define ["backbone"
 	
 	# Add an initializer to setup the router
 	app.addInitializer ->
-		@app_router = new Router @
-		Backbone.history.start()
-
+		@app_router = new Router this
+		this
 
 		
 	app

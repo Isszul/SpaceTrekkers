@@ -1,5 +1,5 @@
 
-define(["jquery", "underscore", "backbone.marionette", "models/user/UserModel", "text!templates/login/loginTemplate.html", "translationUtil", "bootstrap"], function($, _, Marionette, UserModel, LoginTemplate, TranslationUtil) {
+define(["jquery", "underscore", "backbone.marionette", "text!templates/login/loginTemplate.html", "translationUtil", "bootstrap"], function($, _, Marionette, LoginTemplate, TranslationUtil) {
   var LoginView;
   LoginView = Marionette.ItemView.extend({
     template: TranslationUtil.geti18nTemplate(LoginTemplate),
@@ -14,12 +14,9 @@ define(["jquery", "underscore", "backbone.marionette", "models/user/UserModel", 
         keyboard: false,
         backdrop: 'static'
       });
-      $("#loginButton").click(function(e) {
+      $("#loginButton").unbind('click').click(function(e) {
         e.preventDefault();
-        return new UserModel({
-          username: $("#username").val(),
-          password: $("#password").val()
-        }).attemptLogin();
+        return Backbone.Events.trigger("loginView:login");
       });
       $('#username').focus();
       $('#password').keypress(function(e) {

@@ -13,9 +13,6 @@ define ["backbone"
 			#route when navigating to #/desktop 
 			"desktop": "showDesktop"
 
-			#logout route
-			"logout": "logoutUser"
-
 			#placeholder
 			"placeholder": "showPlaceHolder"
 
@@ -29,7 +26,6 @@ define ["backbone"
 		# 	@param app A reference to the main application
 		#
 		initialize: (app) ->
-			@bind 'all', @checkLoggedIn
 			@app = app			
 			@app.navBar.show @app.Views.navBarView
 			@
@@ -46,13 +42,8 @@ define ["backbone"
 		showPlaceHolder:  ->
 			@app.mainRegion.show @app.Views.placeHolder
 
-		#Raise a user logged out event
-		logoutUser:  ->
-			Backbone.Events.trigger "userModel:logout"			
+	
 
-		#check if there is a usermodel @ app.models.userModel
-		checkLoggedIn:  ->
-			@app.mainRegion.show @app.Views.loginView if not @app.Models.userModel?
 
 
 			
