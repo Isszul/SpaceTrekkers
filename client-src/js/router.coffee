@@ -13,12 +13,7 @@ define ["backbone"
 			#route when navigating to #/desktop 
 			"desktop": "showDesktop"
 
-			#placeholder
-			"placeholder": "showPlaceHolder"
 
-			#Tree
-			"tree": "showTree"
-			
 			#Default route
 			"": "showDesktop"
 
@@ -30,17 +25,10 @@ define ["backbone"
 			@app.navBar.show @app.Views.navBarView
 			@
 
-		#Shows the tree in the main region
-		showTree: ->
-			@app.mainRegion.show @app.Views.treeView
-
 		#Shows the desktop in the main Region
 		showDesktop:  ->
 			@app.mainRegion.show @app.Views.desktopView
 
-		#Show the placeholder
-		showPlaceHolder:  ->
-			@app.mainRegion.show @app.Views.placeHolder
 
 	
 

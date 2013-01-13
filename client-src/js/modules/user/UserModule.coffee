@@ -1,10 +1,12 @@
 define ["views/login/LoginView",
-		"models/user/UserModel" 
-], (LoginView, UserModel) ->
+		"models/user/UserModel",
+		"views/signup/SignupView"
+], (LoginView, UserModel, SignupView) ->
 
 	(UserModule, MyApp, Backbone, Marionette, $, _) ->
 
 		MyApp.Views.loginView = new LoginView()
+		MyApp.Views.signUpView = new SignupView();
 
 		UserModule.handleSuccessfulUserLogin = (userModel) ->
 			MyApp.Views.loginView.hide()
@@ -31,18 +33,27 @@ define ["views/login/LoginView",
 
 		#Raise a user logged out event
 		UserModule.logoutUser = () ->
-			Backbone.Events.trigger "userModel:logout"		
+			Backbone.Events.trigger "userModel:logout"	
 
+		UserModule.showSignUp = () ->
+			MyApp.mainRegion.show MyApp.Views.signUpView
+
+		UserModule.handleSignUpComplete = (firstname, surname, email, username, password) ->
+			UserModel::createUser(firstname, surname, email, username, password)
 
 		UserModule.addInitializer ->
 			Backbone.Events.on "userModel:logout", @handleUserLogout, this
 			Backbone.Events.on "userModel:loginsuccess", @handleSuccessfulUserLogin, this
 			Backbone.Events.on "userModel:loginfailure", @showFailedLoginMessage, this
+
+			Backbone.Events.on "loginView:signup", @showSignUp, this
 			Backbone.Events.on "loginView:login", @attemptLogin, this
+
+			Backbone.Events.on "signupView:signup", @handleSignUpComplete, this
 			
 			#Bind the login check to all the routes
 			MyApp.app_router.bind 'all', @checkLoggedIn, this
 
 			#logout route
-			MyApp.app_router.route 'logout', 'logout', _.bind(@logoutUser, this)
+			MyApp.app_router.route 'logout', 'logout', @logoutUser
 

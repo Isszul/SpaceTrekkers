@@ -14,6 +14,9 @@ define(["backbone"], function(Backbone) {
     url: function() {
       return "user?username=" + this.username + "&password=" + this.password;
     },
+    createUser: function(firstname, surname, email, username, password) {
+      return this;
+    },
     attemptLogin: function() {
       return this.fetch({
         error: function(userModel, jqXHR, options) {

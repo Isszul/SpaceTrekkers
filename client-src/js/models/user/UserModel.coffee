@@ -20,6 +20,11 @@ define ["backbone"
 		url: -> 
             "user?username=#{@.username}&password=#{@.password}" 
 
+        createUser: (firstname, surname, email, username, password) ->
+        	#TODO: Add create user logic
+        	@
+
+
 		#Public function to attempt the login.
 		attemptLogin: ->
 

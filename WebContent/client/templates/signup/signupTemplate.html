@@ -1,0 +1,77 @@
+<div>
+
+	<form id="signUpForm" class="form-horizontal">
+
+	<div id="mainSignupDiv" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+
+		
+
+			<div class="modal-header">
+	   			 <h3 id="signup-Label">{{ nls.sign_up }}</h3>
+			</div>
+
+
+
+				<div class="modal-body">
+					
+					<fieldset>
+
+						<div class="control-group">
+							<label for="signup-firstname" class="control-label">{{ nls.firstname_label }}:</label> 
+							<div class="controls">
+								<input type="text" id="signup-firstname" class="text-input" required autofocus="true" /> 
+							</div>
+						</div>
+
+						<div class="control-group">
+							<label for="signup-surname" class="control-label">{{ nls.surname_label }}:</label> 
+							<div class="controls">
+								<input type="text" id="signup-surname" class="text-input" required autofocus="true" /> 
+							</div>
+						</div>	
+
+						<div class="control-group">
+							<label for="signup-email" class="control-label">{{ nls.email_label }}:</label> 
+							<div class="controls">
+								<input type="text" id="signup-email" class="text-input" required autofocus="true" /> 
+							</div>
+						</div>	
+
+						<div class="control-group">
+							<label for="signup-username" class="control-label">{{ nls.username_label }}:</label> 
+							<div class="controls">
+								<input type="text" id="signup-username" class="text-input" required autofocus="true" /> 
+							</div>
+						</div>
+
+						<div class="control-group">
+							<label for="signup-password" class="control-label">{{ nls.password_label }}:</label> 
+							<div class="controls">
+								<input type="password" id="signup-password" class="text-input" />
+							</div>
+						</div>
+
+					</fieldset>
+
+					<div class="control-group">
+						<div class="controls">
+							<span class="label label-warning" id="signup-Message"></span>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="modal-footer">
+
+
+					<button class="btn btn-primary" id="completeSignUp">
+						<i class="icon-plus"></i> {{nls.sign_up }}
+					</button>
+
+			    </div>
+
+	</div>
+
+	</form>
+
+</div>

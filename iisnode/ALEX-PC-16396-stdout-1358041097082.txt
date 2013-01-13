@@ -1,0 +1,165 @@
+Express server listening on port NaN in development mode
+Connect String : Driver={SQL Server Native Client 11.0};Server=(local)\SQLEXPRESS;Trusted_Connection={Yes};Database={marionettebase};
+SQL : SELECT * FROM [user] WHERE [username] = 'isszul' AND [password] = 'monkey123';
+Connect String : Driver={SQL Server Native Client 11.0};Server=(local)\SQLEXPRESS;Trusted_Connection={Yes};Database={marionettebase};
+SQL : SELECT * FROM [user] WHERE [username] = 'isszul' AND [password] = 'monkey123';
+Err : undefined
+[ { username: 'isszul', password: 'monkey123', id: '1' } ]
+Err : undefined
+[ { username: 'isszul', password: 'monkey123', id: '1' } ]
+Connect String : Driver={SQL Server Native Client 11.0};Server=(local)\SQLEXPRESS;Trusted_Connection={Yes};Database={marionettebase};
+SQL : SELECT * FROM [user] WHERE [username] = 'isszul' AND [password] = 'monkey123';
+Err : undefined
+[ { username: 'isszul', password: 'monkey123', id: '1' } ]
+Connect String : Driver={SQL Server Native Client 11.0};Server=(local)\SQLEXPRESS;Trusted_Connection={Yes};Database={marionettebase};
+SQL : SELECT * FROM [user] WHERE [username] = 'isszul' AND [password] = 'monkey123';
+Err : undefined
+[ { username: 'isszul', password: 'monkey123', id: '1' } ]
+Connect String : Driver={SQL Server Native Client 11.0};Server=(local)\SQLEXPRESS;Trusted_Connection={Yes};Database={marionettebase};
+SQL : SELECT * FROM [user] WHERE [username] = 'isszul' AND [password] = 'monkey123';
+Connect String : Driver={SQL Server Native Client 11.0};Server=(local)\SQLEXPRESS;Trusted_Connection={Yes};Database={marionettebase};
+SQL : SELECT * FROM [user] WHERE [username] = 'isszul' AND [password] = 'monkey123';
+Err : undefined
+[ { username: 'isszul', password: 'monkey123', id: '1' } ]
+Err : undefined
+[ { username: 'isszul', password: 'monkey123', id: '1' } ]
+Connect String : Driver={SQL Server Native Client 11.0};Server=(local)\SQLEXPRESS;Trusted_Connection={Yes};Database={marionettebase};
+SQL : SELECT * FROM [user] WHERE [username] = 'isszul' AND [password] = 'monkey123';
+Connect String : Driver={SQL Server Native Client 11.0};Server=(local)\SQLEXPRESS;Trusted_Connection={Yes};Database={marionettebase};
+SQL : SELECT * FROM [user] WHERE [username] = 'isszul' AND [password] = 'monkey123';
+Err : undefined
+[ { username: 'isszul', password: 'monkey123', id: '1' } ]
+Err : undefined
+[ { username: 'isszul', password: 'monkey123', id: '1' } ]
+Connect String : Driver={SQL Server Native Client 11.0};Server=(local)\SQLEXPRESS;Trusted_Connection={Yes};Database={marionettebase};
+SQL : SELECT * FROM [user] WHERE [username] = '' AND [password] = '';
+Err : undefined
+[]
+Connect String : Driver={SQL Server Native Client 11.0};Server=(local)\SQLEXPRESS;Trusted_Connection={Yes};Database={marionettebase};
+SQL : SELECT * FROM [user] WHERE [username] = 'isszul' AND [password] = 'monkey123';
+Connect String : Driver={SQL Server Native Client 11.0};Server=(local)\SQLEXPRESS;Trusted_Connection={Yes};Database={marionettebase};
+SQL : SELECT * FROM [user] WHERE [username] = 'isszul' AND [password] = 'monkey123';
+Err : undefined
+[ { username: 'isszul', password: 'monkey123', id: '1' } ]
+Err : undefined
+[ { username: 'isszul', password: 'monkey123', id: '1' } ]
+Connect String : Driver={SQL Server Native Client 11.0};Server=(local)\SQLEXPRESS;Trusted_Connection={Yes};Database={marionettebase};
+SQL : SELECT * FROM [user] WHERE [username] = 'isszul' AND [password] = 'monkey123';
+Connect String : Driver={SQL Server Native Client 11.0};Server=(local)\SQLEXPRESS;Trusted_Connection={Yes};Database={marionettebase};
+SQL : SELECT * FROM [user] WHERE [username] = 'isszul' AND [password] = 'monkey123';
+Err : undefined
+[ { username: 'isszul', password: 'monkey123', id: '1' } ]
+Err : undefined
+[ { username: 'isszul', password: 'monkey123', id: '1' } ]
+Connect String : Driver={SQL Server Native Client 11.0};Server=(local)\SQLEXPRESS;Trusted_Connection={Yes};Database={marionettebase};
+SQL : SELECT * FROM [user] WHERE [username] = 'isszul' AND [password] = 'monkey123';
+Connect String : Driver={SQL Server Native Client 11.0};Server=(local)\SQLEXPRESS;Trusted_Connection={Yes};Database={marionettebase};
+SQL : SELECT * FROM [user] WHERE [username] = 'isszul' AND [password] = 'monkey123';
+Err : undefined
+[ { username: 'isszul', password: 'monkey123', id: '1' } ]
+Err : undefined
+[ { username: 'isszul', password: 'monkey123', id: '1' } ]
+Connect String : Driver={SQL Server Native Client 11.0};Server=(local)\SQLEXPRESS;Trusted_Connection={Yes};Database={marionettebase};
+SQL : SELECT * FROM [user] WHERE [username] = 'isszul' AND [password] = 'monkey123';
+Connect String : Driver={SQL Server Native Client 11.0};Server=(local)\SQLEXPRESS;Trusted_Connection={Yes};Database={marionettebase};
+SQL : SELECT * FROM [user] WHERE [username] = 'isszul' AND [password] = 'monkey123';
+Err : undefined
+[ { username: 'isszul', password: 'monkey123', id: '1' } ]
+Err : undefined
+[ { username: 'isszul', password: 'monkey123', id: '1' } ]
+Connect String : Driver={SQL Server Native Client 11.0};Server=(local)\SQLEXPRESS;Trusted_Connection={Yes};Database={marionettebase};
+SQL : SELECT * FROM [user] WHERE [username] = 'isszul' AND [password] = 'monkey123';
+Connect String : Driver={SQL Server Native Client 11.0};Server=(local)\SQLEXPRESS;Trusted_Connection={Yes};Database={marionettebase};
+SQL : SELECT * FROM [user] WHERE [username] = 'isszul' AND [password] = 'monkey123';
+Err : undefined
+[ { username: 'isszul', password: 'monkey123', id: '1' } ]
+Err : undefined
+[ { username: 'isszul', password: 'monkey123', id: '1' } ]
+Connect String : Driver={SQL Server Native Client 11.0};Server=(local)\SQLEXPRESS;Trusted_Connection={Yes};Database={marionettebase};
+SQL : SELECT * FROM [user] WHERE [username] = 'isszul' AND [password] = 'monkey123';
+Connect String : Driver={SQL Server Native Client 11.0};Server=(local)\SQLEXPRESS;Trusted_Connection={Yes};Database={marionettebase};
+SQL : SELECT * FROM [user] WHERE [username] = 'isszul' AND [password] = 'monkey123';
+Err : undefined
+[ { username: 'isszul', password: 'monkey123', id: '1' } ]
+Err : undefined
+[ { username: 'isszul', password: 'monkey123', id: '1' } ]
+Connect String : Driver={SQL Server Native Client 11.0};Server=(local)\SQLEXPRESS;Trusted_Connection={Yes};Database={marionettebase};
+SQL : SELECT * FROM [user] WHERE [username] = 'isszul' AND [password] = 'monkey123';
+Connect String : Driver={SQL Server Native Client 11.0};Server=(local)\SQLEXPRESS;Trusted_Connection={Yes};Database={marionettebase};
+SQL : SELECT * FROM [user] WHERE [username] = 'isszul' AND [password] = 'monkey123';
+Err : undefined
+[ { username: 'isszul', password: 'monkey123', id: '1' } ]
+Err : undefined
+[ { username: 'isszul', password: 'monkey123', id: '1' } ]
+Connect String : Driver={SQL Server Native Client 11.0};Server=(local)\SQLEXPRESS;Trusted_Connection={Yes};Database={marionettebase};
+SQL : SELECT * FROM [user] WHERE [username] = 'isszul' AND [password] = 'monkey123';
+Connect String : Driver={SQL Server Native Client 11.0};Server=(local)\SQLEXPRESS;Trusted_Connection={Yes};Database={marionettebase};
+SQL : SELECT * FROM [user] WHERE [username] = 'isszul' AND [password] = 'monkey123';
+Err : undefined
+[ { username: 'isszul', password: 'monkey123', id: '1' } ]
+Err : undefined
+[ { username: 'isszul', password: 'monkey123', id: '1' } ]
+Connect String : Driver={SQL Server Native Client 11.0};Server=(local)\SQLEXPRESS;Trusted_Connection={Yes};Database={marionettebase};
+SQL : SELECT * FROM [user] WHERE [username] = 'isszul' AND [password] = 'monkey123';
+Connect String : Driver={SQL Server Native Client 11.0};Server=(local)\SQLEXPRESS;Trusted_Connection={Yes};Database={marionettebase};
+SQL : SELECT * FROM [user] WHERE [username] = 'isszul' AND [password] = 'monkey123';
+Err : undefined
+[ { username: 'isszul', password: 'monkey123', id: '1' } ]
+Err : undefined
+[ { username: 'isszul', password: 'monkey123', id: '1' } ]
+Connect String : Driver={SQL Server Native Client 11.0};Server=(local)\SQLEXPRESS;Trusted_Connection={Yes};Database={marionettebase};
+SQL : SELECT * FROM [user] WHERE [username] = 'isszul' AND [password] = 'monkey123';
+Connect String : Driver={SQL Server Native Client 11.0};Server=(local)\SQLEXPRESS;Trusted_Connection={Yes};Database={marionettebase};
+SQL : SELECT * FROM [user] WHERE [username] = 'isszul' AND [password] = 'monkey123';
+Err : undefined
+[ { username: 'isszul', password: 'monkey123', id: '1' } ]
+Err : undefined
+[ { username: 'isszul', password: 'monkey123', id: '1' } ]
+Connect String : Driver={SQL Server Native Client 11.0};Server=(local)\SQLEXPRESS;Trusted_Connection={Yes};Database={marionettebase};
+SQL : SELECT * FROM [user] WHERE [username] = 'isszul' AND [password] = 'monkey123';
+Connect String : Driver={SQL Server Native Client 11.0};Server=(local)\SQLEXPRESS;Trusted_Connection={Yes};Database={marionettebase};
+SQL : SELECT * FROM [user] WHERE [username] = 'isszul' AND [password] = 'monkey123';
+Err : undefined
+[ { username: 'isszul', password: 'monkey123', id: '1' } ]
+Err : undefined
+[ { username: 'isszul', password: 'monkey123', id: '1' } ]
+Connect String : Driver={SQL Server Native Client 11.0};Server=(local)\SQLEXPRESS;Trusted_Connection={Yes};Database={marionettebase};
+SQL : SELECT * FROM [user] WHERE [username] = 'isszul' AND [password] = 'monkey123';
+Connect String : Driver={SQL Server Native Client 11.0};Server=(local)\SQLEXPRESS;Trusted_Connection={Yes};Database={marionettebase};
+SQL : SELECT * FROM [user] WHERE [username] = 'isszul' AND [password] = 'monkey123';
+Err : undefined
+[ { username: 'isszul', password: 'monkey123', id: '1' } ]
+Err : undefined
+[ { username: 'isszul', password: 'monkey123', id: '1' } ]
+Connect String : Driver={SQL Server Native Client 11.0};Server=(local)\SQLEXPRESS;Trusted_Connection={Yes};Database={marionettebase};
+SQL : SELECT * FROM [user] WHERE [username] = 'isszul' AND [password] = 'monkey123';
+Err : undefined
+[ { username: 'isszul', password: 'monkey123', id: '1' } ]
+Connect String : Driver={SQL Server Native Client 11.0};Server=(local)\SQLEXPRESS;Trusted_Connection={Yes};Database={marionettebase};
+SQL : SELECT * FROM [user] WHERE [username] = 'isszul' AND [password] = 'monkey123';
+Err : undefined
+[ { username: 'isszul', password: 'monkey123', id: '1' } ]
+Connect String : Driver={SQL Server Native Client 11.0};Server=(local)\SQLEXPRESS;Trusted_Connection={Yes};Database={marionettebase};
+SQL : SELECT * FROM [user] WHERE [username] = 'isszul' AND [password] = 'monkey123';
+Err : undefined
+[ { username: 'isszul', password: 'monkey123', id: '1' } ]
+Connect String : Driver={SQL Server Native Client 11.0};Server=(local)\SQLEXPRESS;Trusted_Connection={Yes};Database={marionettebase};
+SQL : SELECT * FROM [user] WHERE [username] = 'isszul' AND [password] = 'monkey123';
+Err : undefined
+[ { username: 'isszul', password: 'monkey123', id: '1' } ]
+Connect String : Driver={SQL Server Native Client 11.0};Server=(local)\SQLEXPRESS;Trusted_Connection={Yes};Database={marionettebase};
+SQL : SELECT * FROM [user] WHERE [username] = 'isszul' AND [password] = 'monkey123';
+Err : undefined
+[ { username: 'isszul', password: 'monkey123', id: '1' } ]
+Connect String : Driver={SQL Server Native Client 11.0};Server=(local)\SQLEXPRESS;Trusted_Connection={Yes};Database={marionettebase};
+SQL : SELECT * FROM [user] WHERE [username] = 'isszul' AND [password] = 'monkey123';
+Err : undefined
+[ { username: 'isszul', password: 'monkey123', id: '1' } ]
+Connect String : Driver={SQL Server Native Client 11.0};Server=(local)\SQLEXPRESS;Trusted_Connection={Yes};Database={marionettebase};
+SQL : SELECT * FROM [user] WHERE [username] = 'isszul' AND [password] = 'monkey123';
+Err : undefined
+[ { username: 'isszul', password: 'monkey123', id: '1' } ]
+Connect String : Driver={SQL Server Native Client 11.0};Server=(local)\SQLEXPRESS;Trusted_Connection={Yes};Database={marionettebase};
+SQL : SELECT * FROM [user] WHERE [username] = 'isszul' AND [password] = 'monkey123';
+Err : undefined
+[ { username: 'isszul', password: 'monkey123', id: '1' } ]

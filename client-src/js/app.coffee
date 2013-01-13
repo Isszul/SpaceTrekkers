@@ -4,9 +4,9 @@ define ["backbone"
 		"modules/user/UserModule"
 		"views/navbar/NavBarView"
 		"views/plainOldTemplate/PlainOldTemplate"
-		"views/tree/TreeView"
+
 		
-], (Backbone, Marionette, Router, UserModule, NavBarView, PlainOldTemplate, TreeView ) ->
+], (Backbone, Marionette, Router, UserModule, NavBarView, PlainOldTemplate ) ->
 
 	"use strict"
 	
@@ -23,8 +23,6 @@ define ["backbone"
 		Views:
 			desktopView: new PlainOldTemplate("templates/desktop/desktopTemplate.html")
 			navBarView: new NavBarView()
-			placeHolder: new PlainOldTemplate("templates/placeHolder/placeHolderTemplate.html")
-			treeView: new TreeView()
 	
 		loadModules: ->
 			@.module("UserModule", UserModule)

@@ -30,7 +30,11 @@ define ["jquery"
 			$("#loginButton").unbind('click').click (e) ->
 				e.preventDefault()
 				Backbone.Events.trigger "loginView:login"
-													
+							
+			$("#signupButton").unbind('click').click (e) ->
+				e.preventDefault()
+				Backbone.Events.trigger "loginView:signup"
+
 			#By Default focus on the username input
 			$('#username').focus()
 				

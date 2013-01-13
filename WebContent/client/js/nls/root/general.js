@@ -1,6 +1,6 @@
 
 define({
-  app_title: "Marionette+Bootstrap Base",
+  app_title: "Space Trekkers",
   desktop: "Desktop",
   logout: "Logout",
   tree: "Tree",
@@ -9,8 +9,12 @@ define({
   login_label: "Login",
   failed_login: "Failed login",
   attempting_login: "Logging in...",
-  welcome_dialog_title: "Welcome",
-  welcome_dialog_text: "This is a working base containing the following :- RequireJS, Backbone, Marionette, Handlebars, Jasmine, jQuery, underscore  and Bootstrap",
+  sign_up: "Sign Up",
+  welcome_dialog_title: "Space Trekkers",
+  welcome_dialog_text: "Welcome",
   logged_in_as: "Logged in as",
-  loading: "Loading..."
+  loading: "Loading...",
+  firstname_label: "First name",
+  surname_label: "Surname",
+  email_label: "Email"
 });
