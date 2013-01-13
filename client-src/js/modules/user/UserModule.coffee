@@ -1,6 +1,6 @@
-define ["views/login/LoginView",
+define ["modules/user/views/login/LoginView",
 		"models/user/UserModel",
-		"views/signup/SignupView"
+		"modules/user/views/signup/SignupView"
 ], (LoginView, UserModel, SignupView) ->
 
 	(UserModule, MyApp, Backbone, Marionette, $, _) ->

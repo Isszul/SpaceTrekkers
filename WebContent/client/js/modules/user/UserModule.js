@@ -1,5 +1,5 @@
 
-define(["views/login/LoginView", "models/user/UserModel", "views/signup/SignupView"], function(LoginView, UserModel, SignupView) {
+define(["modules/user/views/login/LoginView", "models/user/UserModel", "modules/user/views/signup/SignupView"], function(LoginView, UserModel, SignupView) {
   return function(UserModule, MyApp, Backbone, Marionette, $, _) {
     MyApp.Views.loginView = new LoginView();
     MyApp.Views.signUpView = new SignupView();

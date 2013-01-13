@@ -9,13 +9,13 @@ define ["jquery"
 
 		template: "<div>" + TranslationUtil.geti18nString 'loading' + "</div>"
 
-		initialize: (templateFileName) ->
+		initialize: (templateFileName, options) ->
 
 			_template = $.ajax 
 				url: templateFileName
 				async: false
 
-			@template = TranslationUtil.geti18nTemplate _template.responseText
+			@template = TranslationUtil.geti18nTemplate _template.responseText, options
 
 			@
 	
