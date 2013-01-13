@@ -1,13 +1,14 @@
 
-define(["modules/user/views/login/LoginView", "models/user/UserModel", "modules/user/views/signup/SignupView"], function(LoginView, UserModel, SignupView) {
+define(["modules/user/views/LoginView", "models/user/UserModel", "modules/user/views/SignupView"], function(LoginView, UserModel, SignupView) {
   return function(UserModule, MyApp, Backbone, Marionette, $, _) {
+    MyApp.Modules.UserModule = this;
     MyApp.Views.loginView = new LoginView();
     MyApp.Views.signUpView = new SignupView();
     UserModule.handleSuccessfulUserLogin = function(userModel) {
       MyApp.Views.loginView.hide();
       MyApp.Models.userModel = userModel;
-      MyApp.app_router.showDesktop();
-      return MyApp.app_router.navigate('#desktop', true);
+      MyApp.app_router.navigate('', true);
+      return MyApp.app_router.navigate('desktop', true);
     };
     UserModule.handleUserLogout = function() {
       return delete MyApp.Models.userModel;

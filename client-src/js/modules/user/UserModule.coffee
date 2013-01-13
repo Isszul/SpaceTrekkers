@@ -1,9 +1,11 @@
-define ["modules/user/views/login/LoginView",
+define ["modules/user/views/LoginView",
 		"models/user/UserModel",
-		"modules/user/views/signup/SignupView"
+		"modules/user/views/SignupView"
 ], (LoginView, UserModel, SignupView) ->
 
 	(UserModule, MyApp, Backbone, Marionette, $, _) ->
+
+		MyApp.Modules.UserModule = this
 
 		MyApp.Views.loginView = new LoginView()
 		MyApp.Views.signUpView = new SignupView();
@@ -11,8 +13,8 @@ define ["modules/user/views/login/LoginView",
 		UserModule.handleSuccessfulUserLogin = (userModel) ->
 			MyApp.Views.loginView.hide()
 			MyApp.Models.userModel = userModel
-			MyApp.app_router.showDesktop() #if we are on the desktop the navigate call does nothing below
-			MyApp.app_router.navigate '#desktop', true
+			MyApp.app_router.navigate '', true
+			MyApp.app_router.navigate 'desktop', true
 
 		UserModule.handleUserLogout = ()  ->
 			delete MyApp.Models.userModel

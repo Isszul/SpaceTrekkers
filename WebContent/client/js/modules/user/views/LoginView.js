@@ -22,12 +22,9 @@ define(["jquery", "underscore", "backbone.marionette", "text!templates/login/log
         e.preventDefault();
         return Backbone.Events.trigger("loginView:signup");
       });
-      $('#username').focus();
-      $('#password').keypress(function(e) {
-        if (e.which === 13) {
-          return $("#loginButton").click();
-        }
-      });
+      setTimeout(function() {
+        return $('#username').focus();
+      }, 500);
       return this;
     }
   });

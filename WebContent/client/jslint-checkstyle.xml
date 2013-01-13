@@ -1,9 +1,11 @@
 <checkstyle><file name='E:\Project\GitHub\SpaceTrekkers\WebContent\client\js\app.js'>
 </file><file name='E:\Project\GitHub\SpaceTrekkers\WebContent\client\js\main.js'>
 </file><file name='E:\Project\GitHub\SpaceTrekkers\WebContent\client\js\models\user\UserModel.js'>
+</file><file name='E:\Project\GitHub\SpaceTrekkers\WebContent\client\js\modules\desktop\DesktopModule.js'>
+</file><file name='E:\Project\GitHub\SpaceTrekkers\WebContent\client\js\modules\desktop\layout\DesktopLayout.js'>
 </file><file name='E:\Project\GitHub\SpaceTrekkers\WebContent\client\js\modules\user\UserModule.js'>
-</file><file name='E:\Project\GitHub\SpaceTrekkers\WebContent\client\js\modules\user\views\login\LoginView.js'>
-</file><file name='E:\Project\GitHub\SpaceTrekkers\WebContent\client\js\modules\user\views\signup\SignupView.js'>
+</file><file name='E:\Project\GitHub\SpaceTrekkers\WebContent\client\js\modules\user\views\LoginView.js'>
+</file><file name='E:\Project\GitHub\SpaceTrekkers\WebContent\client\js\modules\user\views\SignupView.js'>
 </file><file name='E:\Project\GitHub\SpaceTrekkers\WebContent\client\js\nls\general.js'>
 </file><file name='E:\Project\GitHub\SpaceTrekkers\WebContent\client\js\nls\root\general.js'>
 </file><file name='E:\Project\GitHub\SpaceTrekkers\WebContent\client\js\router.js'>

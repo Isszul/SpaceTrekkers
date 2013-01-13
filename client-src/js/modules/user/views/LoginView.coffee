@@ -36,11 +36,9 @@ define ["jquery"
 				Backbone.Events.trigger "loginView:signup"
 
 			#By Default focus on the username input
-			$('#username').focus()
-				
-			#When we push enter on the password input attempt the login	
-			$('#password').keypress (e) ->
-				$("#loginButton").click() if(e.which == 13)
+			setTimeout () -> 
+				$('#username').focus()
+			, 500
 
 			@					
 					

@@ -1,17 +1,19 @@
 
-define(["backbone", "backbone.marionette", "router", "modules/user/UserModule", "views/navbar/NavBarView", "views/plainOldTemplate/PlainOldTemplate"], function(Backbone, Marionette, Router, UserModule, NavBarView, PlainOldTemplate) {
+define(["backbone", "backbone.marionette", "router", "modules/user/UserModule", "modules/desktop/DesktopModule", "views/navbar/NavBarView"], function(Backbone, Marionette, Router, UserModule, DesktopModule, NavBarView) {
   "use strict";
 
   var app;
   app = new Marionette.Application({
     Models: {},
+    Modules: {},
+    Layouts: {},
     Collections: {},
     Views: {
-      desktopView: new PlainOldTemplate("templates/desktop/desktopTemplate.html"),
       navBarView: new NavBarView()
     },
     loadModules: function() {
-      return this.module("UserModule", UserModule);
+      this.module("UserModule", UserModule);
+      return this.module("DesktopModule", DesktopModule);
     }
   });
   app.addRegions({
