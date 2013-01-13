@@ -16,5 +16,13 @@ define({
   loading: "Loading...",
   firstname_label: "First name",
   surname_label: "Surname",
-  email_label: "Email"
+  email_label: "Email",
+  Name: "Name",
+  Level: "Level",
+  Specialisation: "Specialisation",
+  Health: "Health",
+  Experience: "Experience",
+  Damage: "Damage",
+  CrewListTitle: "Your current crew.",
+  ShipListTitle: "Your current ships."
 });

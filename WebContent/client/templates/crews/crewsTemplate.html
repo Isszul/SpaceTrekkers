@@ -1,0 +1,34 @@
+<div>
+	<h3>{{nls.CrewListTitle}}</h3>
+
+	<table class="table table-striped">	
+		<thead>
+			<tr>
+				<th>{{nls.Name}}</th>
+				<th>{{nls.Level}}</th>
+				<th>{{nls.Specialisation}}</th>
+				<th>{{nls.Health}}</th>
+				<th>{{nls.Experience}}</th>
+			</tr>
+		</thead>
+		<tbody>
+			{{#each options.crew}}
+			<tr>
+				<td><i class="icon-user icon-white"></i> {{name}}</td>
+				<td>{{level}}</td>
+				<td><i class="icon-{{icon}} icon-white"></i> {{specialisation}}</td>
+				<td>
+					<div class="progress progress-striped active">
+						<div class="bar bar-success" style="width: {{hp}}%;"></div>
+					</div>							
+				</td>
+				<td>
+					<div class="progress progress-striped active">
+						<div class="bar" style="width: {{exp}}%;"></div>
+					</div>
+				</td>
+			</tr>
+			{{/each}}
+		</tbody>						
+	</table>
+</div>

@@ -1,5 +1,9 @@
 <checkstyle><file name='E:\Project\GitHub\SpaceTrekkers\WebContent\client\js\app.js'>
+</file><file name='E:\Project\GitHub\SpaceTrekkers\WebContent\client\js\collections\crews\CrewsCollection.js'>
+</file><file name='E:\Project\GitHub\SpaceTrekkers\WebContent\client\js\collections\ships\ShipsCollection.js'>
 </file><file name='E:\Project\GitHub\SpaceTrekkers\WebContent\client\js\main.js'>
+</file><file name='E:\Project\GitHub\SpaceTrekkers\WebContent\client\js\models\crew\CrewModel.js'>
+</file><file name='E:\Project\GitHub\SpaceTrekkers\WebContent\client\js\models\ship\ShipModel.js'>
 </file><file name='E:\Project\GitHub\SpaceTrekkers\WebContent\client\js\models\user\UserModel.js'>
 </file><file name='E:\Project\GitHub\SpaceTrekkers\WebContent\client\js\modules\desktop\DesktopModule.js'>
 </file><file name='E:\Project\GitHub\SpaceTrekkers\WebContent\client\js\modules\desktop\layout\DesktopLayout.js'>
@@ -10,13 +14,8 @@
 </file><file name='E:\Project\GitHub\SpaceTrekkers\WebContent\client\js\nls\root\general.js'>
 </file><file name='E:\Project\GitHub\SpaceTrekkers\WebContent\client\js\router.js'>
 </file><file name='E:\Project\GitHub\SpaceTrekkers\WebContent\client\js\utils\translationUtil.js'>
+</file><file name='E:\Project\GitHub\SpaceTrekkers\WebContent\client\js\views\crews\CrewsView.js'>
 </file><file name='E:\Project\GitHub\SpaceTrekkers\WebContent\client\js\views\navbar\NavBarView.js'>
 </file><file name='E:\Project\GitHub\SpaceTrekkers\WebContent\client\js\views\plainOldTemplate\PlainOldTemplate.js'>
-</file><file name='E:\Project\GitHub\SpaceTrekkers\WebContent\client\test\models\user\UserModelSpec.js'>
-</file><file name='E:\Project\GitHub\SpaceTrekkers\WebContent\client\test\runWebDriverTests.js'>
-</file><file name='E:\Project\GitHub\SpaceTrekkers\WebContent\client\test\utils\translationUtil-Mock.js'>
-</file><file name='E:\Project\GitHub\SpaceTrekkers\WebContent\client\test\views\login\LoginViewSpec.js'>
-</file><file name='E:\Project\GitHub\SpaceTrekkers\WebContent\client\test\views\login\UserModel-Mock.js'>
-</file><file name='E:\Project\GitHub\SpaceTrekkers\WebContent\client\test\views\navbar\NavBarViewSpec.js'>
-</file><file name='E:\Project\GitHub\SpaceTrekkers\WebContent\client\test\views\plainOldTemplate\PlainOldTemplateSpec.js'>
+</file><file name='E:\Project\GitHub\SpaceTrekkers\WebContent\client\js\views\ships\ShipsView.js'>
 </file></checkstyle>

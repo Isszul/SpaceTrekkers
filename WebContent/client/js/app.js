@@ -12,7 +12,6 @@ define(["backbone", "backbone.marionette", "router", "modules/user/UserModule", 
       navBarView: new NavBarView()
     },
     loadModules: function() {
-      this.module("UserModule", UserModule);
       return this.module("DesktopModule", DesktopModule);
     }
   });

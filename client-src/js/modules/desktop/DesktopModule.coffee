@@ -1,6 +1,10 @@
 define ["views/plainOldTemplate/PlainOldTemplate"
 		"modules/desktop/layout/DesktopLayout"
-], (PlainOldTemplate, DesktopLayout) ->
+		"views/ships/ShipsView"
+		"views/crews/CrewsView"
+		"collections/crews/CrewsCollection"
+		"collections/ships/ShipsCollection"
+], (PlainOldTemplate, DesktopLayout, ShipsView, CrewsView, CrewsCollection, ShipsCollection) ->
 
 	(DesktopModule, MyApp, Backbone, Marionette, $, _) ->
 
@@ -8,9 +12,12 @@ define ["views/plainOldTemplate/PlainOldTemplate"
 		
 		MyApp.Layouts.desktopLayout = new DesktopLayout()
 
+		MyApp.Collections.crewsCollection = new CrewsCollection()
+		MyApp.Collections.shipsCollection = new ShipsCollection()
+
 		MyApp.Views.splashView = new PlainOldTemplate("templates/splash/splashTemplate.html")
-		MyApp.Views.crewView = new PlainOldTemplate("templates/crew/crewTemplate.html")
-		MyApp.Views.shipsView = new PlainOldTemplate("templates/ships/shipsTemplate.html")
+		MyApp.Views.crewView = new CrewsView()
+		MyApp.Views.shipsView = new ShipsView()
 
 		DesktopModule.app = MyApp
 
@@ -26,5 +33,8 @@ define ["views/plainOldTemplate/PlainOldTemplate"
 		DesktopModule.addInitializer ->
 			#show desktop route
 			MyApp.app_router.route 'desktop', 'desktop', @showDesktop		
-			MyApp.app_router.route '', '', @showDesktop		
+			MyApp.app_router.route '', '', @showDesktop	
+
+			MyApp.Collections.crewsCollection.getData()	
+			MyApp.Collections.shipsCollection.getData()
 	
