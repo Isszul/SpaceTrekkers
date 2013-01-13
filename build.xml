@@ -1,0 +1,71 @@
+<project name="MarionetteBase-Coffeescript" default="lintJavascript" basedir=".">
+
+
+	<taskdef name="CoffeeScriptC" classname="csat.CoffeeScriptCTask" classpath="lib/csat-0.1.6.jar" />
+	<taskdef name="jsmin" classname="net.matthaynes.jsmin.JSMin_Task" classpath="lib/jsmin.0.2.4.jar" />
+	<taskdef name="jslint" classname="com.googlecode.jslint4java.ant.JSLintTask" classpath="lib/jslint4java-2.0.3/jslint4java-2.0.3.jar" />
+
+	<property name="src" location="client-src" />
+	<property name="output" location="WebContent/client" />
+	<property name="CopyrightMsg" value="(c) 2012 Alex Thomas" />
+
+	<condition property="isWindows">
+		<os family="windows" />
+	</condition>
+
+	<condition property="isLinux">
+		<os family="unix" />
+	</condition>
+
+	<target name="clean" description="clean up">
+		<delete dir="${output}" />
+	</target>
+
+	<target name="compile" depends="clean" description="compile the source ">
+
+		<CoffeeScriptC nowrap="true" destDir="${output}" verbose="true" nesting="true">
+			<fileset dir="${src}">
+				<include name="**/*.coffee" />
+			</fileset>
+		</CoffeeScriptC>
+
+		<copy todir="${output}">
+			<fileset dir="${src}">
+				<exclude name="**/*.coffee" />
+			</fileset>
+		</copy>
+
+	</target>
+
+	<target name="lintJavascript" depends="compile">
+		<jslint options="indent, white, nomen, undef, sloppy, eqeq">
+			<formatter type="checkstyle" destfile="${output}/jslint-checkstyle.xml" />
+			<formatter type="report" destfile="${output}/jslint-report.html" />
+			<fileset dir="${output}">
+				<include name="**/*.js" />
+				<exclude name="**/libs/**" />
+				<exclude name="**/i18n.js" />
+				<exclude name="**/node_modules/**" />
+			</fileset>
+		</jslint>
+	</target>
+
+
+	<target name="minifyJavascript" depends="compile">
+		<jsmin copyright="${CopyrightMsg}" force="true">
+			<fileset dir="${output}">
+				<include name="**/*.js" />
+				<exclude name="**/libs/**" />
+				<exclude name="**/i18n.js" />
+			</fileset>
+		</jsmin>
+	</target>
+	
+	<target name="test" if="isWindows">
+		<delete file="${output}\test\testResults.txt" />
+		<exec dir="${output}\test" executable="cmd" >
+			<arg line="/c runTests.bat" />	
+		</exec>
+	</target>
+
+</project>

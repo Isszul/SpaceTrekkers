@@ -1,0 +1,87 @@
+<html>
+<head>
+    <title>iisnode logs</title>
+    <style type="text/css">
+        body
+        {
+            font-family: "Trebuchet MS" , Arial, Helvetica, sans-serif;
+        }
+        table
+        {
+            border-collapse: collapse;
+        }
+        td, th
+        {
+            border: 1px solid lightgray;
+            padding: 3px 7px 2px 7px;
+        }
+        th
+        {
+            text-align: left;
+            padding-top: 5px;
+            padding-bottom: 4px;
+            background-color: Gray;
+            color: #ffffff;
+        }
+        td.stderr
+        {
+            color: Red;
+        }
+    </style>
+</head>
+<body>
+    <table id="logFilesTable">
+        <tr>
+            <th>
+                Computer name
+            </th>
+            <th>
+                PID
+            </th>
+            <th>
+                Type
+            </th>
+            <th>
+                Created
+            </th>
+            <th>
+                Link
+            </th>
+        </tr>
+    </table>
+    <p id="lastUpdated"></p>
+    <script type="text/javascript">
+
+        // this is replaced with actual data at runtime by code in interceptor.js
+        var logFiles = [{"file":"ALEX-PC-1248-stdout-1358030809182.txt","computername":"ALEX-PC","pid":1248,"type":"stdout","created":1358030809182},{"file":"ALEX-PC-1248-stdout-1358031098385.txt","computername":"ALEX-PC","pid":1248,"type":"stdout","created":1358031098385},{"file":"ALEX-PC-1952-stdout-1358030176479.txt","computername":"ALEX-PC","pid":1952,"type":"stdout","created":1358030176479},{"file":"ALEX-PC-2144-stdout-1358035568421.txt","computername":"ALEX-PC","pid":2144,"type":"stdout","created":1358035568421},{"file":"ALEX-PC-2168-stdout-1358030778857.txt","computername":"ALEX-PC","pid":2168,"type":"stdout","created":1358030778857},{"file":"ALEX-PC-2208-stdout-1358030046684.txt","computername":"ALEX-PC","pid":2208,"type":"stdout","created":1358030046684},{"file":"ALEX-PC-2408-stdout-1358032915424.txt","computername":"ALEX-PC","pid":2408,"type":"stdout","created":1358032915424},{"file":"ALEX-PC-3236-stdout-1358030243865.txt","computername":"ALEX-PC","pid":3236,"type":"stdout","created":1358030243865},{"file":"ALEX-PC-3924-stdout-1358031544674.txt","computername":"ALEX-PC","pid":3924,"type":"stdout","created":1358031544674},{"file":"ALEX-PC-4528-stdout-1358031523800.txt","computername":"ALEX-PC","pid":4528,"type":"stdout","created":1358031523800},{"file":"ALEX-PC-5048-stdout-1358030470062.txt","computername":"ALEX-PC","pid":5048,"type":"stdout","created":1358030470062},{"file":"ALEX-PC-5860-stdout-1358031416972.txt","computername":"ALEX-PC","pid":5860,"type":"stdout","created":1358031416972},{"file":"ALEX-PC-5864-stdout-1358031186891.txt","computername":"ALEX-PC","pid":5864,"type":"stdout","created":1358031186891},{"file":"ALEX-PC-5972-stdout-1358030643854.txt","computername":"ALEX-PC","pid":5972,"type":"stdout","created":1358030643854},{"file":"ALEX-PC-6096-stdout-1358030113306.txt","computername":"ALEX-PC","pid":6096,"type":"stdout","created":1358030113306},{"file":"ALEX-PC-6416-stdout-1358030309147.txt","computername":"ALEX-PC","pid":6416,"type":"stdout","created":1358030309147},{"file":"ALEX-PC-6504-stdout-1358031481079.txt","computername":"ALEX-PC","pid":6504,"type":"stdout","created":1358031481079},{"file":"ALEX-PC-6536-stdout-1358031016647.txt","computername":"ALEX-PC","pid":6536,"type":"stdout","created":1358031016647},{"file":"ALEX-PC-6924-stdout-1358029912910.txt","computername":"ALEX-PC","pid":6924,"type":"stdout","created":1358029912910},{"file":"ALEX-PC-6956-stdout-1358030895121.txt","computername":"ALEX-PC","pid":6956,"type":"stdout","created":1358030895121},{"file":"ALEX-PC-7000-stdout-1358031214316.txt","computername":"ALEX-PC","pid":7000,"type":"stdout","created":1358031214316},{"file":"ALEX-PC-7040-stdout-1358031351619.txt","computername":"ALEX-PC","pid":7040,"type":"stdout","created":1358031351619},{"file":"ALEX-PC-7152-stdout-1358029898924.txt","computername":"ALEX-PC","pid":7152,"type":"stdout","created":1358029898924},{"file":"ALEX-PC-948-stdout-1358033859231.txt","computername":"ALEX-PC","pid":948,"type":"stdout","created":1358033859231}];
+        var lastUpdated = 1358035568483;
+        var date = new Date();
+
+        date.setTime(lastUpdated);
+        document.getElementById('lastUpdated').innerHTML = 'Index was last updated ' + date;
+
+        logFiles.sort(function (a, b) {
+            return b.created - a.created;
+        });
+
+        var logFilesTable = document.getElementById("logFilesTable");
+        for (var i = 0; i < logFiles.length; i++) {
+            var logFile = logFiles[i];
+            date.setTime(logFile.created);
+            var row = logFilesTable.insertRow(-1);
+            var computerNameCell = row.insertCell(0);
+            var pidCell = row.insertCell(1);
+            var typeCell = row.insertCell(2);
+            var dateCell = row.insertCell(3);
+            var logCell = row.insertCell(4);
+            computerNameCell.innerHTML = logFile.computername;
+            pidCell.innerHTML = logFile.pid.toString();
+            typeCell.innerHTML = logFile.type;
+            typeCell.setAttribute('class', logFile.type);
+            dateCell.innerHTML = date.toString();
+            logCell.innerHTML = '<a href="' + logFile.file + '">log</a>';
+        };
+
+    </script>
+</body>
+</html>
