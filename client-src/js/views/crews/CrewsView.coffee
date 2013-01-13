@@ -12,11 +12,11 @@ define ["jquery"
 		template: TranslationUtil.geti18nTemplate CrewsTemplate
 
 		initialize: () ->
-			Backbone.Events.on "CrewsCollection:fetchedSuccessfully", @.reRender, this
+			Backbone.Events.on "CrewsCollection:fetchedSuccessfully", @reRender, this
 
 		reRender: (crews) ->
-			@.template =  TranslationUtil.geti18nTemplate CrewsTemplate, crews
-			@.render()
+			@template =  TranslationUtil.geti18nTemplate CrewsTemplate, crews
+			@render()
 
 
 	crewsView

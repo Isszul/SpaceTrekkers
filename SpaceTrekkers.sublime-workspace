@@ -31,6 +31,17 @@
 	},
 	"buffers":
 	[
+		{
+			"contents": "define [\"backbone\"\n		\"jquery\"\n		\"atmosphere\"\n		\"backbone.marionette\"\n		\"router\"\n		\"modules/user/UserModule\"\n		\"modules/desktop/DesktopModule\"\n		\"views/navbar/NavBarView\"\n		\n], (Backbone, $, Atmosphere, Marionette, Router, UserModule, DesktopModule, NavBarView) ->\n\n	\"use strict\"\n	\n	# Class definition for the main Application\n	app = new Marionette.Application\n		\n		# Single Models\n		Models: {}\n\n		# Modules \n		Modules: {}\n\n		# Layouts\n		Layouts: {}\n		\n		# Collections of models\n		Collections: {}\n		\n		#Registered views\n		Views:\n			navBarView: new NavBarView()\n\n		SocketIO: null\n\n	\n		loadModules: ->\n			#@module(\"UserModule\", UserModule)\n			@module(\"DesktopModule\", DesktopModule)\n\n\n	# Setup the regions we will use on the page\n	app.addRegions \n		navBar: \"#navBar\"\n		mainRegion: \"#mainRegion\"\n	\n	# Add an initializer to setup the router\n	app.addInitializer ->\n		@app_router = new Router this\n		@SocketIO = $.atmosphere.subscribe(\n			url: document.location.toString() + 'chat'\n			contentType : \"application/json\"\n			logLevel : 'debug'\n			transport : 'websocket' \n			fallbackTransport: 'long-polling'			\n		)\n\n		this\n\n		\n	app\n\n	\n\n\n\n\n\n\n\n\n",
+			"file": "client-src/js/app.coffee",
+			"file_size": 928,
+			"file_write_time": 130025906548334166,
+			"settings":
+			{
+				"buffer_size": 1133,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "Packages/Java/Ant.sublime-build",
 	"command_palette":
@@ -56,9 +67,51 @@
 	},
 	"file_history":
 	[
-		"/E/Project/MarionetteBase-Coffeescript/client-src/js/views/login/LoginView.coffee",
+		"/E/Project/GitHub/SpaceTrekkers/web.config",
+		"/E/Project/GitHub/SpaceTrekkers/SpaceTrekkers.sublime-workspace",
+		"/E/Project/GitHub/SpaceTrekkers/client-src/js/modules/desktop/DesktopModule.coffee",
+		"/E/Project/GitHub/SpaceTrekkers/client-src/js/models/user/UserModel.coffee",
+		"/E/Project/GitHub/SpaceTrekkers/client-src/js/models/ship/ShipModel.coffee",
+		"/E/Project/GitHub/SpaceTrekkers/client-src/js/main.coffee",
+		"/E/Project/GitHub/SpaceTrekkers/client-src/templates/ships/shipsTemplate.html",
+		"/E/Project/GitHub/SpaceTrekkers/client-src/js/nls/root/general.coffee",
+		"/E/Project/GitHub/SpaceTrekkers/client-src/templates/crews/crewsTemplate.html",
+		"/E/Project/GitHub/SpaceTrekkers/client-src/js/views/crews/CrewsView.coffee",
+		"/E/Project/GitHub/SpaceTrekkers/client-src/js/views/ships/ShipsView.coffee",
+		"/E/Project/GitHub/SpaceTrekkers/client-src/js/collections/crews/CrewsCollection.coffee",
+		"/E/Project/GitHub/SpaceTrekkers/server-src/routes/index.js",
+		"/E/Project/GitHub/SpaceTrekkers/server-src/crew/index.js",
+		"/E/Project/GitHub/SpaceTrekkers/client-src/js/models/crew/CrewModel.coffee",
+		"/E/Project/GitHub/SpaceTrekkers/client-src/js/collections/ships/ShipsCollection.coffee",
+		"/E/Project/GitHub/SpaceTrekkers/server-src/ships/index.js",
+		"/E/Project/GitHub/SpaceTrekkers/client-src/templates/ship/shipTemplate.html",
+		"/E/Project/GitHub/SpaceTrekkers/client-src/js/views/ship/ShipView.coffee",
+		"/E/Project/GitHub/SpaceTrekkers/client-src/js/app.coffee",
+		"/E/Project/GitHub/SpaceTrekkers/client-src/templates/crew/crewTemplate.html",
+		"/E/Project/GitHub/SpaceTrekkers/client-src/templates/splash/splashTemplate.html",
+		"/E/Project/GitHub/SpaceTrekkers/client-src/js/router.coffee",
+		"/E/Project/GitHub/SpaceTrekkers/client-src/js/modules/user/UserModule.coffee",
+		"/E/Project/GitHub/SpaceTrekkers/client-src/templates/desktop/desktopLayout.html",
+		"/E/Project/GitHub/SpaceTrekkers/client-src/templates/desktop/desktopTemplate.html",
+		"/E/Project/GitHub/SpaceTrekkers/client-src/js/layout/desktop/DesktopLayout.coffee",
+		"/E/Project/GitHub/SpaceTrekkers/client-src/js/modules/user/views/login/LoginView.coffee",
+		"/E/Project/GitHub/SpaceTrekkers/client-src/index.html",
+		"/E/Project/GitHub/SpaceTrekkers/client-src/js/utils/translationUtil.coffee",
+		"/E/Project/GitHub/SpaceTrekkers/client-src/js/views/plainOldTemplate/PlainOldTemplate.coffee",
+		"/E/Project/GitHub/SpaceTrekkers/client-src/js/modules/desktop/layouts/desktop/DesktopLayout.coffee",
+		"/E/Project/GitHub/SpaceTrekkers/client-src/templates/desktop/desktopLayoutTemplate.html",
+		"/E/Project/GitHub/SpaceTrekkers/client-src/js/views/navbar/NavBarView.coffee",
+		"/E/Project/GitHub/SpaceTrekkers/WebContent/client/js/app.js",
 		"/E/Project/MarionetteBase-Coffeescript/client-src/js/modules/user/UserModule.coffee",
+		"/E/Project/GitHub/SpaceTrekkers/client-src/js/views/login/LoginView.coffee",
 		"/E/Project/GitHub/SpaceTrekkers/server.js",
+		"/E/Project/MarionetteBase-Coffeescript/client-src/js/views/login/LoginView.coffee",
+		"/E/Project/GitHub/SpaceTrekkers/client-src/templates/login/loginTemplate.html",
+		"/E/Project/GitHub/SpaceTrekkers/client-src/css/styles.css",
+		"/E/Project/GitHub/SpaceTrekkers/client-src/templates/signup/signupTemplate.html",
+		"/E/Project/GitHub/SpaceTrekkers/client-src/js/views/signup/SignupView.coffee",
+		"/E/Project/GitHub/SpaceTrekkers/client-src/css/bootstrapTheme.css",
+		"/E/Project/GitHub/SpaceTrekkers/client-src/js/app.js",
 		"/E/Project/MarionetteBase-Coffeescript/client-src/js/router.coffee",
 		"/E/Project/MarionetteBase-Coffeescript/client-src/js/main.coffee",
 		"/E/Project/MarionetteBase-Coffeescript/client-src/js/app.coffee",
@@ -141,49 +194,7 @@
 		"/E/Tools/env-js-master/examples/loadpage.js",
 		"/E/Tools/env-js-master/envjs/platform/rhino.js",
 		"/E/Tools/env-js-master/examples/pictures/boot.js",
-		"/E/Project/MarionetteBase-Coffeescript/src/js/libs/jasmine-core/jasmine-html.js",
-		"/E/Project/MarionetteBase-Coffeescript/src/js/libs/jasmine-core/jasmine.css",
-		"/E/Project/MarionetteBase-Coffeescript/src/js/libs/jasmine-core/jasmine.js",
-		"/E/Project/Chutzpah-sample/jasmineTests.html",
-		"/E/Project/Chutzpah-sample/jasmineTests.js",
-		"/E/Project/MarionetteBase-Coffeescript/src/js/libs/jquery/jquery-serialize.js",
-		"/E/Project/MarionetteBase-Coffeescript/src/js/libs/backbone/backbone.marionette.js",
-		"/E/Project/MarionetteBase-Coffeescript/src/js/libs/underscore/underscore1.4.3-min.js",
-		"/C/Users/Alex/Desktop/MarionetteBase/js/models/user/UserModel.js",
-		"/C/Users/Alex/Desktop/MarionetteBase/js/router.js",
-		"/C/Users/Alex/Desktop/MarionetteBase/js/app.js",
-		"/E/Project/MarionetteBase-Coffeescript/src/js/libs/underscore/underscore-min.js",
-		"/C/Users/Alex/Desktop/MarionetteBase/js/main.js",
-		"/C/Users/Alex/Desktop/MarionetteBase/templates/desktop/desktopTemplate.html",
-		"/C/Users/Alex/Desktop/MarionetteBase/js/views/desktop/DesktopView.js",
-		"/C/Users/Alex/Desktop/MarionetteBase/js/views/login/LoginView.js",
-		"/C/Users/Alex/Desktop/MarionetteBase/index.html",
-		"/C/Users/Alex/Desktop/MarionetteBase/js/nls/root/general.js",
-		"/C/Users/Alex/Desktop/MarionetteBase/js/nls/general.js",
-		"/C/Users/Alex/Desktop/MarionetteBase/js/config.js",
-		"/C/Users/Alex/Desktop/MarionetteBase/templates/login/loginTemplate.html",
-		"/C/Users/Alex/Desktop/MarionetteBase/js/nls/fr-fr/general.js",
-		"/C/Users/Alex/Desktop/modular-backbone/templates/footer/footerTemplate.html",
-		"/C/Users/Alex/Desktop/modular-backbone/js/views/login/LoginView.js",
-		"/C/Users/Alex/Desktop/modular-backbone/templates/login/loginTemplate.html",
-		"/C/Users/Alex/Desktop/modular-backbone/js/main.js",
-		"/C/Users/Alex/Desktop/modular-backbone/index.html",
-		"/C/Users/Alex/Desktop/modular-backbone/translations/translations.js",
-		"/C/Users/Alex/Desktop/modular-backbone/run-gjslint.bat",
-		"/C/Users/Alex/Desktop/modular-backbone/js/app.js",
-		"/C/Users/Alex/Desktop/modular-backbone/js/models/user/UserModel.js",
-		"/C/Users/Alex/Desktop/modular-backbone/js/models/user/UserModelSpec.js",
-		"/C/Users/Alex/Desktop/modular-backbone/run-jshint.bat",
-		"/C/Users/Alex/Desktop/modular-backbone/run-jsl.bat",
-		"/C/Users/Alex/Desktop/modular-backbone/build-tools/jsl-0.3.0/jsl.default.conf",
-		"/C/Users/Alex/Desktop/modular-backbone/.jshintignore",
-		"/C/Users/Alex/Desktop/modular-backbone/build-tools/.jshintignore",
-		"/C/Users/Alex/Desktop/modular-backbone/build-tools/run-jshint.bat",
-		"/C/Users/Alex/Desktop/modular-backbone/js/.jshintignore",
-		"/C/Users/Alex/Desktop/modular-backbone/build-tools/run-jsl.bat",
-		"/C/Users/Alex/Desktop/modular-backbone/build-tools/jshint-r12/run-jshint.bat",
-		"/C/Users/Alex/Desktop/modular-backbone/build-tools/jshint-r12/.r2config",
-		"/C/Users/Alex/Desktop/modular-backbone/js/models/user/UserModelTestRunner.html"
+		"/E/Project/MarionetteBase-Coffeescript/src/js/libs/jasmine-core/jasmine-html.js"
 	],
 	"find":
 	{
@@ -230,8 +241,36 @@
 	"groups":
 	[
 		{
+			"selected": 0,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "client-src/js/app.coffee",
+					"settings":
+					{
+						"buffer_size": 1133,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1124,
+								1124
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -299,6 +338,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 209.0,
+	"side_bar_width": 403.0,
 	"status_bar_visible": true
 }

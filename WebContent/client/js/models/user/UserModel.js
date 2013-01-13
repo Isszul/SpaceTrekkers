@@ -1,5 +1,5 @@
 
-define(["backbone"], function(Backbone) {
+define(["backbone", "atmosphere"], function(Backbone, Atmosphere) {
   var userModel;
   userModel = Backbone.Model.extend({
     defaults: {
@@ -9,6 +9,8 @@ define(["backbone"], function(Backbone) {
     initialize: function(options) {
       this.username = options.username;
       this.password = options.password;
+      Atmosphere;
+
       return this;
     },
     url: function() {

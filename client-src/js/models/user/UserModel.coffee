@@ -1,5 +1,6 @@
 define ["backbone"
-], (Backbone) ->
+		"atmosphere"
+], (Backbone, Atmosphere) ->
 
 	#Class def for the user model
 	userModel = Backbone.Model.extend
@@ -14,11 +15,12 @@ define ["backbone"
 		initialize: (options) ->
 			@username = options.username
 			@password = options.password
+			Atmosphere
 			@
 
 		#REST Url used when calling .save() .fetch() etc...
 		url: -> 
-            "user?username=#{@.username}&password=#{@.password}" 
+            "user?username=#{@username}&password=#{@password}" 
 
         createUser: (firstname, surname, email, username, password) ->
         	#TODO: Add create user logic
