@@ -15,11 +15,14 @@ define(["views/plainOldTemplate/PlainOldTemplate", "modules/desktop/layout/Deskt
       this.app.Layouts.desktopLayout.desktopleft.show(this.app.Views.shipsView);
       return this.app.Layouts.desktopLayout.desktopright.show(this.app.Views.crewView);
     };
+    DesktopModule.handleSuccessfulUserLogin = function() {
+      MyApp.Collections.crewsCollection.getData();
+      return MyApp.Collections.shipsCollection.getData();
+    };
     return DesktopModule.addInitializer(function() {
       MyApp.app_router.route('desktop', 'desktop', this.showDesktop);
       MyApp.app_router.route('', '', this.showDesktop);
-      MyApp.Collections.crewsCollection.getData();
-      return MyApp.Collections.shipsCollection.getData();
+      return Backbone.Events.on("userModel:loginsuccess", this.handleSuccessfulUserLogin, this);
     });
   };
 });

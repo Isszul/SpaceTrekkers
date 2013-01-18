@@ -22,19 +22,20 @@ define ["views/plainOldTemplate/PlainOldTemplate"
 		DesktopModule.app = MyApp
 
 		#Shows the desktop in the main Region
-		DesktopModule.showDesktop =  ->
+		DesktopModule.showDesktop =  () ->
 			@app.mainRegion.show @app.Layouts.desktopLayout	
 
 			@app.Layouts.desktopLayout.desktoptop.show @app.Views.splashView	
 			@app.Layouts.desktopLayout.desktopleft.show @app.Views.shipsView
 			@app.Layouts.desktopLayout.desktopright.show @app.Views.crewView	
 
+		DesktopModule.handleSuccessfulUserLogin  = () ->
+			MyApp.Collections.crewsCollection.getData()	
+			MyApp.Collections.shipsCollection.getData()
 
-		DesktopModule.addInitializer ->
+		DesktopModule.addInitializer () ->
 			#show desktop route
 			MyApp.app_router.route 'desktop', 'desktop', @showDesktop		
 			MyApp.app_router.route '', '', @showDesktop	
 
-			MyApp.Collections.crewsCollection.getData()	
-			MyApp.Collections.shipsCollection.getData()
-	
+			Backbone.Events.on "userModel:loginsuccess", @handleSuccessfulUserLogin, this

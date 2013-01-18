@@ -9,8 +9,8 @@ exports.get = function (req, res) {
     res.send(_crews);
 };
 
-exports.getCrews = function() {
-	return _crews;
+exports.getCrews = function(callback) {
+	callback(_crews);
 };
 
 

@@ -8,8 +8,8 @@ exports.get = function (req, res) {
     res.send(_ships);
 };
 
-exports.getShips = function() {
-    return _ships;
+exports.getShips = function(callback) {
+    callback(_ships);
 }
 
 _ships =  {

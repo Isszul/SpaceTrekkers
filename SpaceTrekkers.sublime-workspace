@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"va",
+				"validLogin"
+			],
+			[
 				"We",
 				"WebSocket"
 			],
@@ -44,31 +48,23 @@
 			}
 		},
 		{
+			"file": "server-src/user/index.js",
+			"settings":
+			{
+				"buffer_size": 1225,
+				"line_ending": "Windows"
+			}
+		},
+		{
 			"file": "server-src/routes/index.js",
 			"settings":
 			{
-				"buffer_size": 398,
+				"buffer_size": 690,
 				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "server-src/ships/index.js",
-			"settings":
-			{
-				"buffer_size": 523,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "client-src/js/app.coffee",
-			"settings":
-			{
-				"buffer_size": 994,
-				"line_ending": "Unix"
 			}
 		}
 	],
-	"build_system": "Packages/JSLint/JSLint.sublime-build",
+	"build_system": "Packages/Java/Ant.sublime-build",
 	"command_palette":
 	{
 		"height": 357.0,
@@ -117,12 +113,19 @@
 	"file_history":
 	[
 		"/E/Project/GitHub/SpaceTrekkers/client-src/js/app.coffee",
-		"/E/Project/GitHub/SpaceTrekkers/client-src/js/collections/crews/CrewsCollection.coffee",
-		"/E/Project/GitHub/SpaceTrekkers/client-src/js/models/user/UserModel.coffee",
-		"/E/Project/GitHub/SpaceTrekkers/client-src/js/modules/user/views/LoginView.coffee",
+		"/E/Project/GitHub/SpaceTrekkers/client-src/js/modules/desktop/DesktopModule.coffee",
 		"/E/Project/GitHub/SpaceTrekkers/client-src/js/modules/user/UserModule.coffee",
-		"/E/Project/GitHub/SpaceTrekkers/server.js",
+		"/E/Project/GitHub/SpaceTrekkers/server-src/ships/index.js",
+		"/E/Project/GitHub/SpaceTrekkers/server-src/crews/index.js",
+		"/E/Project/GitHub/SpaceTrekkers/server-src/user/index.js",
+		"/E/Project/GitHub/SpaceTrekkers/server-src/routes/index.js",
+		"/E/Project/GitHub/SpaceTrekkers/client-src/js/models/user/UserModel.coffee",
+		"/E/Project/GitHub/SpaceTrekkers/client-src/js/collections/crews/CrewsCollection.coffee",
+		"/E/Project/GitHub/SpaceTrekkers/client-src/js/collections/ships/ShipsCollection.coffee",
+		"/E/Project/GitHub/SpaceTrekkers/client-src/js/utils/SocketIOHandler.coffee",
 		"/E/Project/GitHub/SpaceTrekkers/client-src/js/main.coffee",
+		"/E/Project/GitHub/SpaceTrekkers/server.js",
+		"/E/Project/GitHub/SpaceTrekkers/client-src/js/modules/user/views/LoginView.coffee",
 		"/E/Project/GitHub/SpaceTrekkers/client-src/js/router.coffee",
 		"/E/Project/GitHub/SpaceTrekkers/build.xml",
 		"/E/Project/GitHub/spacetrekkers/node_modules/socket.io/lib/socket.io.js",
@@ -130,18 +133,14 @@
 		"/E/Project/GitHub/SpaceTrekkers/package.json",
 		"/E/Project/GitHub/SpaceTrekkers/web.config",
 		"/E/Project/GitHub/SpaceTrekkers/SpaceTrekkers.sublime-workspace",
-		"/E/Project/GitHub/SpaceTrekkers/client-src/js/modules/desktop/DesktopModule.coffee",
 		"/E/Project/GitHub/SpaceTrekkers/client-src/js/models/ship/ShipModel.coffee",
 		"/E/Project/GitHub/SpaceTrekkers/client-src/templates/ships/shipsTemplate.html",
 		"/E/Project/GitHub/SpaceTrekkers/client-src/js/nls/root/general.coffee",
 		"/E/Project/GitHub/SpaceTrekkers/client-src/templates/crews/crewsTemplate.html",
 		"/E/Project/GitHub/SpaceTrekkers/client-src/js/views/crews/CrewsView.coffee",
 		"/E/Project/GitHub/SpaceTrekkers/client-src/js/views/ships/ShipsView.coffee",
-		"/E/Project/GitHub/SpaceTrekkers/server-src/routes/index.js",
 		"/E/Project/GitHub/SpaceTrekkers/server-src/crew/index.js",
 		"/E/Project/GitHub/SpaceTrekkers/client-src/js/models/crew/CrewModel.coffee",
-		"/E/Project/GitHub/SpaceTrekkers/client-src/js/collections/ships/ShipsCollection.coffee",
-		"/E/Project/GitHub/SpaceTrekkers/server-src/ships/index.js",
 		"/E/Project/GitHub/SpaceTrekkers/client-src/templates/ship/shipTemplate.html",
 		"/E/Project/GitHub/SpaceTrekkers/client-src/js/views/ship/ShipView.coffee",
 		"/E/Project/GitHub/SpaceTrekkers/client-src/templates/crew/crewTemplate.html",
@@ -240,10 +239,7 @@
 		"/E/Tools/env-js-master/envjs/platform/core.js",
 		"/E/Tools/env-js-master/envjs/spydermonkey.py",
 		"/E/Tools/env-js-master/README.textile",
-		"/E/Tools/env-js-master/envjs/rhino.js",
-		"/E/Tools/env-js-master/local_settings.js",
-		"/E/Tools/env-js-master/settings.js",
-		"/E/Tools/env-js-master/specs/platform/rhino.js"
+		"/E/Tools/env-js-master/envjs/rhino.js"
 	],
 	"find":
 	{
@@ -291,7 +287,6 @@
 	"groups":
 	[
 		{
-			"selected": 3,
 			"sheets":
 			[
 				{
@@ -306,8 +301,8 @@
 						"selection":
 						[
 							[
-								1016,
-								1016
+								884,
+								884
 							]
 						],
 						"settings":
@@ -324,44 +319,18 @@
 				},
 				{
 					"buffer": 1,
-					"file": "server-src/routes/index.js",
+					"file": "server-src/user/index.js",
 					"settings":
 					{
-						"buffer_size": 398,
+						"buffer_size": 1225,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								390,
-								390
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "server-src/ships/index.js",
-					"settings":
-					{
-						"buffer_size": 523,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								216,
-								216
+								1025,
+								1025
 							]
 						],
 						"settings":
@@ -371,31 +340,30 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 90.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "client-src/js/app.coffee",
+					"buffer": 2,
+					"file": "server-src/routes/index.js",
 					"settings":
 					{
-						"buffer_size": 994,
+						"buffer_size": 690,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								491,
-								491
+								393,
+								393
 							]
 						],
 						"settings":
 						{
-							"syntax": "Packages/CoffeeScript/CoffeeScript.tmLanguage",
-							"translate_tabs_to_spaces": false
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -470,6 +438,6 @@
 	"show_open_files": false,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 403.0,
+	"side_bar_width": 230.0,
 	"status_bar_visible": true
 }

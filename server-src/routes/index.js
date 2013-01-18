@@ -19,15 +19,19 @@ exports.setupRouting = function (app) {
 exports.setupRoutingSocketIO = function(client) {
 
 	client.on('ships', function(callback) {
-		callback(ships.getShips());
+		if(user.isLoggedInByClient(client)){
+			ships.getShips(callback);
+		};
 	});
 
 	client.on('crews', function(callback) {
-		callback(crews.getCrews());
+		if(user.isLoggedInByClient(client)){		
+			crews.getCrews(callback);
+		};			
 	});
 
 	client.on('userLogin', function(username, password, callback){
-		user.isValidLogin(username, password, callback);
+		user.validateLogin(username, password, callback, client);
 	});
 
 }
