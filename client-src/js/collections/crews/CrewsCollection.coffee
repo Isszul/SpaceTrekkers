@@ -1,6 +1,7 @@
 define ["backbone"
 		"models/crew/CrewModel"
-], (Backbone, CrewModel) ->
+		"SocketIOHandler"		
+], (Backbone, CrewModel, SocketIOHandler) ->
 
 	#Class def for the ship model
 	crewCollection = Backbone.Collection.extend
@@ -9,8 +10,11 @@ define ["backbone"
 		url: "/crews"
 
 		getData: ->
-			@fetch
-				success: (collection, results) ->
-					Backbone.Events.trigger "CrewsCollection:fetchedSuccessfully", results
+			SocketIOHandler.socket.emit 'crews', (data) ->
+				Backbone.Events.trigger "CrewsCollection:fetchedSuccessfully", data
+				
+		#	@fetch
+		#		success: (collection, results) ->
+		#			Backbone.Events.trigger "CrewsCollection:fetchedSuccessfully", results
 
 	crewCollection

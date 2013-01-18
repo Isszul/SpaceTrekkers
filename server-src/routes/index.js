@@ -22,4 +22,12 @@ exports.setupRoutingSocketIO = function(client) {
 		callback(ships.getShips());
 	});
 
+	client.on('crews', function(callback) {
+		callback(crews.getCrews());
+	});
+
+	client.on('userLogin', function(username, password, callback){
+		user.isValidLogin(username, password, callback);
+	});
+
 }

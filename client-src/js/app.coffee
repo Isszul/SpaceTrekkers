@@ -30,7 +30,7 @@ define ["backbone"
 
 
 		loadModules: ->
-			#@module("UserModule", UserModule)
+			@module("UserModule", UserModule)
 			@module("DesktopModule", DesktopModule)
 
 

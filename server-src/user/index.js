@@ -11,6 +11,20 @@ exports.userLogin = function (req, res) {
     var username = req.query["username"];
     var password = req.query["password"];
 
+
+    exports.isValidLogin(username, password, function(result){
+
+        res.send(result);
+
+    });
+
+
+
+};
+
+
+exports.isValidLogin = function(username, password, callback) {
+
     var validLogin = false;
 
     db.runSQLQuery("SELECT * FROM [user] WHERE [username] = '" + username + "' AND [password] = '" + password + "';", function (err, results) {
@@ -24,14 +38,11 @@ exports.userLogin = function (req, res) {
             validLogin = (results[0].username === username);
         }
 
-        res.send({
-
-            validLogin: validLogin
-
+        callback({
+            "username": username,
+            "validLogin": validLogin
         });
 
     });
-
-
 
 };

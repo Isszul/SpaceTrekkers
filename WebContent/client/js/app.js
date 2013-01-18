@@ -12,6 +12,7 @@ define(["backbone", "jquery", "backbone.marionette", "router", "modules/user/Use
       navBarView: new NavBarView()
     },
     loadModules: function() {
+      this.module("UserModule", UserModule);
       return this.module("DesktopModule", DesktopModule);
     }
   });

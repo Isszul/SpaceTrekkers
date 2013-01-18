@@ -1,5 +1,6 @@
 define ["backbone"
-], (Backbone) ->
+		"SocketIOHandler"
+], (Backbone, SocketIOHandler) ->
 
 	#Class def for the user model
 	userModel = Backbone.Model.extend
@@ -27,18 +28,23 @@ define ["backbone"
 
 		#Public function to attempt the login.
 		attemptLogin: ->
+			SocketIOHandler.socket.emit 'userLogin', @username, @password, (data) ->
+				if data.validLogin == true
+					Backbone.Events.trigger "userModel:loginsuccess", data
+				else
+					Backbone.Events.trigger "userModel:loginfailure", data
 
 			#Call fetch internally but attach success and error handlers 
-			@fetch
+			#@fetch
 
 		        #When the ajax call fails
-				error: (userModel, jqXHR, options) ->
-					Backbone.Events.trigger "userModel:loginfailure", userModel
+			#	error: (userModel, jqXHR, options) ->
+			#		Backbone.Events.trigger "userModel:loginfailure", userModel
 			
 				#When there is a successful request made (still need to validate and check the response)
-				success: (userModel, response, options) ->
-					Backbone.Events.trigger "userModel:loginsuccess", userModel if response.validLogin
-					Backbone.Events.trigger "userModel:loginfailure", userModel if !response.validLogin
+			#	success: (userModel, response, options) ->
+			#		Backbone.Events.trigger "userModel:loginsuccess", userModel if response.validLogin
+			#		Backbone.Events.trigger "userModel:loginfailure", userModel if !response.validLogin
 
 
 
