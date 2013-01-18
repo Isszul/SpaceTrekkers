@@ -1,14 +1,12 @@
 
-define(["backbone", "models/ship/ShipModel"], function(Backbone, ShipModel) {
+define(["backbone", "models/ship/ShipModel", "SocketIOHandler"], function(Backbone, ShipModel, SocketIOHandler) {
   var shipsCollection;
   shipsCollection = Backbone.Collection.extend({
     model: ShipModel,
     url: "/ships",
     getData: function() {
-      return this.fetch({
-        success: function(collection, results) {
-          return Backbone.Events.trigger("ShipsCollection:fetchedSuccessfully", results);
-        }
+      return SocketIOHandler.socket.emit('ships', function(data) {
+        return Backbone.Events.trigger("ShipsCollection:fetchedSuccessfully", data);
       });
     }
   });

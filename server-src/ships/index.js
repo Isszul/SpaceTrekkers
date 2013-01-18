@@ -9,7 +9,18 @@ exports.get = function (req, res) {
 
     res.send({
 
-        ship: [
+        ship : _ships
+        
+    });
+
+};
+
+
+exports.getShips = function() {
+    return {ship : _ships};
+}
+
+_ships = [
             {
                 icon: "plane",
                 name: "SS SuperPants",
@@ -22,9 +33,3 @@ exports.get = function (req, res) {
                 damage: 60
             }
         ] 
-        
-    });
-
-
-
-};

@@ -14,7 +14,6 @@ require.config({
     jquery: "../libs/jquery/jquery-min",
     jqueryhotkeys: "../libs/jquery/jquery.hotkeys",
     jstree: "../libs/jquery/jquery.jstree",
-    atmosphere: "../libs/jquery/jquery.atmosphere",
     bootstrap: "../libs/bootstrap/bootstrap",
     underscore: "../libs/underscore/underscore1.4.3-min",
     text: "../libs/text/text",
@@ -25,7 +24,9 @@ require.config({
     "backbone.eventbinder": "../libs/backbone/backbone.eventbinder.min",
     "backbone.marionette": "../libs/backbone/backbone.marionette.min",
     "handlebars": "../libs/handlebars/handlebars-1.0.rc.1",
-    "translationUtil": "utils/translationUtil"
+    "translationUtil": "utils/translationUtil",
+    "SocketIOHandler": "utils/SocketIOHandler",
+    "SocketIO": "../libs/socket.io/socket.io"
   },
   shim: {
     underscore: {
@@ -41,9 +42,6 @@ require.config({
       deps: ["jquery"]
     },
     bootstrap: {
-      deps: ["jquery"]
-    },
-    atmosphere: {
       deps: ["jquery"]
     },
     "handlebars": {

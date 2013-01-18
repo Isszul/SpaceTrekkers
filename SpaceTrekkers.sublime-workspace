@@ -4,6 +4,10 @@
 		"selected_items":
 		[
 			[
+				"We",
+				"WebSocket"
+			],
+			[
 				"logout",
 				"logoutUser"
 			],
@@ -32,29 +36,74 @@
 	"buffers":
 	[
 		{
-			"contents": "define [\"backbone\"\n		\"jquery\"\n		\"atmosphere\"\n		\"backbone.marionette\"\n		\"router\"\n		\"modules/user/UserModule\"\n		\"modules/desktop/DesktopModule\"\n		\"views/navbar/NavBarView\"\n		\n], (Backbone, $, Atmosphere, Marionette, Router, UserModule, DesktopModule, NavBarView) ->\n\n	\"use strict\"\n	\n	# Class definition for the main Application\n	app = new Marionette.Application\n		\n		# Single Models\n		Models: {}\n\n		# Modules \n		Modules: {}\n\n		# Layouts\n		Layouts: {}\n		\n		# Collections of models\n		Collections: {}\n		\n		#Registered views\n		Views:\n			navBarView: new NavBarView()\n\n		SocketIO: null\n\n	\n		loadModules: ->\n			#@module(\"UserModule\", UserModule)\n			@module(\"DesktopModule\", DesktopModule)\n\n\n	# Setup the regions we will use on the page\n	app.addRegions \n		navBar: \"#navBar\"\n		mainRegion: \"#mainRegion\"\n	\n	# Add an initializer to setup the router\n	app.addInitializer ->\n		@app_router = new Router this\n		@SocketIO = $.atmosphere.subscribe(\n			url: document.location.toString() + 'chat'\n			contentType : \"application/json\"\n			logLevel : 'debug'\n			transport : 'websocket' \n			fallbackTransport: 'long-polling'			\n		)\n\n		this\n\n		\n	app\n\n	\n\n\n\n\n\n\n\n\n",
-			"file": "client-src/js/app.coffee",
-			"file_size": 928,
-			"file_write_time": 130025906548334166,
+			"file": "server.js",
 			"settings":
 			{
-				"buffer_size": 1133,
+				"buffer_size": 1124,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "server-src/routes/index.js",
+			"settings":
+			{
+				"buffer_size": 398,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "server-src/ships/index.js",
+			"settings":
+			{
+				"buffer_size": 523,
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "client-src/js/app.coffee",
+			"settings":
+			{
+				"buffer_size": 994,
 				"line_ending": "Unix"
 			}
 		}
 	],
-	"build_system": "Packages/Java/Ant.sublime-build",
+	"build_system": "Packages/JSLint/JSLint.sublime-build",
 	"command_palette":
 	{
-		"height": 0.0,
+		"height": 357.0,
 		"selected_items":
 		[
+			[
+				"pack re",
+				"Package Control: Remove Package"
+			],
+			[
+				"pack",
+				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: ",
+				"Package Control: Install Package"
+			],
+			[
+				"PAck",
+				"Package Control: Remove Package"
+			],
+			[
+				"Pack",
+				"Package Control: Install Package"
+			],
+			[
+				"Package",
+				"Package Control: Install Package"
+			]
 		],
-		"width": 0.0
+		"width": 440.0
 	},
 	"console":
 	{
-		"height": 0.0
+		"height": 125.0
 	},
 	"distraction_free":
 	{
@@ -67,18 +116,27 @@
 	},
 	"file_history":
 	[
+		"/E/Project/GitHub/SpaceTrekkers/client-src/js/app.coffee",
+		"/E/Project/GitHub/SpaceTrekkers/client-src/js/collections/crews/CrewsCollection.coffee",
+		"/E/Project/GitHub/SpaceTrekkers/client-src/js/models/user/UserModel.coffee",
+		"/E/Project/GitHub/SpaceTrekkers/client-src/js/modules/user/views/LoginView.coffee",
+		"/E/Project/GitHub/SpaceTrekkers/client-src/js/modules/user/UserModule.coffee",
+		"/E/Project/GitHub/SpaceTrekkers/server.js",
+		"/E/Project/GitHub/SpaceTrekkers/client-src/js/main.coffee",
+		"/E/Project/GitHub/SpaceTrekkers/client-src/js/router.coffee",
+		"/E/Project/GitHub/SpaceTrekkers/build.xml",
+		"/E/Project/GitHub/spacetrekkers/node_modules/socket.io/lib/socket.io.js",
+		"/E/Project/GitHub/SpaceTrekkers/node_modules/socket.io/node_modules/socket.io-client/lib/socket.js",
+		"/E/Project/GitHub/SpaceTrekkers/package.json",
 		"/E/Project/GitHub/SpaceTrekkers/web.config",
 		"/E/Project/GitHub/SpaceTrekkers/SpaceTrekkers.sublime-workspace",
 		"/E/Project/GitHub/SpaceTrekkers/client-src/js/modules/desktop/DesktopModule.coffee",
-		"/E/Project/GitHub/SpaceTrekkers/client-src/js/models/user/UserModel.coffee",
 		"/E/Project/GitHub/SpaceTrekkers/client-src/js/models/ship/ShipModel.coffee",
-		"/E/Project/GitHub/SpaceTrekkers/client-src/js/main.coffee",
 		"/E/Project/GitHub/SpaceTrekkers/client-src/templates/ships/shipsTemplate.html",
 		"/E/Project/GitHub/SpaceTrekkers/client-src/js/nls/root/general.coffee",
 		"/E/Project/GitHub/SpaceTrekkers/client-src/templates/crews/crewsTemplate.html",
 		"/E/Project/GitHub/SpaceTrekkers/client-src/js/views/crews/CrewsView.coffee",
 		"/E/Project/GitHub/SpaceTrekkers/client-src/js/views/ships/ShipsView.coffee",
-		"/E/Project/GitHub/SpaceTrekkers/client-src/js/collections/crews/CrewsCollection.coffee",
 		"/E/Project/GitHub/SpaceTrekkers/server-src/routes/index.js",
 		"/E/Project/GitHub/SpaceTrekkers/server-src/crew/index.js",
 		"/E/Project/GitHub/SpaceTrekkers/client-src/js/models/crew/CrewModel.coffee",
@@ -86,11 +144,8 @@
 		"/E/Project/GitHub/SpaceTrekkers/server-src/ships/index.js",
 		"/E/Project/GitHub/SpaceTrekkers/client-src/templates/ship/shipTemplate.html",
 		"/E/Project/GitHub/SpaceTrekkers/client-src/js/views/ship/ShipView.coffee",
-		"/E/Project/GitHub/SpaceTrekkers/client-src/js/app.coffee",
 		"/E/Project/GitHub/SpaceTrekkers/client-src/templates/crew/crewTemplate.html",
 		"/E/Project/GitHub/SpaceTrekkers/client-src/templates/splash/splashTemplate.html",
-		"/E/Project/GitHub/SpaceTrekkers/client-src/js/router.coffee",
-		"/E/Project/GitHub/SpaceTrekkers/client-src/js/modules/user/UserModule.coffee",
 		"/E/Project/GitHub/SpaceTrekkers/client-src/templates/desktop/desktopLayout.html",
 		"/E/Project/GitHub/SpaceTrekkers/client-src/templates/desktop/desktopTemplate.html",
 		"/E/Project/GitHub/SpaceTrekkers/client-src/js/layout/desktop/DesktopLayout.coffee",
@@ -104,7 +159,6 @@
 		"/E/Project/GitHub/SpaceTrekkers/WebContent/client/js/app.js",
 		"/E/Project/MarionetteBase-Coffeescript/client-src/js/modules/user/UserModule.coffee",
 		"/E/Project/GitHub/SpaceTrekkers/client-src/js/views/login/LoginView.coffee",
-		"/E/Project/GitHub/SpaceTrekkers/server.js",
 		"/E/Project/MarionetteBase-Coffeescript/client-src/js/views/login/LoginView.coffee",
 		"/E/Project/GitHub/SpaceTrekkers/client-src/templates/login/loginTemplate.html",
 		"/E/Project/GitHub/SpaceTrekkers/client-src/css/styles.css",
@@ -189,12 +243,7 @@
 		"/E/Tools/env-js-master/envjs/rhino.js",
 		"/E/Tools/env-js-master/local_settings.js",
 		"/E/Tools/env-js-master/settings.js",
-		"/E/Tools/env-js-master/specs/platform/rhino.js",
-		"/E/Tools/env-js-master/envjs/console.js",
-		"/E/Tools/env-js-master/examples/loadpage.js",
-		"/E/Tools/env-js-master/envjs/platform/rhino.js",
-		"/E/Tools/env-js-master/examples/pictures/boot.js",
-		"/E/Project/MarionetteBase-Coffeescript/src/js/libs/jasmine-core/jasmine-html.js"
+		"/E/Tools/env-js-master/specs/platform/rhino.js"
 	],
 	"find":
 	{
@@ -212,6 +261,7 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"atmosphere",
 			"img",
 			"test",
 			"});\n",
@@ -241,23 +291,105 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 3,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "client-src/js/app.coffee",
+					"file": "server.js",
 					"settings":
 					{
-						"buffer_size": 1133,
+						"buffer_size": 1124,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1124,
-								1124
+								1016,
+								1016
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "server-src/routes/index.js",
+					"settings":
+					{
+						"buffer_size": 398,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								390,
+								390
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "server-src/ships/index.js",
+					"settings":
+					{
+						"buffer_size": 523,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								216,
+								216
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "client-src/js/app.coffee",
+					"settings":
+					{
+						"buffer_size": 994,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								491,
+								491
 							]
 						],
 						"settings":

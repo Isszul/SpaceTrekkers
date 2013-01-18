@@ -3,7 +3,8 @@
  * Module dependencies.
  */
 
-var express = require('express');
+var express = require('express'),
+    io = require('socket.io'),
     routes = require('./server-src/routes');
 
 
@@ -30,14 +31,22 @@ app.configure('production', function(){
 
 routes.setupRouting(app);
 
-app.listen(process.env.port || 3000);
+var socket = io.listen(app);
 
-var io = require('socket.io').listen(app);
-
-io.sockets.on('connection', function (socket) {
-    console.log("SocketIO Connected");
-    socket.emit('hello', { hello: 'hi' });
+socket.configure(function () {
+  socket.set('transports', ['websocket', 'flashsocket', 'xhr-polling']);
 });
 
+app.listen(process.env.port || 3000);
+
+
+
+socket.on('connection', function (client) {
+
+    console.log("Socket.IO connection***");
+
+    routes.setupRoutingSocketIO(client);
+
+});
 
 console.log("Express server listening on port %d in %s mode", app.address().port, app.settings.env);

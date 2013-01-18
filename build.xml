@@ -1,4 +1,4 @@
-<project name="MarionetteBase-Coffeescript" default="lintJavascript" basedir=".">
+<project name="MarionetteBase-Coffeescript" default="compile" basedir=".">
 
 
 	<taskdef name="CoffeeScriptC" classname="csat.CoffeeScriptCTask" classpath="lib/csat-0.1.6.jar" />

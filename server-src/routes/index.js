@@ -14,3 +14,12 @@ exports.setupRouting = function (app) {
     app.get('/crews', crews.get);
 
 };
+
+
+exports.setupRoutingSocketIO = function(client) {
+
+	client.on('ships', function(callback) {
+		callback(ships.getShips());
+	});
+
+}
